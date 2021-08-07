@@ -1,6 +1,7 @@
+import React from "react"
 import Head from "next/head"
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -78,3 +79,5 @@ export default function HomePage() {
     </div>
   )
 }
+
+export default HomePage
