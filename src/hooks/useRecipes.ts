@@ -1,0 +1,17 @@
+import { recipes } from "../data/data"
+import { IRecipe, RecipeCard } from "../types"
+
+const sortAlphabetically = (x: RecipeCard[]): RecipeCard[] =>
+  x.sort((a, b) => a.title.localeCompare(b.title))
+
+const useRecipes = (): RecipeCard[] => {
+  const formattedRecipes: RecipeCard[] = recipes.map((recipe: IRecipe) => ({
+    title: recipe.title,
+    category: recipe.category,
+    href: `/${recipe.id}`,
+  }))
+
+  return sortAlphabetically(formattedRecipes)
+}
+
+export default useRecipes
