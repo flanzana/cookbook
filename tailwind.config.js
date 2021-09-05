@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         primary: colors.indigo,
       },
+      gridTemplateColumns: {
+        recipeMobile: "1fr",
+        recipeDesktop: "1fr 2fr",
+      },
     },
     fontFamily: {
       display: ["Poppins", "ui-sans-serif"],
