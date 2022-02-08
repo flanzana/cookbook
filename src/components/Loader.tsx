@@ -11,7 +11,7 @@ type Props = {
  * @param sizingClassNames - width and height of the loader
  */
 const Loader = ({ sizingClassNames }: Props) => (
-  <div className={`animate-pulse bg-gray-200 rounded ${sizingClassNames}`} />
+  <div className={`animate-pulse rounded bg-gray-200 ${sizingClassNames}`} />
 )
 
 export default Loader

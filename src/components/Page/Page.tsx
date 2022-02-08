@@ -31,9 +31,9 @@ const Page = ({ meta, children, hasHeader = true, hasFooter = true }: Props) => 
         <title>{title}</title>
         {description && <meta name="description" content={description} />}
       </Head>
-      <div className="min-h-screen flex flex-col">
+      <div className="flex min-h-screen flex-col">
         {hasHeader && <PageHeader />}
-        <main className="font-body flex flex-1 flex-col px-6 py-3 md:px-10 md:py-5 lg:px-20 lg:py-10">
+        <main className="flex flex-1 flex-col px-6 py-3 font-body md:px-10 md:py-5 lg:px-20 lg:py-10">
           {children}
         </main>
         {hasFooter && <PageFooter />}

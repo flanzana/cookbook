@@ -7,11 +7,11 @@ import TextLink from "../../../components/TextLink/TextLink"
  */
 const RecipeNotFound = () => (
   <>
-    <h1 className="text-3xl font-bold text-center mb-6">Recipe not found</h1>
-    <p className="text-lg text-center">
+    <h1 className="mb-6 text-center text-3xl font-bold">Recipe not found</h1>
+    <p className="text-center text-lg">
       Unfortunately, the recipe you are looking for does not exist.
     </p>
-    <p className="text-lg text-center">
+    <p className="text-center text-lg">
       Search through all available{" "}
       <TextLink href="/search" isUnderlined additionalClassName="px-0">
         recipes

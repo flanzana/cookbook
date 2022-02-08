@@ -17,7 +17,7 @@ const Part = ({ title, id, children }: PartProps) => (
   <div className="flex flex-col items-center">
     <h2
       id={id}
-      className="text-xl h-6 font-semibold mb-3 border-b border-b-8 border-b-primary-100 px-3 box-border"
+      className="mb-3 box-border h-6 border-b border-b-8 border-b-primary-100 px-3 text-xl font-semibold"
     >
       {title}
     </h2>
@@ -47,7 +47,7 @@ const Recipe = ({ recipe, isLoading }: Props) => {
       {isLoading ? (
         <Loader sizingClassNames="h-9 sm:h-10 w-1/2 sm:w-2/5 lg:w-60" />
       ) : (
-        <h1 className="text-2xl sm:text-3xl font-bold text-center">{(recipe as IRecipe).title}</h1>
+        <h1 className="text-center text-2xl font-bold sm:text-3xl">{(recipe as IRecipe).title}</h1>
       )}
 
       {recipe?.originalRecipe && (
@@ -56,7 +56,7 @@ const Recipe = ({ recipe, isLoading }: Props) => {
         </TextLink>
       )}
 
-      <div className="mt-6 grid grid-cols-recipeMobile gap-6 max-w-lg md:grid-cols-recipeDesktop md:max-w-4xl">
+      <div className="mt-6 grid max-w-lg grid-cols-recipeMobile gap-6 md:max-w-4xl md:grid-cols-recipeDesktop">
         <Part title={getTranslation("ingredients", language)} id="IngredientsTable">
           <IngredientsTable>
             {isLoading

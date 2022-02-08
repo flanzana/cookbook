@@ -2,7 +2,7 @@ import React from "react"
 import Link from "next/link"
 
 const DEFAULT_TEXTLINK_CLASSNAMES =
-  "font-semibold px-1 hover:bg-primary-50 focus:bg-primary-50 rounded-md text-primary-600 hover:text-primary-700 focus:text-primary-700 hover:underline focus:underline outline-none"
+  "rounded-md px-1 font-semibold text-primary-600 outline-none hover:bg-primary-50 hover:text-primary-700 hover:underline focus:bg-primary-50 focus:text-primary-700 focus:underline"
 
 type Props = {
   href: string

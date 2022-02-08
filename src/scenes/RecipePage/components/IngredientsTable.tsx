@@ -14,10 +14,10 @@ export const IngredientsTableRow = ({
   isLoading,
 }: IngredientsTableRowProps) => (
   <tr>
-    <td key="amount" className="text-right text-sm pr-2 border-r">
+    <td key="amount" className="border-r pr-2 text-right text-sm">
       {isLoading ? <Loader sizingClassNames="h-5 w-20" /> : amount}
     </td>
-    <td key="ingredient" className="text-left pl-2">
+    <td key="ingredient" className="pl-2 text-left">
       {isLoading ? <Loader sizingClassNames="h-6 w-28" /> : ingredient}
     </td>
   </tr>
