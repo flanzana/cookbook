@@ -3,7 +3,9 @@ import React from "react"
 import Loader from "../../../components/Loader"
 
 const InstructionIndex = ({ index }: Pick<InstructionsListItemProps, "index">) => (
-  <div className="mr-3 mt-0.5 h-5 w-5 rounded-full bg-primary-100 text-center text-sm">{index}</div>
+  <div className="mr-3 mt-0.5 h-5 w-5 rounded-full bg-primary-100 text-center text-sm dark:bg-zinc-600">
+    {index}
+  </div>
 )
 
 type InstructionsListItemProps = {

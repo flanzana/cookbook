@@ -17,7 +17,7 @@ const Part = ({ title, id, children }: PartProps) => (
   <div className="flex flex-col items-center">
     <h2
       id={id}
-      className="mb-3 box-border h-6 border-b border-b-8 border-b-primary-100 px-3 text-xl font-semibold"
+      className="mb-3 box-border h-6 border-b border-b-8 border-b-primary-100 px-3 text-xl font-semibold dark:border-b-zinc-600"
     >
       {title}
     </h2>

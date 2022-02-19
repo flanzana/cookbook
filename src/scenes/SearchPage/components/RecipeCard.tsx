@@ -15,12 +15,12 @@ import CategoryIcon from "../../../components/CategoryIcon/CategoryIcon"
 const RecipeCard = ({ href, title, category }: RecipeCardType) => (
   <Link href={href} passHref>
     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-    <a className="flex flex-row items-center justify-between rounded-xl bg-gray-100 py-2 px-3 outline-none hover:bg-primary-100 hover:text-primary-700 focus:bg-primary-100 focus:text-primary-700 sm:p-4">
+    <a className="flex flex-row items-center justify-between rounded-xl bg-zinc-100 py-2 px-3 outline-none hover:bg-primary-100 hover:text-primary-700 focus:bg-primary-100 focus:text-primary-700 dark:bg-zinc-700 dark:hover:bg-primary-300 dark:focus:bg-primary-300 sm:p-4">
       <span className="flex-1 text-base leading-tight">
         <span className="mr-2 font-semibold">{title}</span>
         <CategoryIcon category={category} />
       </span>
-      <ChevronRightIcon className="ml-2 h-4 w-4 text-gray-500" />
+      <ChevronRightIcon className="ml-2 h-4 w-4 text-zinc-500" />
     </a>
   </Link>
 )
