@@ -1,0 +1,20 @@
+{
+    "name": "Žana's cookbook",
+    "short_name": "Žana's cookbook",
+    "description": "A cookbook of Žana's favourite recipes; from dips, soups to desserts. Recipes are written in English, Spanish or Slovenian language.",
+    "icons": [
+        {
+            "src": "/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
