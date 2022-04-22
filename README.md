@@ -20,7 +20,7 @@ then open [localhost:3000](http://localhost:3000) in your browser (Google Chrome
 - Next.js
 - TypeScript
 - TailwindCSS and Heroicons
-- Jest and React testing library
+- Jest, React testing library and Next.js page tester
 - ESLint and different ESLint plugins
 - Prettier
 

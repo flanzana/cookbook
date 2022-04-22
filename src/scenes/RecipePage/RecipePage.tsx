@@ -1,24 +1,38 @@
 import React from "react"
+import { useRouter } from "next/router"
 
-import useRecipe from "../../hooks/useRecipe"
 import Page from "../../components/Page/Page"
 import Recipe from "./components/Recipe"
 import RecipeNotFound from "./components/RecipeNotFound"
+import { IRecipe } from "../../types"
 
-const RecipePage = () => {
-  const { data, status } = useRecipe()
+type Props = {
+  data?: IRecipe | null // from getStaticProps
+}
 
-  if (status === "error") {
+const RecipePage = ({ data }: Props) => {
+  const { query } = useRouter()
+
+  // query doesn't contain recipeId on first loading unless it was prefetched with getStaticPaths
+  if (!query.recipeId) {
     return (
-      <Page meta={{ title: "Error | Žana's cookbook" }}>
-        <RecipeNotFound />
+      <Page meta={{ title: "Žana's cookbook" }}>
+        <Recipe recipe={null} isLoading />
+      </Page>
+    )
+  }
+
+  if (data) {
+    return (
+      <Page meta={{ title: `${data.title} | Žana's cookbook` }}>
+        <Recipe recipe={data} isLoading={false} />
       </Page>
     )
   }
 
   return (
-    <Page meta={{ title: `${data?.title || "Loading recipe"} | Žana's cookbook` }}>
-      <Recipe recipe={data} isLoading={status === "loading"} />
+    <Page meta={{ title: "Not found | Žana's cookbook" }}>
+      <RecipeNotFound />
     </Page>
   )
 }
