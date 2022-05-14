@@ -20,7 +20,9 @@ const PageHeader = () => (
         <span className="ml-4 font-display text-xl font-medium">Žana&apos;s cookbook</span>
       </a>
     </Link>
-    <DarkModeButton />
+    <div className="mr-4 flex items-center">
+      <DarkModeButton />
+    </div>
   </header>
 )
 

@@ -43,7 +43,7 @@ const Page = ({ meta, children, hasHeader = true, hasFooter = true }: Props) => 
         {hasHeader ? (
           <PageHeader />
         ) : (
-          <div className="flex flex-row-reverse">
+          <div className="m-4 flex flex-row-reverse">
             <DarkModeButton />
           </div>
         )}
