@@ -3,11 +3,16 @@ import Link from "next/link"
 
 import Logo from "../Logo/Logo"
 import DarkModeButton from "../DarkModeButton/DarkModeButton"
+import FavouriteIconButton from "../FavouriteIconButton/FavouriteIconButton"
+
+type Props = {
+  hasFavouritesIcon: boolean
+}
 
 /**
  * Header for the pages with the logo and title.
  */
-const PageHeader = () => (
+const PageHeader = ({ hasFavouritesIcon }: Props) => (
   <header className="sticky top-0 flex w-full flex-row justify-between bg-white/70 backdrop-blur dark:bg-zinc-800/70">
     <Link href="/" passHref>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -20,7 +25,8 @@ const PageHeader = () => (
         <span className="ml-4 font-display text-xl font-medium">Žana&apos;s cookbook</span>
       </a>
     </Link>
-    <div className="mr-4 flex items-center">
+    <div className="mr-4 flex flex-row items-center sm:space-x-4">
+      {hasFavouritesIcon && <FavouriteIconButton />}
       <DarkModeButton />
     </div>
   </header>

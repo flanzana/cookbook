@@ -1,4 +1,5 @@
 import React from "react"
+import { ExternalLinkIcon } from "@heroicons/react/outline"
 
 import { IRecipe, Language } from "../../../types"
 import TextLink from "../../../components/TextLink/TextLink"
@@ -6,6 +7,7 @@ import Loader from "../../../components/Loader"
 import IngredientsTable, { IngredientsTableRow } from "./IngredientsTable"
 import InstructionsList, { InstructionsListItem } from "./InstructionsList"
 import getTranslation from "../../../helpers/getTranslation"
+import FavouriteLink from "./FavouriteLink"
 
 type PartProps = {
   title: string
@@ -50,10 +52,18 @@ const Recipe = ({ recipe, isLoading }: Props) => {
         <h1 className="text-center text-2xl font-bold sm:text-3xl">{(recipe as IRecipe).title}</h1>
       )}
 
-      {recipe?.originalRecipe && (
-        <TextLink href={recipe?.originalRecipe} isExternal additionalClassName="text-xs mt-3">
-          {getTranslation("original.recipe", language)}
-        </TextLink>
+      {recipe && (
+        <div className="flex items-center space-x-4 lg:space-x-16">
+          {recipe.originalRecipe && (
+            <TextLink href={recipe.originalRecipe} isExternal additionalClassName="text-xs mt-3">
+              <div className="flex items-center">
+                {getTranslation("original.recipe", language)}
+                <ExternalLinkIcon className="my-0.5 ml-1 h-4 w-4" />
+              </div>
+            </TextLink>
+          )}
+          <FavouriteLink recipeId={recipe.id} language={language} />
+        </div>
       )}
 
       <div className="mt-6 grid max-w-lg grid-cols-recipeMobile gap-6 md:max-w-4xl md:grid-cols-recipeDesktop">

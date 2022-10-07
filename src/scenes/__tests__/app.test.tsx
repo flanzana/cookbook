@@ -1,6 +1,12 @@
 import { screen } from "@testing-library/react"
 import { getPage } from "next-page-tester"
 
+import mockLocalStorage from "../../testUtils/mockLocalStorage"
+
+mockLocalStorage({
+  ["cookbook-zana:favourite-recipes"]: JSON.stringify([]),
+})
+
 describe("app", () => {
   it("displays home page", async () => {
     const { render } = await getPage({

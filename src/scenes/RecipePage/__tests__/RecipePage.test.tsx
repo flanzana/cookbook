@@ -1,9 +1,10 @@
 import React from "react"
-import { render, screen } from "@testing-library/react"
+import { screen } from "@testing-library/react"
 import { useRouter as _useRouter } from "next/router"
 
 import RecipePage from "../RecipePage"
 import { mockedRecipe } from "../../../testUtils/mockedData"
+import renderWithProviders from "../../../testUtils/renderWithProviders"
 
 jest.mock("next/router")
 
@@ -15,7 +16,7 @@ const RECIPE_TITLE = "Lorem ipsum"
 describe("RecipePage", () => {
   it("displays loading state", () => {
     useRouter.mockReturnValueOnce({ query: {} })
-    render(<RecipePage data={null} />)
+    renderWithProviders(<RecipePage data={null} />)
 
     expect(screen.queryByRole("heading", { name: RECIPE_TITLE })).not.toBeInTheDocument()
     expect(screen.queryByRole("heading", { name: RECIPE_NOT_FOUND })).not.toBeInTheDocument()
@@ -23,7 +24,7 @@ describe("RecipePage", () => {
 
   it("displays error state", () => {
     useRouter.mockReturnValueOnce({ query: { recipeId: "random" } })
-    render(<RecipePage data={null} />)
+    renderWithProviders(<RecipePage data={null} />)
 
     expect(screen.getByRole("heading", { name: RECIPE_NOT_FOUND })).toBeVisible()
     expect(screen.getByRole("link", { name: "recipes" })).toHaveAttribute("href", "/search")
@@ -31,7 +32,7 @@ describe("RecipePage", () => {
 
   it("displays success state", () => {
     useRouter.mockReturnValueOnce({ query: { recipeId: "lorem-ipsum" } })
-    render(<RecipePage data={mockedRecipe} />)
+    renderWithProviders(<RecipePage data={mockedRecipe} />)
 
     expect(screen.getByRole("heading", { name: RECIPE_TITLE })).toBeVisible()
     expect(screen.getByRole("heading", { name: "Ingredients" })).toBeVisible()
