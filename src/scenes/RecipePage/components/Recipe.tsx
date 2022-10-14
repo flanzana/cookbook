@@ -53,13 +53,15 @@ const Recipe = ({ recipe, isLoading }: Props) => {
       )}
 
       {recipe && (
-        <div className="flex items-center space-x-4 lg:space-x-16">
+        <div className="mt-3 flex items-center space-x-4 lg:space-x-16">
           {recipe.originalRecipe && (
-            <TextLink href={recipe.originalRecipe} isExternal additionalClassName="text-xs mt-3">
-              <div className="flex items-center">
-                {getTranslation("original.recipe", language)}
-                <ExternalLinkIcon className="my-0.5 ml-1 h-4 w-4" />
-              </div>
+            <TextLink
+              href={recipe.originalRecipe}
+              isExternal
+              additionalClassName="text-xs"
+              icon={<ExternalLinkIcon />}
+            >
+              {getTranslation("original.recipe", language)}
             </TextLink>
           )}
           <FavouriteLink recipeId={recipe.id} language={language} />

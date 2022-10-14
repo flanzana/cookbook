@@ -1,4 +1,4 @@
-import React from "react"
+import React, { cloneElement } from "react"
 import Link from "next/link"
 
 const DEFAULT_TEXTLINK_CLASSNAMES =
@@ -7,11 +7,29 @@ const DEFAULT_TEXTLINK_CLASSNAMES =
 export type Props = {
   href?: string
   onClick?: () => void
-  children: string | React.ReactNode
+  children?: string | React.ReactNode
+  icon?: React.ReactElement
   isExternal?: boolean
   isUnderlined?: boolean
   additionalClassName?: string
   ariaLabel?: string
+}
+
+const StyledContent = ({ icon, children }: Pick<Props, "children" | "icon">) => {
+  if (icon && children) {
+    return (
+      <div className="flex items-center">
+        {children}
+        {cloneElement(icon, { className: "my-0.5 ml-1 h-4 w-4" })}
+      </div>
+    )
+  }
+
+  if (icon) {
+    return cloneElement(icon, { className: "my-0.5 h-4 w-4" })
+  }
+
+  return <>{children}</>
 }
 
 /**
@@ -20,6 +38,7 @@ export type Props = {
  * @param href - URL of the page the link goes to
  * @param onClick - function to be triggered when the link is clicked
  * @param children - label of the link
+ * @param icon - icon to be displayed on the right
  * @param isExternal - when true, page will be opened in a new tab. If false, link will be wrapped with Next.js's Link.
  * @param isUnderlined - when true, the link will be underlined
  * @param additionalClassName - additional className for styling
@@ -29,6 +48,7 @@ const TextLink = ({
   href,
   onClick,
   children,
+  icon,
   isExternal = false,
   isUnderlined = false,
   additionalClassName = "",
@@ -47,14 +67,14 @@ const TextLink = ({
         rel="noopener noreferrer"
         aria-label={ariaLabel}
       >
-        {children}
+        <StyledContent icon={icon}>{children}</StyledContent>
       </a>
     ) : (
       <Link href={href} passHref>
         {/* href is passed down from Link component */}
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a className={className} aria-label={ariaLabel}>
-          {children}
+          <StyledContent icon={icon}>{children}</StyledContent>
         </a>
       </Link>
     )
@@ -62,7 +82,7 @@ const TextLink = ({
 
   return (
     <button onClick={onClick} className={className} aria-label={ariaLabel}>
-      {children}
+      <StyledContent icon={icon}>{children}</StyledContent>
     </button>
   )
 }

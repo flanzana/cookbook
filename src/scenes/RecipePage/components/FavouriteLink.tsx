@@ -1,21 +1,11 @@
-import React, { cloneElement } from "react"
+import React from "react"
 import { HeartIcon as FilledHeartIcon } from "@heroicons/react/solid"
 import { HeartIcon as EmptyHeartIcon } from "@heroicons/react/outline"
 
 import { IRecipe } from "../../../types"
-import TextLink, { Props as TextLinkProps } from "../../../components/TextLink/TextLink"
+import TextLink from "../../../components/TextLink/TextLink"
 import getTranslation from "../../../helpers/getTranslation"
 import { useFavourites } from "../../../context/FavouritesProvider"
-
-type StyledFavouriteLinkProps = Required<Pick<TextLinkProps, "onClick" | "ariaLabel">> & {
-  icon: React.ReactElement
-}
-
-const StyledFavouriteLink = ({ onClick, icon, ariaLabel }: StyledFavouriteLinkProps) => (
-  <TextLink onClick={onClick} ariaLabel={ariaLabel} additionalClassName="text-xs mt-3">
-    {cloneElement(icon, { className: "my-0.5 h-4 w-4" })}
-  </TextLink>
-)
 
 type Props = {
   recipeId: IRecipe["id"]
@@ -33,13 +23,13 @@ const FavouriteLink = ({ recipeId, language }: Props) => {
   if (typeof window === "undefined") return null
 
   return isFavourite ? (
-    <StyledFavouriteLink
+    <TextLink
       onClick={() => removeFavouriteRecipe(recipeId)}
       icon={<FilledHeartIcon />}
       ariaLabel={getTranslation("remove.favourite.recipe", language)}
     />
   ) : (
-    <StyledFavouriteLink
+    <TextLink
       onClick={() => setFavouriteRecipe(recipeId)}
       icon={<EmptyHeartIcon />}
       ariaLabel={getTranslation("add.favourite.recipe", language)}
