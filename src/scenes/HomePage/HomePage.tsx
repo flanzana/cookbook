@@ -1,5 +1,5 @@
 import React from "react"
-import { ArrowRightIcon } from "@heroicons/react/solid"
+import { ArrowRightIcon } from "@heroicons/react/20/solid"
 
 import Page from "../../components/Page/Page"
 import Logo from "../../components/Logo/Logo"

@@ -1,6 +1,6 @@
 import React from "react"
-import { HeartIcon as FilledHeartIcon } from "@heroicons/react/solid"
-import { HeartIcon as EmptyHeartIcon } from "@heroicons/react/outline"
+import { HeartIcon as FilledHeartIcon } from "@heroicons/react/20/solid"
+import { HeartIcon as EmptyHeartIcon } from "@heroicons/react/24/outline"
 
 import CircledButton from "../CircledButton/CircledButton"
 import { useFavourites } from "../../context/FavouritesProvider"
@@ -9,9 +9,9 @@ import { useFavourites } from "../../context/FavouritesProvider"
  * Button to toggle favourite recipes vs all recipes.
  */
 const FavouriteIconButton = () => {
-  const { areFavouriteOnly, showFavouriteRecipesOnly, showAllRecipes } = useFavourites()
+  const { areFavouriteRecipesOnlyShown, showFavouriteRecipesOnly, showAllRecipes } = useFavourites()
 
-  return areFavouriteOnly ? (
+  return areFavouriteRecipesOnlyShown ? (
     <CircledButton
       ariaLabel="Show all recipes"
       onClick={showAllRecipes}

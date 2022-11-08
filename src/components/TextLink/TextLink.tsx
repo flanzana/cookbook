@@ -70,12 +70,8 @@ const TextLink = ({
         <StyledContent icon={icon}>{children}</StyledContent>
       </a>
     ) : (
-      <Link href={href} passHref>
-        {/* href is passed down from Link component */}
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a className={className} aria-label={ariaLabel}>
-          <StyledContent icon={icon}>{children}</StyledContent>
-        </a>
+      <Link href={href} className={className} aria-label={ariaLabel}>
+        <StyledContent icon={icon}>{children}</StyledContent>
       </Link>
     )
   }

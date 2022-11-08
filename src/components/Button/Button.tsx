@@ -25,23 +25,18 @@ type Props = {
  * @param size - size of the button
  */
 const Button = ({ href, onClick, children, size = "normal" }: Props) => {
-  const button = (
-    <button
-      onClick={onClick}
-      className={`${
-        size === "large" ? LARGE_SIZE_CLASSES : NORMAL_SIZE_CLASSES
-      } w-fit rounded-full font-body outline-none focus:ring-4 ${TEXT_COLORS} ${BACKGROUND_COLORS} ${RING_COLORS}`}
-    >
-      {children}
-    </button>
-  )
+  const className = `${
+    size === "large" ? LARGE_SIZE_CLASSES : NORMAL_SIZE_CLASSES
+  } w-fit rounded-full font-body outline-none focus:ring-4 ${TEXT_COLORS} ${BACKGROUND_COLORS} ${RING_COLORS}`
 
   return href ? (
-    <Link href={href} passHref>
-      {button}
+    <Link href={href} className={className}>
+      {children}
     </Link>
   ) : (
-    button
+    <button onClick={onClick} className={className}>
+      {children}
+    </button>
   )
 }
 

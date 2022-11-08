@@ -1,5 +1,5 @@
 import React from "react"
-import { ExternalLinkIcon } from "@heroicons/react/outline"
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline"
 
 import { IRecipe, Language } from "../../../types"
 import TextLink from "../../../components/TextLink/TextLink"
@@ -59,7 +59,7 @@ const Recipe = ({ recipe, isLoading }: Props) => {
               href={recipe.originalRecipe}
               isExternal
               additionalClassName="text-xs"
-              icon={<ExternalLinkIcon />}
+              icon={<ArrowTopRightOnSquareIcon />}
             >
               {getTranslation("original.recipe", language)}
             </TextLink>

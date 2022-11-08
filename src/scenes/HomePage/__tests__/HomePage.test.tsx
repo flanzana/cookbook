@@ -13,7 +13,7 @@ describe("HomePage", () => {
   it("displays the button to the search page", () => {
     render(<HomePage />)
 
-    expect(screen.getByRole("button", { name: /search the recipes/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /search the recipes/i })).toHaveAttribute(
       "href",
       "/search",
     )

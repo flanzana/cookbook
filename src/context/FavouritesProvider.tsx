@@ -1,12 +1,14 @@
 import React, { createContext, useCallback, useContext, useState } from "react"
 
 import useLocalStorage from "../hooks/useLocalStorage"
+import { RecipeId } from "../types"
 
 type Favourites = {
-  areFavouriteOnly: boolean
+  areFavouriteRecipesOnlyShown: boolean
   favouriteRecipes: string[]
-  setFavouriteRecipe: (recipeId: string) => void
-  removeFavouriteRecipe: (recipeId: string) => void
+  setFavouriteRecipe: (recipeId: RecipeId) => void
+  removeFavouriteRecipe: (recipeId: RecipeId) => void
+  isFavouriteRecipe: (recipeId: RecipeId) => boolean
   showFavouriteRecipesOnly: () => void
   showAllRecipes: () => void
 }
@@ -21,17 +23,24 @@ type Props = {
 
 const FavouritesProvider = ({ children }: Props) => {
   const [favouriteRecipes, setFavouriteRecipes] = useLocalStorage<string[]>("favourite-recipes", [])
-  const [areFavouriteOnly, setAreFavouriteOnly] = useState<boolean>(false)
+  const [areFavouriteRecipesOnlyShown, setAreFavouriteRecipesOnlyShown] = useState<boolean>(false)
+
+  const isFavouriteRecipe = useCallback(
+    (recipeId: RecipeId) => {
+      return favouriteRecipes.includes(recipeId)
+    },
+    [favouriteRecipes],
+  )
 
   const setFavouriteRecipe = useCallback(
-    recipeId => {
+    (recipeId: RecipeId) => {
       return setFavouriteRecipes([...favouriteRecipes, recipeId])
     },
     [setFavouriteRecipes, favouriteRecipes],
   )
 
   const removeFavouriteRecipe = useCallback(
-    recipeId => {
+    (recipeId: RecipeId) => {
       return setFavouriteRecipes(favouriteRecipes.filter((recipe: string) => recipe !== recipeId))
     },
     [setFavouriteRecipes, favouriteRecipes],
@@ -43,9 +52,10 @@ const FavouritesProvider = ({ children }: Props) => {
         favouriteRecipes,
         setFavouriteRecipe,
         removeFavouriteRecipe,
-        areFavouriteOnly,
-        showFavouriteRecipesOnly: () => setAreFavouriteOnly(true),
-        showAllRecipes: () => setAreFavouriteOnly(false),
+        isFavouriteRecipe,
+        areFavouriteRecipesOnlyShown,
+        showFavouriteRecipesOnly: () => setAreFavouriteRecipesOnlyShown(true),
+        showAllRecipes: () => setAreFavouriteRecipesOnlyShown(false),
       }}
     >
       {children}

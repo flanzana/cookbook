@@ -6,10 +6,12 @@ const sortAlphabetically = (x: RecipeCard[]): RecipeCard[] =>
   x.sort((a, b) => a.title.localeCompare(b.title))
 
 const useRecipes = (): RecipeCard[] => {
-  const { areFavouriteOnly, favouriteRecipes } = useFavourites()
+  const { areFavouriteRecipesOnlyShown, isFavouriteRecipe } = useFavourites()
 
   const formattedRecipes: RecipeCard[] = recipes
-    .filter((recipe: IRecipe) => (areFavouriteOnly ? favouriteRecipes.includes(recipe.id) : recipe))
+    .filter((recipe: IRecipe) =>
+      areFavouriteRecipesOnlyShown ? isFavouriteRecipe(recipe.id) : recipe,
+    )
     .map((recipe: IRecipe) => ({
       title: recipe.title,
       category: recipe.category,

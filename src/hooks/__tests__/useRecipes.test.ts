@@ -14,48 +14,48 @@ describe("useRecipes", () => {
     const { result } = renderHook(() => useRecipes())
 
     expect(result.current).toMatchInlineSnapshot(`
-Array [
-  Object {
-    "category": "dessert",
-    "href": "/lorem-dessert-ipsum",
-    "title": "Lorem dessert ipsum",
-  },
-  Object {
-    "category": "dipAndSpread",
-    "href": "/lorem-dipAndSpread-ipsum",
-    "title": "Lorem dipAndSpread ipsum",
-  },
-  Object {
-    "category": "dough",
-    "href": "/lorem-dough-ipsum",
-    "title": "Lorem dough ipsum",
-  },
-  Object {
-    "category": "drink",
-    "href": "/lorem-drink-ipsum",
-    "title": "Lorem drink ipsum",
-  },
-  Object {
-    "category": "main",
-    "href": "/lorem-main-ipsum",
-    "title": "Lorem main ipsum",
-  },
-  Object {
-    "category": "pasta",
-    "href": "/lorem-pasta-ipsum",
-    "title": "Lorem pasta ipsum",
-  },
-  Object {
-    "category": "salad",
-    "href": "/lorem-salad-ipsum",
-    "title": "Lorem salad ipsum",
-  },
-  Object {
-    "category": "soupAndStew",
-    "href": "/lorem-soupAndStew-ipsum",
-    "title": "Lorem soupAndStew ipsum",
-  },
-]
-`)
+      [
+        {
+          "category": "dessert",
+          "href": "/lorem-dessert-ipsum",
+          "title": "Lorem dessert ipsum",
+        },
+        {
+          "category": "dipAndSpread",
+          "href": "/lorem-dipAndSpread-ipsum",
+          "title": "Lorem dipAndSpread ipsum",
+        },
+        {
+          "category": "dough",
+          "href": "/lorem-dough-ipsum",
+          "title": "Lorem dough ipsum",
+        },
+        {
+          "category": "drink",
+          "href": "/lorem-drink-ipsum",
+          "title": "Lorem drink ipsum",
+        },
+        {
+          "category": "main",
+          "href": "/lorem-main-ipsum",
+          "title": "Lorem main ipsum",
+        },
+        {
+          "category": "pasta",
+          "href": "/lorem-pasta-ipsum",
+          "title": "Lorem pasta ipsum",
+        },
+        {
+          "category": "salad",
+          "href": "/lorem-salad-ipsum",
+          "title": "Lorem salad ipsum",
+        },
+        {
+          "category": "soupAndStew",
+          "href": "/lorem-soupAndStew-ipsum",
+          "title": "Lorem soupAndStew ipsum",
+        },
+      ]
+    `)
   })
 })

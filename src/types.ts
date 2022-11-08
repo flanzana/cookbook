@@ -20,8 +20,10 @@ type Ingredient = {
   ingredient: string
 }
 
+export type RecipeId = string
+
 export interface IRecipe {
-  id: string
+  id: RecipeId
   title: string
   category: Category
   language: Language

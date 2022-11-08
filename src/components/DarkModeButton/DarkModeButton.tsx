@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { SunIcon } from "@heroicons/react/solid"
+import { SunIcon } from "@heroicons/react/20/solid"
 
 import useLocalStorage from "../../hooks/useLocalStorage"
 import CircledButton from "../CircledButton/CircledButton"
