@@ -44,7 +44,7 @@ const Page = ({
         <meta name="description" content={description || DEFAULT_DESCRIPTION} />
         <meta
           name="keywords"
-          content="cookbook, recipe, recipes, cooking, cook, food, meal, breakfast, lunch, dinner, snack, dip, spread, soup, stew, pasta, salad, meat, vegetarian, dessert, drink, dough, Slovenian food, Spanish food, international food"
+          content="cookbook, recipe, recipes, cooking, cook, food, meal, breakfast, lunch, dinner, snack, dip, spread, sauce, soup, stew, pasta, salad, meat, vegetarian, dessert, drink, dough, Slovenian food, Spanish food, international food"
         />
       </Head>
       <div className="flex min-h-screen flex-col bg-white text-zinc-900 dark:bg-zinc-800 dark:text-zinc-200">

@@ -4,8 +4,8 @@ const getCategoryTitle = (category: Category): string => {
   switch (category) {
     case Category.Dessert:
       return "Dessert"
-    case Category.Dough:
-      return "Dough"
+    case Category.Snack:
+      return "Snack"
     case Category.Drink:
       return "Drink"
     case Category.Main:
@@ -16,8 +16,8 @@ const getCategoryTitle = (category: Category): string => {
       return "Salad"
     case Category.SoupAndStew:
       return "Soup & stew"
-    case Category.DipAndSpread:
-      return "Dip & spread"
+    case Category.Sauce:
+      return "Sauce, dip & spread"
     default:
       throw new Error("Unsupported category.")
   }

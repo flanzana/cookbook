@@ -352,7 +352,7 @@ export const recipes: IRecipe[] = [
   {
     id: "guacamole",
     title: "Guacamole",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.Spanish,
     ingredients: [
       { amount: "2", ingredient: "aguacate" },
@@ -370,7 +370,7 @@ export const recipes: IRecipe[] = [
   {
     id: "avocado-egg-spread",
     title: "Avocado egg spread",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.English,
     ingredients: [
       { amount: "1", ingredient: "avocado" },
@@ -384,7 +384,7 @@ export const recipes: IRecipe[] = [
   {
     id: "hummus",
     title: "Hummus",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.English,
     ingredients: [
       { amount: "250 g", ingredient: "chickpeas" },
@@ -401,7 +401,7 @@ export const recipes: IRecipe[] = [
   {
     id: "tzatziki",
     title: "Tzatziki",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.English,
     ingredients: [
       { amount: "200 g", ingredient: "Greek yogurt" },
@@ -421,7 +421,7 @@ export const recipes: IRecipe[] = [
   {
     id: "velikonocni-hren",
     title: "Velikonočni hren",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.Slovenian,
     ingredients: [
       { amount: "3", ingredient: "jajce" },
@@ -437,7 +437,7 @@ export const recipes: IRecipe[] = [
   {
     id: "mezcla-de-atun-maiz-y-pepinillos",
     title: "Mezcla de atún, maíz y pepinillos",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.Spanish,
     ingredients: [
       { ingredient: "atún" },
@@ -456,7 +456,7 @@ export const recipes: IRecipe[] = [
   {
     id: "pasta-de-aceitunas",
     title: "Pasta de aceitunas",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.Spanish,
     ingredients: [
       { amount: "2 latas", ingredient: "aceitunas verdes" },
@@ -474,7 +474,7 @@ export const recipes: IRecipe[] = [
   {
     id: "marmelada-de-pimientos",
     title: "Marmelada de pimientos",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.Spanish,
     ingredients: [
       { amount: "300 g", ingredient: "pimiento rojo" },
@@ -493,7 +493,7 @@ export const recipes: IRecipe[] = [
   {
     id: "solski-namaz",
     title: "Šolski namaz",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.Slovenian,
     ingredients: [
       { amount: "1", ingredient: "jajce" },
@@ -510,7 +510,7 @@ export const recipes: IRecipe[] = [
   {
     id: "mojo",
     title: "Mojo",
-    category: Category.DipAndSpread,
+    category: Category.Sauce,
     language: Language.Spanish,
     ingredients: [
       { amount: "1 l", ingredient: "agua" },
@@ -534,7 +534,7 @@ export const recipes: IRecipe[] = [
   {
     id: "pisto",
     title: "Pisto",
-    category: Category.Main,
+    category: Category.Sauce,
     language: Language.Spanish,
     ingredients: [
       { amount: "5", ingredient: "tomate" },
@@ -1471,7 +1471,7 @@ export const recipes: IRecipe[] = [
   {
     id: "pizza",
     title: "Pizza",
-    category: Category.Dough,
+    category: Category.Snack,
     language: Language.Slovenian,
     ingredients: [
       { amount: "1 kg", ingredient: "moka" },
@@ -1492,7 +1492,7 @@ export const recipes: IRecipe[] = [
   {
     id: "tortilja",
     title: "Tortilja",
-    category: Category.Dough,
+    category: Category.Main,
     language: Language.Slovenian,
     ingredients: [
       { amount: "225 g", ingredient: "moka" },
@@ -1509,7 +1509,7 @@ export const recipes: IRecipe[] = [
   {
     id: "empanadas",
     title: "Empanadas",
-    category: Category.Dough,
+    category: Category.Snack,
     language: Language.Slovenian,
     ingredients: [
       { amount: "300 g", ingredient: "ostra moka" },
@@ -1534,7 +1534,7 @@ export const recipes: IRecipe[] = [
   {
     id: "njoki",
     title: "Njoki",
-    category: Category.Dough,
+    category: Category.Main,
     language: Language.Slovenian,
     ingredients: [
       { amount: "700 g", ingredient: "krompir" },
@@ -1558,7 +1558,7 @@ export const recipes: IRecipe[] = [
   {
     id: "naan",
     title: "Naan",
-    category: Category.Dough,
+    category: Category.Snack,
     language: Language.English,
     ingredients: [
       { amount: "340 g", ingredient: "flour" },
@@ -1583,7 +1583,7 @@ export const recipes: IRecipe[] = [
   {
     id: "slani-kvaseni-mafini",
     title: "Slani kvašeni mafini",
-    category: Category.Dough,
+    category: Category.Snack,
     language: Language.Slovenian,
     ingredients: [
       { amount: "250 g", ingredient: "gladka moka" },
@@ -1606,7 +1606,7 @@ export const recipes: IRecipe[] = [
   {
     id: "savoury-baking-powder-muffins",
     title: "Savoury baking powder muffins",
-    category: Category.Dough,
+    category: Category.Snack,
     language: Language.English,
     ingredients: [
       { amount: "200 g", ingredient: "flour" },
@@ -1631,7 +1631,7 @@ export const recipes: IRecipe[] = [
   {
     id: "pizza-polzki",
     title: "Pizza polžki",
-    category: Category.Dough,
+    category: Category.Snack,
     language: Language.Slovenian,
     ingredients: [
       { amount: "1 zavitek", ingredient: "listnato testo" },

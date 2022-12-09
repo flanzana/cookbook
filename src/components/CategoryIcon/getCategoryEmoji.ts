@@ -4,8 +4,6 @@ const getCategoryEmoji = (category: Category): string => {
   switch (category) {
     case Category.Dessert:
       return "🍰"
-    case Category.Dough:
-      return "🍞"
     case Category.Drink:
       return "🍹"
     case Category.Main:
@@ -16,8 +14,10 @@ const getCategoryEmoji = (category: Category): string => {
       return "🥗"
     case Category.SoupAndStew:
       return "🍲"
-    case Category.DipAndSpread:
-      return "🥪"
+    case Category.Snack:
+      return "🍕"
+    case Category.Sauce:
+      return "🥫"
     default:
       throw new Error("Unsupported category.")
   }

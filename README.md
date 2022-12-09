@@ -5,8 +5,8 @@ the same food on weekly basis, we started exploring different recipes and even d
 Searching through all our favourite saved recipes in browser's bookmarks soon became annoying, so I decided to build
 this app to list all our favourite recipes with adjusted ingredients and amounts in the metric system. 
 
-This cookbook contains recipes of different categories: dips, spreads, soups, stews, pasta, salads, main dishes,
-desserts, drinks and doughs.
+This cookbook contains recipes of different categories: dips, spreads, sauces, soups, stews, pasta, salads, main dishes,
+desserts, drinks and snacks.
 
 Recipes are written in English, Spanish or Slovenian language, depending on the source or the person recipe comes from.
 I do not plan to translate recipes to all three languages, sorry about that. :)

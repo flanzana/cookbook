@@ -21,16 +21,6 @@ describe("useRecipes", () => {
           "title": "Lorem dessert ipsum",
         },
         {
-          "category": "dipAndSpread",
-          "href": "/lorem-dipAndSpread-ipsum",
-          "title": "Lorem dipAndSpread ipsum",
-        },
-        {
-          "category": "dough",
-          "href": "/lorem-dough-ipsum",
-          "title": "Lorem dough ipsum",
-        },
-        {
           "category": "drink",
           "href": "/lorem-drink-ipsum",
           "title": "Lorem drink ipsum",
@@ -49,6 +39,16 @@ describe("useRecipes", () => {
           "category": "salad",
           "href": "/lorem-salad-ipsum",
           "title": "Lorem salad ipsum",
+        },
+        {
+          "category": "sauce",
+          "href": "/lorem-sauce-ipsum",
+          "title": "Lorem sauce ipsum",
+        },
+        {
+          "category": "snack",
+          "href": "/lorem-snack-ipsum",
+          "title": "Lorem snack ipsum",
         },
         {
           "category": "soupAndStew",

@@ -5,8 +5,8 @@ export enum Category {
   Salad = "salad",
   Dessert = "dessert",
   Drink = "drink",
-  DipAndSpread = "dipAndSpread",
-  Dough = "dough",
+  Sauce = "sauce",
+  Snack = "snack",
 }
 
 export enum Language {
