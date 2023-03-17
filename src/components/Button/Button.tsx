@@ -6,7 +6,7 @@ const NORMAL_SIZE_CLASSES = "px-6 py-2.5 text-md md:px-8"
 
 const TEXT_COLORS = "text-white dark:text-zinc-800"
 const BACKGROUND_COLORS =
-  "bg-primary-600 hover:bg-primary-700 focus:bg-primary-700 dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400"
+  "bg-primary-600 hocus:bg-primary-700 dark:bg-primary-300 dark:hocus:bg-primary-400"
 const RING_COLORS = "focus:ring-primary-700/60 dark:focus:ring-primary-400/60"
 
 type Props = {

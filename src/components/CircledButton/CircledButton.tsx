@@ -30,7 +30,7 @@ const CircledButton = ({ ariaLabel, onClick, icon, type = CircledButtonType.PRIM
     <button
       aria-label={ariaLabel}
       onClick={onClick}
-      className={`h-fit w-fit items-center rounded-full p-2 outline-none ${ICON_COLOR[type]} hover:bg-primary-50 focus:bg-primary-50 dark:hover:bg-zinc-700 dark:focus:bg-zinc-700`}
+      className={`h-fit w-fit items-center rounded-full p-2 outline-none ${ICON_COLOR[type]} hocus:bg-primary-50 dark:hocus:bg-zinc-700`}
     >
       {cloneElement(icon, { className: "h-5 w-5" })}
     </button>
