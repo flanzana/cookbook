@@ -1,13 +1,6 @@
 import React from "react"
 import Link from "next/link"
-
-const LARGE_SIZE_CLASSES = "px-8 py-3 text-lg md:px-12"
-const NORMAL_SIZE_CLASSES = "px-6 py-2.5 text-md md:px-8"
-
-const TEXT_COLORS = "text-white dark:text-zinc-800"
-const BACKGROUND_COLORS =
-  "bg-primary-600 hocus:bg-primary-700 dark:bg-primary-300 dark:hocus:bg-primary-400"
-const RING_COLORS = "focus:ring-primary-700/60 dark:focus:ring-primary-400/60"
+import clsx from "clsx"
 
 type Props = {
   href?: string
@@ -25,9 +18,13 @@ type Props = {
  * @param size - size of the button
  */
 const Button = ({ href, onClick, children, size = "normal" }: Props) => {
-  const className = `${
-    size === "large" ? LARGE_SIZE_CLASSES : NORMAL_SIZE_CLASSES
-  } w-fit rounded-full font-body outline-none focus:ring-4 ${TEXT_COLORS} ${BACKGROUND_COLORS} ${RING_COLORS}`
+  const className = clsx(
+    size === "large" ? "px-8 py-3 text-lg md:px-12" : "px-6 py-2.5 text-md md:px-8",
+    "w-fit rounded-full font-body outline-none focus:ring-4",
+    "text-white dark:text-zinc-800",
+    "bg-primary-600 hocus:bg-primary-700 dark:bg-primary-300 dark:hocus:bg-primary-400",
+    "focus:ring-primary-700/60 dark:focus:ring-primary-400/60",
+  )
 
   return href ? (
     <Link href={href} className={className}>

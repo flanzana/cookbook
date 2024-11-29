@@ -1,8 +1,6 @@
 import React, { cloneElement } from "react"
 import Link from "next/link"
-
-const DEFAULT_TEXTLINK_CLASSNAMES =
-  "rounded-md px-1 font-semibold text-primary-600 outline-none hocus:bg-primary-50 hocus:text-primary-700 hocus:underline dark:text-primary-300 dark:hocus:bg-zinc-700"
+import clsx from "clsx"
 
 export type Props = {
   href?: string
@@ -54,9 +52,12 @@ const TextLink = ({
   additionalClassName = "",
   ariaLabel,
 }: Props) => {
-  const className = `${DEFAULT_TEXTLINK_CLASSNAMES} ${
-    isUnderlined ? "underline" : ""
-  } ${additionalClassName}`
+  const className = clsx(
+    "rounded-md px-1 font-semibold text-primary-600 outline-none dark:text-primary-300",
+    "hocus:bg-primary-50 hocus:text-primary-700 hocus:underline dark:hocus:bg-zinc-700",
+    isUnderlined && "underline",
+    additionalClassName,
+  )
 
   if (href) {
     return isExternal ? (
