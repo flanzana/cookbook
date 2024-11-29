@@ -45,7 +45,7 @@ const Recipe = ({ recipe, isLoading }: Props) => {
   const language = isLoading ? Language.English : (recipe as IRecipe).language
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex cursor-default flex-col items-center">
       {isLoading ? (
         <Loader sizingClassNames="h-9 sm:h-10 w-1/2 sm:w-2/5 lg:w-60" />
       ) : (

@@ -1,4 +1,5 @@
-import React from "react"
+import clsx from "clsx"
+import React, { useState } from "react"
 
 import Loader from "../../../components/Loader"
 
@@ -14,16 +15,24 @@ type InstructionsListItemProps = {
   isLoading?: boolean
 }
 
-export const InstructionsListItem = ({ children, index, isLoading }: InstructionsListItemProps) => (
-  <li className="flex flex-row text-left">
-    <InstructionIndex index={index} />
-    {isLoading ? (
-      <Loader sizingClassNames="w-64 h-6" />
-    ) : (
-      <span className="flex-1">{children}</span>
-    )}
-  </li>
-)
+export const InstructionsListItem = ({ children, index, isLoading }: InstructionsListItemProps) => {
+  const [isCrossed, setIsCrossed] = useState<boolean>(false)
+
+  return (
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions
+    <li
+      className={clsx("flex flex-row text-left", isCrossed && "text-zinc-400 line-through")}
+      onClick={() => setIsCrossed(!isCrossed)}
+    >
+      <InstructionIndex index={index} />
+      {isLoading ? (
+        <Loader sizingClassNames="w-64 h-6" />
+      ) : (
+        <span className="flex-1">{children}</span>
+      )}
+    </li>
+  )
+}
 
 type Props = {
   children: React.ReactNode
