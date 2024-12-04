@@ -1,4 +1,4 @@
-import { renderHook } from "@testing-library/react-hooks"
+import { renderHook } from "@testing-library/react"
 
 import useRecipes from "../useRecipes"
 import { mockedRecipes } from "../../testUtils/mockedData"

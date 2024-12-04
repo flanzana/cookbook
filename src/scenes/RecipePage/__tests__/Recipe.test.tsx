@@ -60,7 +60,7 @@ describe("Recipe", () => {
     },
   ].forEach(langItem =>
     describe(`items in ${langItem.language} language`, () => {
-      // eslint-disable-next-line testing-library/no-render-in-setup
+      // eslint-disable-next-line testing-library/no-render-in-lifecycle
       beforeEach(() => renderRecipe(langItem.recipe))
 
       it("displays the title", () => {
@@ -98,16 +98,14 @@ describe("Recipe", () => {
         expect(screen.getAllByRole("listitem")).toHaveLength(4)
       })
 
-      // TODO check why it doesnt toggle after adding changes due to hydration
-      // eslint-disable-next-line jest/no-disabled-tests
-      it.skip("toggles between Add and Remove in favourites", () => {
+      it("toggles between Add and Remove in favourites", async () => {
         expect(screen.getByRole("button", { name: langItem.addFavouriteRecipe })).toBeVisible()
 
-        userEvent.click(screen.getByRole("button", { name: langItem.addFavouriteRecipe }))
+        await userEvent.click(screen.getByRole("button", { name: langItem.addFavouriteRecipe }))
 
         expect(screen.getByRole("button", { name: langItem.removeFavouriteRecipe })).toBeVisible()
 
-        userEvent.click(screen.getByRole("button", { name: langItem.removeFavouriteRecipe }))
+        await userEvent.click(screen.getByRole("button", { name: langItem.removeFavouriteRecipe }))
 
         expect(screen.getByRole("button", { name: langItem.addFavouriteRecipe })).toBeVisible()
       })
