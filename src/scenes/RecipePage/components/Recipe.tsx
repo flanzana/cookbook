@@ -39,6 +39,7 @@ type Props = {
  * - recipe title
  * - link to the original recipe if exists
  * - table of all ingredients
+ * - number of servings if specified
  * - list of all instructions
  */
 const Recipe = ({ recipe, isLoading }: Props) => {
@@ -70,6 +71,11 @@ const Recipe = ({ recipe, isLoading }: Props) => {
 
       <div className="mt-6 grid max-w-lg grid-cols-recipeMobile gap-6 md:max-w-4xl md:grid-cols-recipeDesktop">
         <Part title={getTranslation("ingredients", language)} id="IngredientsTable">
+          {recipe?.servings && (
+            <span className="mb-2 font-semibold text-sm uppercase">
+              {getTranslation("servings", language)} {recipe.servings}
+            </span>
+          )}
           <IngredientsTable>
             {isLoading
               ? [1, 2, 3, 4, 5].map(i => <IngredientsTableRow key={i} isLoading />)

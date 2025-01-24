@@ -29,6 +29,7 @@ export interface IRecipe {
   language: Language
   ingredients: Ingredient[]
   instructions: string[]
+  servings?: number
   notes?: string[]
   originalRecipe?: string
 }

@@ -11,6 +11,11 @@ const TRANSLATIONS: Record<string, Record<Language, string>> = {
     [Language.Slovenian]: "Postopek",
     [Language.Spanish]: "Preparación",
   },
+  servings: {
+    [Language.English]: "Servings:",
+    [Language.Slovenian]: "Porcije:",
+    [Language.Spanish]: "Raciones:",
+  },
   "original.recipe": {
     [Language.English]: "Original recipe",
     [Language.Slovenian]: "Izvirni recept",

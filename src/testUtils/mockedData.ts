@@ -5,6 +5,7 @@ export const mockedRecipe: IRecipe = {
   title: "Lorem ipsum",
   category: Category.Dessert,
   language: Language.English,
+  servings: 2,
   ingredients: [
     { amount: "120 g", ingredient: "lorem" },
     { amount: "1 spoon", ingredient: "ipsum" },

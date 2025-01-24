@@ -31,6 +31,7 @@ describe("Recipe", () => {
       original: "Original recipe",
       ingredients: "Ingredients",
       instructions: "Instructions",
+      servings: "Servings:",
       addFavouriteRecipe: "Add to favourites",
       removeFavouriteRecipe: "Remove from favourites",
     },
@@ -43,6 +44,7 @@ describe("Recipe", () => {
       original: "Izvirni recept",
       ingredients: "Sestavine",
       instructions: "Postopek",
+      servings: "Porcije:",
       addFavouriteRecipe: "Dodaj med priljubljene",
       removeFavouriteRecipe: "Odstrani iz priljubljenih",
     },
@@ -55,6 +57,7 @@ describe("Recipe", () => {
       original: "Receta original",
       ingredients: "Ingredientes",
       instructions: "Preparación",
+      servings: "Raciones:",
       addFavouriteRecipe: "Añadir a favoritos",
       removeFavouriteRecipe: "Quitar de favoritos",
     },
@@ -71,6 +74,10 @@ describe("Recipe", () => {
         const link = screen.getByRole("link", { name: langItem.original })
         expect(link).toHaveAttribute("href", ORIGINAL_RECIPE)
         expect(link).toHaveAttribute("target", "_blank")
+      })
+
+      it("displays the servings", () => {
+        expect(screen.getByText(new RegExp(`${langItem.servings}\\s*2`, "i"))).toBeVisible()
       })
 
       it("displays the ingredients table", () => {

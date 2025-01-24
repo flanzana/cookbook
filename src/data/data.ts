@@ -6,6 +6,7 @@ export const recipes: IRecipe[] = [
     title: "Porova juha",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "1", ingredient: "por" },
       { amount: "2", ingredient: "krompir" },
@@ -49,6 +50,7 @@ export const recipes: IRecipe[] = [
     title: "Milijonska juha",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "120 g", ingredient: "korenček" },
       { amount: "1 žlica", ingredient: "zdrob" },
@@ -69,6 +71,7 @@ export const recipes: IRecipe[] = [
     title: "Kremna koruzna juha",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "1 konzerva", ingredient: "koruza" },
       { amount: "1", ingredient: "čebula" },
@@ -94,6 +97,7 @@ export const recipes: IRecipe[] = [
     title: "Peteršiljeva juha z zdrobovimi žličniki",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "šopek", ingredient: "peteršilj" },
       { ingredient: "peteršiljeva korenina" },
@@ -120,6 +124,7 @@ export const recipes: IRecipe[] = [
     title: "Peteršiljeva juha z vlivanci",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "šopek", ingredient: "peteršilj" },
       { ingredient: "peteršiljeva korenina" },
@@ -145,6 +150,7 @@ export const recipes: IRecipe[] = [
     title: "Porova enolončnica s klobaso",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "300 g", ingredient: "por" },
       { amount: "250 g", ingredient: "krompir" },
@@ -171,6 +177,7 @@ export const recipes: IRecipe[] = [
     title: "Kremna juha iz bučk",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "500 g", ingredient: "bučka" },
       { amount: "1 strok", ingredient: "česen" },
@@ -197,6 +204,7 @@ export const recipes: IRecipe[] = [
     title: "Crema de coliflor y puerro",
     category: Category.SoupAndStew,
     language: Language.Spanish,
+    servings: 4,
     ingredients: [
       { amount: "1", ingredient: "coliflor" },
       { amount: "4", ingredient: "puerro" },
@@ -218,6 +226,7 @@ export const recipes: IRecipe[] = [
     title: "Libanonska lečina juha",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "250 g", ingredient: "rdeča leča" },
       { amount: "1", ingredient: "krompir" },
@@ -246,6 +255,7 @@ export const recipes: IRecipe[] = [
     title: "Daal",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "rdeča leča" },
       { amount: "1", ingredient: "čebula" },
@@ -272,6 +282,7 @@ export const recipes: IRecipe[] = [
     title: "Estofado de patatas con carne de ternera",
     category: Category.SoupAndStew,
     language: Language.Spanish,
+    servings: 4,
     ingredients: [
       { amount: "1", ingredient: "cebolla" },
       { amount: "3 dientes", ingredient: "ajo" },
@@ -305,8 +316,9 @@ export const recipes: IRecipe[] = [
     title: "Garbanzos con chorizo y espinacas",
     category: Category.SoupAndStew,
     language: Language.Spanish,
+    servings: 4,
     ingredients: [
-      { amount: "500 g", ingredient: "garbanzos" },
+      { amount: "400 g", ingredient: "garbanzos" },
       { amount: "300 g", ingredient: "espinacas" },
       { amount: "4", ingredient: "tomate" },
       { amount: "2 dientes", ingredient: "ajo" },
@@ -332,6 +344,7 @@ export const recipes: IRecipe[] = [
     title: "Garbanzos con calamar",
     category: Category.SoupAndStew,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "200 g", ingredient: "garbanzos crudos" },
       { amount: "500 g", ingredient: "calamar crudo" },
@@ -362,6 +375,7 @@ export const recipes: IRecipe[] = [
     title: "Lentejas con chorizo",
     category: Category.SoupAndStew,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "200 g", ingredient: "lentejas" },
       { amount: "60 g", ingredient: "chorizo" },
@@ -391,6 +405,7 @@ export const recipes: IRecipe[] = [
     title: "Salmorejo",
     category: Category.SoupAndStew,
     language: Language.Spanish,
+    servings: 4,
     ingredients: [
       { amount: "800 g", ingredient: "tomate pera" },
       { amount: "1", ingredient: "ajo" },
@@ -412,6 +427,7 @@ export const recipes: IRecipe[] = [
     title: "Ričet",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "200 g", ingredient: "ješprenj" },
       { amount: "350 g", ingredient: "kos prekajene šunke" },
@@ -469,6 +485,7 @@ export const recipes: IRecipe[] = [
     title: "Korenčkova juha s kurkumo",
     category: Category.SoupAndStew,
     language: Language.Slovenian,
+    servings: 3,
     ingredients: [
       { amount: "500 g", ingredient: "korenček" },
       { amount: "1", ingredient: "čebula" },
@@ -514,6 +531,7 @@ export const recipes: IRecipe[] = [
     title: "Avocado egg spread",
     category: Category.Sauce,
     language: Language.English,
+    servings: 2,
     ingredients: [
       { amount: "1", ingredient: "avocado" },
       { amount: "2", ingredient: "eggs" },
@@ -645,6 +663,7 @@ export const recipes: IRecipe[] = [
     title: "Šolski namaz",
     category: Category.Sauce,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "1", ingredient: "jajce" },
       { amount: "100 g", ingredient: "poli salama" },
@@ -805,6 +824,7 @@ export const recipes: IRecipe[] = [
     title: "Testenine z milansko omako",
     category: Category.Pasta,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "testenine" },
       { amount: "300 ml", ingredient: "marinara omaka" },
@@ -824,6 +844,7 @@ export const recipes: IRecipe[] = [
     title: "Arrabbiata omaka",
     category: Category.Pasta,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "testenine" },
       { amount: "300 ml", ingredient: "marinara omaka" },
@@ -839,6 +860,7 @@ export const recipes: IRecipe[] = [
     title: "Amatriciana omaka",
     category: Category.Pasta,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "testenine" },
       { amount: "300 ml", ingredient: "marinara omaka" },
@@ -858,6 +880,7 @@ export const recipes: IRecipe[] = [
     title: "Bolonjska omaka",
     category: Category.Pasta,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "500 g", ingredient: "testenine" },
       { amount: "300 g", ingredient: "mleto meso" },
@@ -888,6 +911,7 @@ export const recipes: IRecipe[] = [
     title: "Testenine s šampinjoni, bučkami in slanino",
     category: Category.Pasta,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "testenine" },
       { amount: "200 ml", ingredient: "smetana za kuhanje" },
@@ -911,6 +935,7 @@ export const recipes: IRecipe[] = [
     title: "Testenine s kremno omako in začimbami",
     category: Category.Pasta,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "testenine" },
       { amount: "200 ml", ingredient: "smetana za kuhanje" },
@@ -954,6 +979,7 @@ export const recipes: IRecipe[] = [
     title: "Testenine s porovo omako in panceto",
     category: Category.Pasta,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "testenine" },
       { amount: "300 ml", ingredient: "smetana za kuhanje" },
@@ -977,6 +1003,7 @@ export const recipes: IRecipe[] = [
     title: "Pasta con chorizo",
     category: Category.Pasta,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "250 g", ingredient: "pasta" },
       { amount: "60 g", ingredient: "chorizo" },
@@ -1002,6 +1029,7 @@ export const recipes: IRecipe[] = [
     title: "Gnocchi with feta and spinach",
     category: Category.Pasta,
     language: Language.English,
+    servings: 2,
     ingredients: [
       { amount: "400 g", ingredient: "gnocchi" },
       { amount: "150 g", ingredient: "feta cheese" },
@@ -1025,6 +1053,7 @@ export const recipes: IRecipe[] = [
     title: "Honey mustard chicken salad",
     category: Category.Salad,
     language: Language.English,
+    servings: 2,
     ingredients: [
       { ingredient: "lettuce" },
       { amount: "250 g", ingredient: "chicken" },
@@ -1054,6 +1083,7 @@ export const recipes: IRecipe[] = [
     title: "Mediteranska riževa solata",
     category: Category.Salad,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "400 g", ingredient: "riž" },
       { amount: "250 g", ingredient: "češnjev paradižnik" },
@@ -1080,6 +1110,7 @@ export const recipes: IRecipe[] = [
     title: "Testeninska solata caprese",
     category: Category.Salad,
     language: Language.Slovenian,
+    servings: 5,
     ingredients: [
       { amount: "500 g", ingredient: "testenine (fusili)" },
       { amount: "2 lončka", ingredient: "rdeči pesto" },
@@ -1106,6 +1137,7 @@ export const recipes: IRecipe[] = [
     title: "Testeninska solata s tuno",
     category: Category.Salad,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "400 g", ingredient: "testenine (fusili)" },
       { amount: "1 lonček", ingredient: "kisla smetana" },
@@ -1132,6 +1164,7 @@ export const recipes: IRecipe[] = [
     title: "Ensaladilla rusa",
     category: Category.Salad,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "3", ingredient: "patata" },
       { amount: "100 g", ingredient: "atún" },
@@ -1156,6 +1189,7 @@ export const recipes: IRecipe[] = [
     title: "Ensalada de lentejas y mango",
     category: Category.Salad,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "300 g", ingredient: "lentejas" },
       { amount: "250 g", ingredient: "tomate" },
@@ -1201,6 +1235,7 @@ export const recipes: IRecipe[] = [
     title: "Fajitas",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "½", ingredient: "piščančja prsa" },
       { amount: "8", ingredient: "paprika" },
@@ -1221,6 +1256,7 @@ export const recipes: IRecipe[] = [
     title: "Ajdova kaša z gobicami",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "200 g", ingredient: "adjova kaša" },
       { amount: "250 g", ingredient: "gobe" },
@@ -1264,6 +1300,7 @@ export const recipes: IRecipe[] = [
     title: "Kremna rižota s porom in piščancem",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "150 g", ingredient: "riž" },
       { amount: "200 g", ingredient: "piščanec" },
@@ -1291,6 +1328,7 @@ export const recipes: IRecipe[] = [
     title: "Piščančji paprikaš",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "500 g", ingredient: "piščanec" },
       { amount: "3", ingredient: "čebula" },
@@ -1315,6 +1353,7 @@ export const recipes: IRecipe[] = [
     title: "Zrezki v česno-gorčični omaki",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "450 g", ingredient: "puranji zrezek" },
       { amount: "5 strokov", ingredient: "česen" },
@@ -1473,6 +1512,7 @@ export const recipes: IRecipe[] = [
     title: "Merluza con patatas al horno",
     category: Category.Main,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "2 lomos", ingredient: "merluza" },
       { amount: "3", ingredient: "patata" },
@@ -1565,6 +1605,7 @@ export const recipes: IRecipe[] = [
     title: "Arroz con mariscos",
     category: Category.Main,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "180 g", ingredient: "arroz" },
       { amount: "220 g", ingredient: "mariscos" },
@@ -1591,6 +1632,7 @@ export const recipes: IRecipe[] = [
     title: "Merluza con pisto y arroz",
     category: Category.Main,
     language: Language.Spanish,
+    servings: 1,
     ingredients: [
       { amount: "140 g", ingredient: "lomo de merluza" },
       { amount: "150 g", ingredient: "pisto" },
@@ -1639,6 +1681,7 @@ export const recipes: IRecipe[] = [
     title: "Sepia encebollada",
     category: Category.Main,
     language: Language.Spanish,
+    servings: 2,
     ingredients: [
       { amount: "400 g", ingredient: "sepia limpia" },
       { amount: "400 g", ingredient: "cebolla" },
@@ -1664,6 +1707,7 @@ export const recipes: IRecipe[] = [
     title: "Pimientos rellenos al horno",
     category: Category.Main,
     language: Language.Spanish,
+    servings: 4,
     ingredients: [
       { amount: "140 g", ingredient: "soja texturizada" },
       { amount: "2", ingredient: "cebolla" },
@@ -1729,6 +1773,7 @@ export const recipes: IRecipe[] = [
     title: "Polnjeni jajčevci",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "4", ingredient: "jajčevec" },
       { amount: "400 g", ingredient: "paradižnikova omaka" },
@@ -1752,6 +1797,7 @@ export const recipes: IRecipe[] = [
     title: "Fried rice",
     category: Category.Main,
     language: Language.English,
+    servings: 2,
     ingredients: [
       { amount: "160 g", ingredient: "basmati rice" },
       { amount: "1", ingredient: "leek" },
@@ -1774,6 +1820,7 @@ export const recipes: IRecipe[] = [
     title: "Halloumi bowl",
     category: Category.Main,
     language: Language.English,
+    servings: 1,
     ingredients: [
       { amount: "450 g", ingredient: "potato" },
       { amount: "150 g", ingredient: "cherry tomato" },
@@ -1800,6 +1847,7 @@ export const recipes: IRecipe[] = [
     title: "Chicken quinoa burrito bowl",
     category: Category.Main,
     language: Language.English,
+    servings: 2,
     ingredients: [
       { amount: "125 g", ingredient: "quinoa" },
       { ingredient: "chicken" },
@@ -1854,6 +1902,7 @@ export const recipes: IRecipe[] = [
     title: "Chana Masala",
     category: Category.SoupAndStew,
     language: Language.English,
+    servings: 3,
     ingredients: [
       { amount: "200 g", ingredient: "dry chickpeas" },
       { amount: "3 cloves", ingredient: "garlic" },
@@ -1893,6 +1942,7 @@ export const recipes: IRecipe[] = [
     title: "Zrezki v smetanovi omaki s špinačo in paradižniki",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 2,
     ingredients: [
       { amount: "1", ingredient: "piščančja prsa" },
       { amount: "3 žličke", ingredient: "gorčica" },
@@ -1920,6 +1970,7 @@ export const recipes: IRecipe[] = [
     title: "Pizza",
     category: Category.Snack,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "1 kg", ingredient: "moka" },
       { amount: "42 g", ingredient: "sveži kvas" },
@@ -1941,6 +1992,7 @@ export const recipes: IRecipe[] = [
     title: "Tortilja (testo)",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 8,
     ingredients: [
       { amount: "225 g", ingredient: "moka" },
       { amount: "1 žlica", ingredient: "olivno olje" },
@@ -1958,6 +2010,7 @@ export const recipes: IRecipe[] = [
     title: "Empanada (testo)",
     category: Category.Snack,
     language: Language.Slovenian,
+    servings: 8,
     ingredients: [
       { amount: "300 g", ingredient: "ostra moka" },
       { amount: "½ žličke", ingredient: "sol" },
@@ -1971,7 +2024,7 @@ export const recipes: IRecipe[] = [
       "V eni posodi vgneti sol in maslo v moko, v drugi posodi pa zmešaj 1 jajce, 1 beljak (shrani 1 rumenjak za pozneje), vodo in kis.",
       "Tekočino iz druge posode počasi vlivaj v prvo posodo in vse sestavine dobro premešaj. Testo ne sme biti lepljivo.",
       "Testo naj počiva 1 uro na hladnem.",
-      "Po eni uri razvaljaj testo na 5 mm debelo ter izreži kroge.",
+      "Po eni uri testo razdeli na 8 enokomernih delov. Vsak del razvaljaj v krog debeline 5 mm.",
       "Vsak krog nadevaj s poljubnim nadevom (npr. sir, šunka in origano) ter zapri krog in stisni robove.",
       "Empanade položi na pekač in jih premaži z rumenjakom.",
       "Peci 25 minut na 180°C.",
@@ -1983,6 +2036,7 @@ export const recipes: IRecipe[] = [
     title: "Empanada de kebab",
     category: Category.Snack,
     language: Language.Spanish,
+    servings: 16,
     ingredients: [
       { ingredient: "masa de empanada" },
       { amount: "1", ingredient: "cebolla roja" },
@@ -2035,6 +2089,7 @@ export const recipes: IRecipe[] = [
     title: "Skutini njoki",
     category: Category.Main,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "500 g", ingredient: "skuta" },
       { amount: "1", ingredient: "jajce" },
@@ -2058,6 +2113,7 @@ export const recipes: IRecipe[] = [
     title: "Naan",
     category: Category.Snack,
     language: Language.English,
+    servings: 8,
     ingredients: [
       { amount: "340 g", ingredient: "flour" },
       { amount: "21 g", ingredient: "yeast" },
@@ -2083,6 +2139,7 @@ export const recipes: IRecipe[] = [
     title: "Pizza mafini",
     category: Category.Snack,
     language: Language.Slovenian,
+    servings: 12,
     ingredients: [
       { amount: "250 g", ingredient: "gladka moka" },
       { amount: "21 g", ingredient: "kvas" },
@@ -2106,6 +2163,7 @@ export const recipes: IRecipe[] = [
     title: "Savoury baking powder muffins",
     category: Category.Snack,
     language: Language.English,
+    servings: 12,
     ingredients: [
       { amount: "200 g", ingredient: "flour" },
       { ingredient: "baking powder" },
@@ -2152,6 +2210,7 @@ export const recipes: IRecipe[] = [
     title: "Masala chai",
     category: Category.Drink,
     language: Language.English,
+    servings: 2,
     ingredients: [
       { amount: "400 ml", ingredient: "water" },
       { amount: "3", ingredient: "cloves" },
@@ -2178,6 +2237,7 @@ export const recipes: IRecipe[] = [
     title: "Golden milk",
     category: Category.Drink,
     language: Language.English,
+    servings: 2,
     ingredients: [
       { amount: "500 ml", ingredient: "milk" },
       { amount: "1 tsp", ingredient: "ground turmeric" },
@@ -2202,6 +2262,7 @@ export const recipes: IRecipe[] = [
     title: "Ingverjev čaj",
     category: Category.Drink,
     language: Language.Slovenian,
+    servings: 5,
     ingredients: [
       { ingredient: "ingver" },
       { amount: "1.5 l", ingredient: "voda" },
@@ -2237,6 +2298,7 @@ export const recipes: IRecipe[] = [
     title: "Tinto de verano",
     category: Category.Drink,
     language: Language.Spanish,
+    servings: 8,
     ingredients: [
       { amount: "1 l", ingredient: "vino tinto" },
       { amount: "1 l", ingredient: "agua con gas" },
@@ -2249,6 +2311,7 @@ export const recipes: IRecipe[] = [
     title: "Mojito",
     category: Category.Drink,
     language: Language.Spanish,
+    servings: 1,
     ingredients: [
       { amount: "30 ml", ingredient: "ron blanco" },
       { amount: "200 ml", ingredient: "agua con gas" },
@@ -2269,6 +2332,7 @@ export const recipes: IRecipe[] = [
     title: "Cuba libre",
     category: Category.Drink,
     language: Language.Spanish,
+    servings: 1,
     ingredients: [
       { amount: "30 ml", ingredient: "ron blanco" },
       { amount: "200 ml", ingredient: "cola" },
@@ -2285,6 +2349,7 @@ export const recipes: IRecipe[] = [
     title: "Piña colada",
     category: Category.Drink,
     language: Language.Slovenian,
+    servings: 1,
     ingredients: [
       { amount: "30 ml", ingredient: "beli rum" },
       { amount: "30 ml", ingredient: "kokosovo mleko" },
@@ -2317,6 +2382,7 @@ export const recipes: IRecipe[] = [
     title: "Čokoladni mafini z gozdnimi sadeži",
     category: Category.Dessert,
     language: Language.Slovenian,
+    servings: 12,
     ingredients: [
       { amount: "200 g", ingredient: "gladka moka" },
       { amount: "50 g", ingredient: "kakav" },
@@ -2498,6 +2564,7 @@ export const recipes: IRecipe[] = [
     title: "Overnight oats with peanut butter & banana",
     category: Category.Dessert,
     language: Language.English,
+    servings: 1,
     ingredients: [
       { amount: "35 g", ingredient: "rolled oats" },
       { amount: "5 g", ingredient: "chia seeds" },
@@ -2519,6 +2586,7 @@ export const recipes: IRecipe[] = [
     title: "Overnight oats with berries",
     category: Category.Dessert,
     language: Language.English,
+    servings: 1,
     ingredients: [
       { amount: "35 g", ingredient: "rolled oats" },
       { amount: "5 g", ingredient: "chia seeds" },
@@ -2541,6 +2609,7 @@ export const recipes: IRecipe[] = [
     title: "Overnight oats with choco banana",
     category: Category.Dessert,
     language: Language.English,
+    servings: 1,
     ingredients: [
       { amount: "35 g", ingredient: "rolled oats" },
       { amount: "5 g", ingredient: "chia seeds" },
@@ -2681,6 +2750,7 @@ export const recipes: IRecipe[] = [
     title: "Praznični cheesecake v kozarcu",
     category: Category.Dessert,
     language: Language.Slovenian,
+    servings: 4,
     ingredients: [
       { amount: "180 g", ingredient: "ingverjevi piškoti" },
       { amount: "40 g", ingredient: "maslo" },
