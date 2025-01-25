@@ -8,6 +8,7 @@ import IngredientsTable, { IngredientsTableRow } from "./IngredientsTable"
 import InstructionsList, { InstructionsListItem } from "./InstructionsList"
 import getTranslation from "../../../helpers/getTranslation"
 import FavouriteLink from "./FavouriteLink"
+import NotesList from "./NotesList"
 
 type PartProps = {
   title: string
@@ -84,17 +85,28 @@ const Recipe = ({ recipe, isLoading }: Props) => {
                 ))}
           </IngredientsTable>
         </Part>
-        <Part title={getTranslation("instructions", language)} id="InstructionsList">
-          <InstructionsList>
-            {isLoading
-              ? [1, 2, 3].map(i => <InstructionsListItem key={i} index={i} isLoading />)
-              : (recipe as IRecipe).instructions.map((instruction, index) => (
-                  <InstructionsListItem key={instruction} index={index + 1}>
-                    {instruction}
-                  </InstructionsListItem>
+        <div className="space-y-6">
+          <Part title={getTranslation("instructions", language)} id="InstructionsList">
+            <InstructionsList>
+              {isLoading
+                ? [1, 2, 3].map(i => <InstructionsListItem key={i} index={i} isLoading />)
+                : (recipe as IRecipe).instructions.map((instruction, index) => (
+                    <InstructionsListItem key={instruction} index={index + 1}>
+                      {instruction}
+                    </InstructionsListItem>
+                  ))}
+            </InstructionsList>
+          </Part>
+          {recipe?.notes && (
+            <Part title={getTranslation("notes", language)} id="NotesList">
+              <NotesList>
+                {recipe.notes.map(note => (
+                  <li key={note}>{note}</li>
                 ))}
-          </InstructionsList>
-        </Part>
+              </NotesList>
+            </Part>
+          )}
+        </div>
       </div>
     </div>
   )
