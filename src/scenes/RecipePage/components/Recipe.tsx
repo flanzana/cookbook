@@ -72,7 +72,7 @@ const Recipe = ({ recipe, isLoading }: Props) => {
       <div className="mt-6 grid max-w-lg grid-cols-recipeMobile gap-6 md:max-w-4xl md:grid-cols-recipeDesktop">
         <Part title={getTranslation("ingredients", language)} id="IngredientsTable">
           {recipe?.servings && (
-            <span className="mb-2 font-semibold text-sm uppercase">
+            <span className="mb-2 text-sm font-semibold uppercase">
               {getTranslation("servings", language)} {recipe.servings}
             </span>
           )}
