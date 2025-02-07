@@ -4,4 +4,7 @@ module.exports = {
     defaultLocale: "en",
     locales: ["en"],
   },
+  experimental: {
+    scrollRestoration: true,
+  },
 }
