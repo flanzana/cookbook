@@ -22,6 +22,7 @@ type Props = {
   title: ReactElement | string
   originalRecipeLink?: ReactElement
   favouriteLink?: ReactElement
+  cookModeToggle?: ReactElement
   ingredients: ReactElement
   instructions: ReactElement
   notes?: ReactElement
@@ -31,6 +32,7 @@ const RecipeLayout = ({
   title,
   originalRecipeLink,
   favouriteLink,
+  cookModeToggle,
   ingredients,
   instructions,
   notes,
@@ -43,6 +45,7 @@ const RecipeLayout = ({
         {favouriteLink}
       </div>
     )}
+    {cookModeToggle && <div className="mx-auto">{cookModeToggle}</div>}
     <div className="mt-6 grid max-w-lg grid-cols-recipeMobile gap-6 md:max-w-4xl md:grid-cols-recipeDesktop">
       {ingredients}
       <div className="space-y-6">

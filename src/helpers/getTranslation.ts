@@ -36,6 +36,16 @@ const TRANSLATIONS: Record<string, Record<Language, string>> = {
     [Language.Slovenian]: "Odstrani iz priljubljenih",
     [Language.Spanish]: "Quitar de favoritos",
   },
+  "cook.mode": {
+    [Language.English]: "Cook mode",
+    [Language.Slovenian]: "Način kuhanja",
+    [Language.Spanish]: "Modo cocina",
+  },
+  "keep.screen.awake": {
+    [Language.English]: "(Keep screen awake)",
+    [Language.Slovenian]: "(Ne ugašaj zaslona)",
+    [Language.Spanish]: "(Pantalla activa)",
+  },
 }
 
 /**

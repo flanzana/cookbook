@@ -2162,7 +2162,7 @@ export const recipes: IRecipe[] = [
     ],
     instructions: [
       "V skledo stresemo skuto in jo z vilicami dobro pretlačimo. Zmešamo jo z jajcem in soljo. Po želji dodamo tudi malo naribanega muškatnega oreščka.",
-      " skutino zmes s kuhalnico najprej vmešamo nariban parmezan, nato pa še moko. Ko se sestavine združijo in dobimo testo, ga zvrnemo na rahlo pomokano delovno površino in razrežemo na več manjših kosov, iz katerih naredimo daljše svaljke, ki jih nato s topim nožem narežemo na njoke.",
+      "V skutino zmes s kuhalnico najprej vmešamo nariban parmezan, nato pa še moko. Ko se sestavine združijo in dobimo testo, ga zvrnemo na rahlo pomokano delovno površino in razrežemo na več manjših kosov, iz katerih naredimo daljše svaljke, ki jih nato s topim nožem narežemo na njoke.",
       "Njoke skuhamo v osoljenem kropu. Ko priplavajo na površje, jih kuhamo še 1-2 minuti, nato pa jih poberemo iz lonca.",
     ],
     notes: [

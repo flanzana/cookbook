@@ -9,6 +9,7 @@ import InstructionsList, { InstructionsListItem } from "./InstructionsList"
 import getTranslation from "../../../helpers/getTranslation"
 import FavouriteLink from "./FavouriteLink"
 import NotesList from "./NotesList"
+import CookMode from "./CookMode"
 
 type Props = {
   recipe: IRecipe
@@ -44,6 +45,7 @@ const Recipe = ({ recipe }: Props) => {
         ) : undefined
       }
       favouriteLink={<FavouriteLink recipeId={id} language={language} />}
+      cookModeToggle={<CookMode language={language} />}
       ingredients={
         <Part title={getTranslation("ingredients", language)} id="IngredientsTable">
           {servings ? (
