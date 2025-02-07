@@ -5,6 +5,7 @@ import Page from "../../components/Page/Page"
 import Recipe from "./components/Recipe"
 import RecipeNotFound from "./components/RecipeNotFound"
 import { IRecipe } from "../../types"
+import RecipeLoader from "./components/RecipeLoader"
 
 type Props = {
   data?: IRecipe | null // from getStaticProps
@@ -17,7 +18,7 @@ const RecipePage = ({ data }: Props) => {
   if (!query.recipeId) {
     return (
       <Page meta={{ title: "Žana's cookbook" }}>
-        <Recipe recipe={null} isLoading />
+        <RecipeLoader />
       </Page>
     )
   }
@@ -25,7 +26,7 @@ const RecipePage = ({ data }: Props) => {
   if (data) {
     return (
       <Page meta={{ title: `${data.title} | Žana's cookbook` }}>
-        <Recipe recipe={data} isLoading={false} />
+        <Recipe recipe={data} />
       </Page>
     )
   }

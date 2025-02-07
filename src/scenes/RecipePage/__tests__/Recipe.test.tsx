@@ -20,7 +20,7 @@ const renderRecipe = (recipe: IRecipe, isSaved = false) => {
     ["cookbook-zana:favourite-recipes"]: JSON.stringify(isSaved ? [recipe.id] : []),
   })
 
-  return renderWithProviders(<Recipe recipe={recipe} isLoading={false} />)
+  return renderWithProviders(<Recipe recipe={recipe} />)
 }
 
 describe("Recipe", () => {

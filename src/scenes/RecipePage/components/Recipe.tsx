@@ -1,36 +1,17 @@
 import React from "react"
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline"
 
-import { IRecipe, Language } from "../../../types"
+import { IRecipe } from "../../../types"
+import RecipeLayout, { Part } from "./RecipeLayout"
 import TextLink from "../../../components/TextLink/TextLink"
-import Loader from "../../../components/Loader"
 import IngredientsTable, { IngredientsTableRow } from "./IngredientsTable"
 import InstructionsList, { InstructionsListItem } from "./InstructionsList"
 import getTranslation from "../../../helpers/getTranslation"
 import FavouriteLink from "./FavouriteLink"
 import NotesList from "./NotesList"
 
-type PartProps = {
-  title: string
-  id: string
-  children: React.ReactNode
-}
-
-const Part = ({ title, id, children }: PartProps) => (
-  <div className="flex flex-col items-center">
-    <h2
-      id={id}
-      className="mb-3 box-border h-6 border-b-8 border-b-primary-100 px-3 text-xl font-semibold dark:border-b-zinc-600"
-    >
-      {title}
-    </h2>
-    {children}
-  </div>
-)
-
 type Props = {
-  recipe: IRecipe | null
-  isLoading: boolean
+  recipe: IRecipe
 }
 
 /**
@@ -39,76 +20,67 @@ type Props = {
  * Items on the recipe page:
  * - recipe title
  * - link to the original recipe if exists
+ * - link to save the recipe into favourites
  * - table of all ingredients
  * - number of servings if specified
  * - list of all instructions
  */
-const Recipe = ({ recipe, isLoading }: Props) => {
-  const language = isLoading ? Language.English : (recipe as IRecipe).language
+const Recipe = ({ recipe }: Props) => {
+  const { language, title, originalRecipe, id, servings, ingredients, instructions, notes } = recipe
 
   return (
-    <div className="flex cursor-default flex-col items-center">
-      {isLoading ? (
-        <Loader sizingClassNames="h-9 sm:h-10 w-1/2 sm:w-2/5 lg:w-60" />
-      ) : (
-        <h1 className="text-center text-2xl font-bold sm:text-3xl">{(recipe as IRecipe).title}</h1>
-      )}
-
-      {recipe && (
-        <div className="mt-3 flex items-center space-x-4 lg:space-x-16">
-          {recipe.originalRecipe && (
-            <TextLink
-              href={recipe.originalRecipe}
-              isExternal
-              additionalClassName="text-xs"
-              icon={<ArrowTopRightOnSquareIcon />}
-            >
-              {getTranslation("original.recipe", language)}
-            </TextLink>
-          )}
-          <FavouriteLink recipeId={recipe.id} language={language} />
-        </div>
-      )}
-
-      <div className="mt-6 grid max-w-lg grid-cols-recipeMobile gap-6 md:max-w-4xl md:grid-cols-recipeDesktop">
+    <RecipeLayout
+      title={title}
+      originalRecipeLink={
+        originalRecipe ? (
+          <TextLink
+            href={originalRecipe}
+            isExternal
+            additionalClassName="text-xs"
+            icon={<ArrowTopRightOnSquareIcon />}
+          >
+            {getTranslation("original.recipe", language)}
+          </TextLink>
+        ) : undefined
+      }
+      favouriteLink={<FavouriteLink recipeId={id} language={language} />}
+      ingredients={
         <Part title={getTranslation("ingredients", language)} id="IngredientsTable">
-          {recipe?.servings && (
+          {servings ? (
             <span className="mb-2 text-sm font-semibold uppercase">
               {getTranslation("servings", language)} {recipe.servings}
             </span>
-          )}
+          ) : null}
           <IngredientsTable>
-            {isLoading
-              ? [1, 2, 3, 4, 5].map(i => <IngredientsTableRow key={i} isLoading />)
-              : (recipe as IRecipe).ingredients.map(({ ingredient, amount }) => (
-                  <IngredientsTableRow key={ingredient} amount={amount} ingredient={ingredient} />
-                ))}
+            {ingredients.map(({ ingredient, amount }) => (
+              <IngredientsTableRow key={ingredient} amount={amount} ingredient={ingredient} />
+            ))}
           </IngredientsTable>
         </Part>
-        <div className="space-y-6">
-          <Part title={getTranslation("instructions", language)} id="InstructionsList">
-            <InstructionsList>
-              {isLoading
-                ? [1, 2, 3].map(i => <InstructionsListItem key={i} index={i} isLoading />)
-                : (recipe as IRecipe).instructions.map((instruction, index) => (
-                    <InstructionsListItem key={instruction} index={index + 1}>
-                      {instruction}
-                    </InstructionsListItem>
-                  ))}
-            </InstructionsList>
+      }
+      instructions={
+        <Part title={getTranslation("instructions", language)} id="InstructionsList">
+          <InstructionsList>
+            {instructions.map((instruction, index) => (
+              <InstructionsListItem key={instruction} index={index + 1}>
+                {instruction}
+              </InstructionsListItem>
+            ))}
+          </InstructionsList>
+        </Part>
+      }
+      notes={
+        notes ? (
+          <Part title={getTranslation("notes", language)} id="NotesList">
+            <NotesList>
+              {notes.map(note => (
+                <li key={note}>{note}</li>
+              ))}
+            </NotesList>
           </Part>
-          {recipe?.notes && (
-            <Part title={getTranslation("notes", language)} id="NotesList">
-              <NotesList>
-                {recipe.notes.map(note => (
-                  <li key={note}>{note}</li>
-                ))}
-              </NotesList>
-            </Part>
-          )}
-        </div>
-      </div>
-    </div>
+        ) : undefined
+      }
+    />
   )
 }
 
