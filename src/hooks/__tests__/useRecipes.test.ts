@@ -16,14 +16,19 @@ describe("useRecipes", () => {
     expect(result.current).toMatchInlineSnapshot(`
       [
         {
+          "category": "cold-drink",
+          "href": "/lorem-cold-drink-ipsum",
+          "title": "Lorem cold-drink ipsum",
+        },
+        {
           "category": "dessert",
           "href": "/lorem-dessert-ipsum",
           "title": "Lorem dessert ipsum",
         },
         {
-          "category": "drink",
-          "href": "/lorem-drink-ipsum",
-          "title": "Lorem drink ipsum",
+          "category": "dough",
+          "href": "/lorem-dough-ipsum",
+          "title": "Lorem dough ipsum",
         },
         {
           "category": "main",
@@ -51,9 +56,24 @@ describe("useRecipes", () => {
           "title": "Lorem snack ipsum",
         },
         {
-          "category": "soupAndStew",
-          "href": "/lorem-soupAndStew-ipsum",
-          "title": "Lorem soupAndStew ipsum",
+          "category": "soup",
+          "href": "/lorem-soup-ipsum",
+          "title": "Lorem soup ipsum",
+        },
+        {
+          "category": "spread",
+          "href": "/lorem-spread-ipsum",
+          "title": "Lorem spread ipsum",
+        },
+        {
+          "category": "stew",
+          "href": "/lorem-stew-ipsum",
+          "title": "Lorem stew ipsum",
+        },
+        {
+          "category": "warm-drink",
+          "href": "/lorem-warm-drink-ipsum",
+          "title": "Lorem warm-drink ipsum",
         },
       ]
     `)

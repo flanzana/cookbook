@@ -14,6 +14,6 @@ describe("SearchPage", () => {
   it("displays 8 recipes cards", () => {
     render(<SearchPage />)
 
-    expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(8)
+    expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(12)
   })
 })

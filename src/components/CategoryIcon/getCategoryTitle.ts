@@ -6,18 +6,26 @@ const getCategoryTitle = (category: Category): string => {
       return "Dessert"
     case Category.Snack:
       return "Snack"
-    case Category.Drink:
-      return "Drink"
+    case Category.ColdDrink:
+      return "Cold drink"
+    case Category.WarmDrink:
+      return "Warm drink"
     case Category.Main:
       return "Main dish"
     case Category.Pasta:
       return "Pasta"
     case Category.Salad:
       return "Salad"
-    case Category.SoupAndStew:
-      return "Soup & stew"
+    case Category.Soup:
+      return "Soup"
+    case Category.Stew:
+      return "Stew"
     case Category.Sauce:
-      return "Sauce, dip & spread"
+      return "Sauce"
+    case Category.Spread:
+      return "Spread or dip"
+    case Category.Dough:
+      return "Dough"
     default:
       throw new Error("Unsupported category.")
   }

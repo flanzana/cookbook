@@ -1,12 +1,16 @@
 export enum Category {
-  SoupAndStew = "soupAndStew",
+  Soup = "soup",
+  Stew = "stew",
   Main = "main",
   Pasta = "pasta",
   Salad = "salad",
   Dessert = "dessert",
-  Drink = "drink",
+  ColdDrink = "cold-drink",
+  WarmDrink = "warm-drink",
   Sauce = "sauce",
+  Spread = "spread",
   Snack = "snack",
+  Dough = "dough",
 }
 
 export enum Language {
