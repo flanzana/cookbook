@@ -13,7 +13,7 @@ type Props = {
  * Header for the pages with the logo and title.
  */
 const PageHeader = ({ hasFavouritesIcon }: Props) => (
-  <header className="sticky top-0 flex w-full flex-row justify-between bg-white/70 backdrop-blur dark:bg-zinc-800/70">
+  <header className="sticky top-0 z-20 flex w-full flex-row justify-between bg-white/70 backdrop-blur dark:bg-zinc-800/70">
     <Link href="/" className="group flex max-w-max flex-row items-center p-4 outline-none">
       <>
         <Logo
