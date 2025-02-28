@@ -10,7 +10,7 @@ export const Part = ({ title, id, children }: PartProps) => (
   <div className="flex flex-col items-center">
     <h2
       id={id}
-      className="mb-3 box-border h-6 border-b-8 border-b-primary-100 px-3 text-xl font-semibold dark:border-b-zinc-600"
+      className="border-b-primary-100 mb-3 box-border h-6 border-b-8 px-3 text-xl font-semibold dark:border-b-zinc-600"
     >
       {title}
     </h2>
@@ -46,7 +46,7 @@ const RecipeLayout = ({
       </div>
     )}
     {cookModeToggle && <div className="mx-auto">{cookModeToggle}</div>}
-    <div className="mt-6 grid max-w-lg grid-cols-recipeMobile gap-6 md:max-w-4xl md:grid-cols-recipeDesktop">
+    <div className="mt-6 grid max-w-lg grid-cols-1 gap-6 md:max-w-4xl md:grid-cols-[1fr_2fr]">
       {ingredients}
       <div className="space-y-6">
         {instructions}

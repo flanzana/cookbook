@@ -9,8 +9,8 @@ const HomePage = () => {
   return (
     <Page meta={{ title: "Žana's cookbook" }} hasHeader={false} hasFooter={false}>
       <div className="flex flex-1 flex-col items-center justify-center text-center">
-        <Logo width="100" height="100" className="mb-12 text-primary-600 dark:text-primary-300" />
-        <h1 className="mb-20 font-display text-4xl font-medium sm:text-5xl md:text-6xl">
+        <Logo width="100" height="100" className="text-primary-600 dark:text-primary-300 mb-12" />
+        <h1 className="font-display mb-20 text-4xl font-medium sm:text-5xl md:text-6xl">
           Welcome to{" "}
           <span className="text-primary-600 dark:text-primary-300">Žana&apos;s cookbook</span>!
         </h1>

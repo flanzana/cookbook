@@ -1,7 +1,7 @@
 import React from "react"
-import "tailwindcss/tailwind.css"
 import type { AppProps } from "next/app"
 
+import "../styles/globals.css"
 import FavouritesProvider from "../context/FavouritesProvider"
 
 const MyApp = ({ Component, pageProps }: AppProps) => {

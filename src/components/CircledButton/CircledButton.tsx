@@ -32,7 +32,7 @@ const CircledButton = ({ ariaLabel, onClick, icon, type = CircledButtonType.PRIM
       aria-label={ariaLabel}
       onClick={onClick}
       className={clsx(
-        "h-fit w-fit items-center rounded-full p-2 outline-none",
+        "h-fit w-fit items-center rounded-full p-2 outline-hidden",
         ICON_COLOR[type],
         "hocus:bg-primary-50 dark:hocus:bg-zinc-700",
       )}

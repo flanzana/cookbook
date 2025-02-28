@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Loader from "../../../components/Loader"
 
 const InstructionIndex = ({ index }: Pick<InstructionsListItemProps, "index">) => (
-  <div className="mr-3 mt-0.5 h-5 w-5 rounded-full bg-primary-100 text-center text-sm dark:bg-zinc-600">
+  <div className="bg-primary-100 mt-0.5 mr-3 h-5 w-5 rounded-full text-center text-sm dark:bg-zinc-600">
     {index}
   </div>
 )

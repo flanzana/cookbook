@@ -22,11 +22,11 @@ export const IngredientsTableRow = ({
     >
       <td
         key="amount"
-        className="border-r border-r-zinc-200 pr-2 text-right text-sm dark:border-r-zinc-600"
+        className="border-r border-r-zinc-200 pr-2 pb-1 text-right text-sm text-nowrap dark:border-r-zinc-600"
       >
         {isLoading ? <Loader sizingClassNames="h-5 w-20" /> : amount}
       </td>
-      <td key="ingredient" className="pl-2 text-left">
+      <td key="ingredient" className="pb-1 pl-2 text-left text-base">
         {isLoading ? <Loader sizingClassNames="h-6 w-28" /> : ingredient}
       </td>
     </tr>

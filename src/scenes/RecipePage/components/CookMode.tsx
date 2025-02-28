@@ -27,8 +27,8 @@ const CookMode = ({ language }: Props) => {
       <div
         className={clsx(
           "peer relative h-6 w-11 rounded-full bg-zinc-200 dark:bg-zinc-600",
-          "peer-checked:bg-primary-600 peer-checked:after:translate-x-full peer-checked:after:border-white dark:peer-checked:bg-primary-300 rtl:peer-checked:after:-translate-x-full",
-          "peer-focus:ring-2 peer-focus:ring-primary-300 dark:peer-focus:ring-zinc-500",
+          "peer-checked:bg-primary-600 dark:peer-checked:bg-primary-300 peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:rtl:after:-translate-x-full",
+          "peer-focus:ring-primary-300 peer-focus:ring-2 dark:peer-focus:ring-zinc-500",
           "after:absolute after:start-[2px] after:top-0.5 after:size-5 after:rounded-full after:border after:border-zinc-300 after:bg-white after:transition-all after:content-['']",
         )}
       />

@@ -53,7 +53,7 @@ const TextLink = ({
   ariaLabel,
 }: Props) => {
   const className = clsx(
-    "rounded-md px-1 font-semibold text-primary-600 outline-none dark:text-primary-300",
+    "rounded-md px-1 font-semibold text-primary-600 outline-hidden dark:text-primary-300",
     "hocus:bg-primary-50 hocus:text-primary-700 hocus:underline dark:hocus:bg-zinc-700",
     isUnderlined && "underline",
     additionalClassName,

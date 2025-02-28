@@ -55,7 +55,7 @@ const Page = ({
             <DarkModeButton />
           </div>
         )}
-        <main className="flex flex-1 flex-col p-3 font-body md:px-10 md:py-5 lg:px-20 lg:py-10">
+        <main className="font-body flex flex-1 flex-col p-3 md:px-10 md:py-5 lg:px-20 lg:py-10">
           {children}
         </main>
         {hasFooter && <PageFooter />}

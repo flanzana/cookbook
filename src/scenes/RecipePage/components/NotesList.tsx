@@ -11,7 +11,7 @@ type Props = {
  */
 const NotesList = ({ children }: Props) => (
   <ul
-    className="list-disc space-y-3 pl-4 marker:text-primary-300 marker:dark:text-zinc-500"
+    className="marker:text-primary-300 list-disc space-y-3 pl-4 dark:marker:text-zinc-500"
     aria-labelledby="NotesList"
   >
     {children}
