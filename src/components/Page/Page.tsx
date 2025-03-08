@@ -47,7 +47,7 @@ const Page = ({
           content="cookbook, recipe, recipes, cooking, cook, food, meal, breakfast, lunch, dinner, snack, dip, spread, sauce, soup, stew, pasta, salad, meat, vegetarian, dessert, drink, dough, Slovenian food, Spanish food, international food"
         />
       </Head>
-      <div className="flex min-h-screen flex-col bg-white text-zinc-900 dark:bg-zinc-800 dark:text-zinc-200">
+      <div className="font-body flex min-h-screen flex-col bg-white text-zinc-900 dark:bg-zinc-800 dark:text-zinc-200">
         {hasHeader ? (
           <PageHeader hasFavouritesIcon={hasFavouritesIcon} />
         ) : (
@@ -55,7 +55,7 @@ const Page = ({
             <DarkModeButton />
           </div>
         )}
-        <main className="font-body flex flex-1 flex-col p-3 md:px-10 md:py-5 lg:px-20 lg:py-10">
+        <main className="flex flex-1 flex-col p-3 md:px-10 md:py-5 lg:px-20 lg:py-10">
           {children}
         </main>
         {hasFooter && <PageFooter />}

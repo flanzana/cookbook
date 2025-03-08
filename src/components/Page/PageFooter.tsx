@@ -7,7 +7,7 @@ import TextLink from "../TextLink/TextLink"
  */
 const PageFooter = () => (
   <footer className="flex flex-row items-center justify-center p-4">
-    <span className="font-body text-sm">
+    <span className="text-sm">
       <TextLink href="https://flanzana.github.io" isExternal>
         Žana Flander
       </TextLink>

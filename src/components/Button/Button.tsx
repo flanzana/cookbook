@@ -20,7 +20,7 @@ type Props = {
 const Button = ({ href, onClick, children, size = "normal" }: Props) => {
   const className = clsx(
     size === "large" ? "px-8 py-3 text-lg md:px-12" : "px-6 py-2.5 text-md md:px-8",
-    "w-fit rounded-full font-body outline-hidden focus:ring-4",
+    "w-fit rounded-full outline-hidden focus:ring-4",
     "text-white dark:text-zinc-800",
     "bg-primary-600 hocus:bg-primary-700 dark:bg-primary-300 dark:hocus:bg-primary-400",
     "focus:ring-primary-700/60 dark:focus:ring-primary-400/60",
