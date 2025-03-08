@@ -44,7 +44,7 @@ type Props = {
  * @param children - list items {@link InstructionsListItem}
  */
 const InstructionsList = ({ children }: Props) => (
-  <ul className="space-y-3" aria-labelledby="InstructionsList">
+  <ul className="w-full space-y-3" aria-labelledby="InstructionsList">
     {children}
   </ul>
 )
