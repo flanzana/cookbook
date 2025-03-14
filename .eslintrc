@@ -35,6 +35,8 @@
       "error",
       { "namedComponents": "arrow-function", "unnamedComponents": "arrow-function" }
     ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "react/prefer-stateless-function": "error",
     "testing-library/no-container": "error",
     "testing-library/prefer-explicit-assert": "error",
@@ -49,5 +51,10 @@
     "es6": true,
     "jest": true,
     "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

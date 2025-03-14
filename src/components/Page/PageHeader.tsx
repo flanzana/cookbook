@@ -1,9 +1,8 @@
-import React from "react"
 import Link from "next/link"
 
-import Logo from "../Logo/Logo"
-import DarkModeButton from "../DarkModeButton/DarkModeButton"
-import FavouriteIconButton from "../FavouriteIconButton/FavouriteIconButton"
+import Logo from "../Logo"
+import DarkModeButton from "../DarkModeButton"
+import FavouriteIconButton from "../FavouriteIconButton"
 
 type Props = {
   hasFavouritesIcon: boolean

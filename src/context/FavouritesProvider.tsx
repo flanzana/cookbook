@@ -1,3 +1,4 @@
+"use client"
 import React, { createContext, useCallback, useContext, useState } from "react"
 
 import useLocalStorage from "../hooks/useLocalStorage"

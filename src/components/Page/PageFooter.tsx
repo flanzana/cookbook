@@ -1,6 +1,4 @@
-import React from "react"
-
-import TextLink from "../TextLink/TextLink"
+import TextLink from "../TextLink"
 
 /**
  * Footer for the pages with the link to my website.
