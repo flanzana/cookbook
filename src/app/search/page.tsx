@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const SearchPage = () => {
   return (
     <Page hasFavouritesIcon>
+      <h1 className="sr-only">Recipes</h1>
       <RecipeCards />
     </Page>
   )
