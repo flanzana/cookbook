@@ -26,7 +26,8 @@ type Props = {
  * - list of all instructions
  */
 const Recipe = ({ recipe }: Props) => {
-  const { language, title, originalRecipe, id, servings, ingredients, instructions, notes } = recipe
+  const { language, title, originalRecipe, id, servings, ingredientsGroups, instructions, notes } =
+    recipe
 
   return (
     <RecipeLayout
@@ -52,11 +53,13 @@ const Recipe = ({ recipe }: Props) => {
               {getTranslation("servings", language)} {recipe.servings}
             </span>
           ) : null}
-          <IngredientsTable>
-            {ingredients.map(({ ingredient, amount }) => (
-              <IngredientsTableRow key={ingredient} amount={amount} ingredient={ingredient} />
-            ))}
-          </IngredientsTable>
+          {ingredientsGroups.map(({ title, ingredients }, index) => (
+            <IngredientsTable key={index} title={title}>
+              {ingredients.map(({ ingredient, amount }) => (
+                <IngredientsTableRow key={ingredient} amount={amount} ingredient={ingredient} />
+              ))}
+            </IngredientsTable>
+          ))}
         </Part>
       }
       instructions={

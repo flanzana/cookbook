@@ -25,7 +25,8 @@ describe("data", () => {
       })
 
       it("has ingredients", () => {
-        expect(recipe.ingredients).not.toHaveLength(0)
+        expect(recipe.ingredientsGroups).not.toHaveLength(0)
+        expect(recipe.ingredientsGroups[0].ingredients).not.toHaveLength(0)
       })
 
       it("has instructions", () => {

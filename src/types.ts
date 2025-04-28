@@ -31,7 +31,7 @@ export interface IRecipe {
   title: string
   category: Category
   language: Language
-  ingredients: Ingredient[]
+  ingredientsGroups: { title?: string; ingredients: Ingredient[] }[]
   instructions: string[]
   servings?: number
   notes?: string[]

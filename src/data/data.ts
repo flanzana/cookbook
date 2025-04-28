@@ -7,14 +7,18 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "1", ingredient: "por" },
-      { amount: "2", ingredient: "krompir" },
-      { ingredient: "lovorjev list" },
-      { ingredient: "peteršilj" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
-      { ingredient: "voda" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "por" },
+          { amount: "2", ingredient: "krompir" },
+          { ingredient: "lovorjev list" },
+          { ingredient: "peteršilj" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+          { ingredient: "voda" },
+        ],
+      },
     ],
     instructions: [
       "Na olju popraži por.",
@@ -27,16 +31,20 @@ export const recipes: IRecipe[] = [
     title: "Juha iz rdeče leče in pora",
     category: Category.Soup,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "1", ingredient: "por" },
-      { amount: "100 g", ingredient: "rdeča leča" },
-      { amount: "1", ingredient: "krompir" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "3 stroki", ingredient: "česen" },
-      { ingredient: "peteršilj" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
-      { amount: "600 ml", ingredient: "voda" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "por" },
+          { amount: "100 g", ingredient: "rdeča leča" },
+          { amount: "1", ingredient: "krompir" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "3 stroki", ingredient: "česen" },
+          { ingredient: "peteršilj" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+          { amount: "600 ml", ingredient: "voda" },
+        ],
+      },
     ],
     instructions: [
       "Na olju popraži por, čebulo in česen.",
@@ -51,13 +59,17 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "120 g", ingredient: "korenček" },
-      { amount: "1 žlica", ingredient: "zdrob" },
-      { amount: "1", ingredient: "jajce" },
-      { ingredient: "peteršilj" },
-      { ingredient: "sol" },
-      { amount: "0.5 l", ingredient: "voda" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "120 g", ingredient: "korenček" },
+          { amount: "1 žlica", ingredient: "zdrob" },
+          { amount: "1", ingredient: "jajce" },
+          { ingredient: "peteršilj" },
+          { ingredient: "sol" },
+          { amount: "0.5 l", ingredient: "voda" },
+        ],
+      },
     ],
     instructions: [
       "Korenček drobno naribaj in ga na malo olja prepraži.",
@@ -72,16 +84,20 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "1 konzerva", ingredient: "koruza" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "2 stroka", ingredient: "česen" },
-      { amount: "1 žlica", ingredient: "vegeta" },
-      { ingredient: "lovorjev list" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
-      { amount: "1 žlica", ingredient: "kisla smetana" },
-      { amount: "0.5 l", ingredient: "voda" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 konzerva", ingredient: "koruza" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "2 stroka", ingredient: "česen" },
+          { amount: "1 žlica", ingredient: "vegeta" },
+          { ingredient: "lovorjev list" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+          { amount: "1 žlica", ingredient: "kisla smetana" },
+          { amount: "0.5 l", ingredient: "voda" },
+        ],
+      },
     ],
     instructions: [
       "Na drobno nareži čebulo in česen.",
@@ -98,18 +114,22 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "šopek", ingredient: "peteršilj" },
-      { ingredient: "peteršiljeva korenina" },
-      { ingredient: "šalotka" },
-      { amount: "1 strok", ingredient: "česen" },
-      { ingredient: "lovorjev list" },
-      { ingredient: "timijan" },
-      { ingredient: "voda" },
-      { ingredient: "sol" },
-      { amount: "60 g", ingredient: "pšenični zdrob" },
-      { amount: "30 g", ingredient: "maslo" },
-      { amount: "1", ingredient: "jajce" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "šopek", ingredient: "peteršilj" },
+          { ingredient: "peteršiljeva korenina" },
+          { ingredient: "šalotka" },
+          { amount: "1 strok", ingredient: "česen" },
+          { ingredient: "lovorjev list" },
+          { ingredient: "timijan" },
+          { ingredient: "voda" },
+          { ingredient: "sol" },
+          { amount: "60 g", ingredient: "pšenični zdrob" },
+          { amount: "30 g", ingredient: "maslo" },
+          { amount: "1", ingredient: "jajce" },
+        ],
+      },
     ],
     instructions: [
       "Pripravi zmes za žličnike, tako da zmešaš jajca, maslo, zdrob in sol, ter pusti počivati 1 uro.",
@@ -125,17 +145,21 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "šopek", ingredient: "peteršilj" },
-      { ingredient: "peteršiljeva korenina" },
-      { ingredient: "šalotka" },
-      { amount: "1 strok", ingredient: "česen" },
-      { ingredient: "lovorjev list" },
-      { ingredient: "timijan" },
-      { ingredient: "voda" },
-      { ingredient: "sol" },
-      { ingredient: "ostra moka" },
-      { amount: "1", ingredient: "jajce" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "šopek", ingredient: "peteršilj" },
+          { ingredient: "peteršiljeva korenina" },
+          { ingredient: "šalotka" },
+          { amount: "1 strok", ingredient: "česen" },
+          { ingredient: "lovorjev list" },
+          { ingredient: "timijan" },
+          { ingredient: "voda" },
+          { ingredient: "sol" },
+          { ingredient: "ostra moka" },
+          { amount: "1", ingredient: "jajce" },
+        ],
+      },
     ],
     instructions: [
       "Suhaj šopek peteršilja, peteršiljevo korenino, šalotko, česen, lovorjev list in timijan v vodi. Soli po okusu.",
@@ -151,16 +175,20 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "300 g", ingredient: "por" },
-      { amount: "250 g", ingredient: "krompir" },
-      { amount: "2", ingredient: "korenček" },
-      { amount: "1", ingredient: "klobasa" },
-      { amount: "1 l", ingredient: "voda" },
-      { amount: "1 žlica", ingredient: "vegeta" },
-      { ingredient: "peteršilj" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "300 g", ingredient: "por" },
+          { amount: "250 g", ingredient: "krompir" },
+          { amount: "2", ingredient: "korenček" },
+          { amount: "1", ingredient: "klobasa" },
+          { amount: "1 l", ingredient: "voda" },
+          { amount: "1 žlica", ingredient: "vegeta" },
+          { ingredient: "peteršilj" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Por nareži na kolobarje, korenček naribaj, krompir olupi in nareži na majhne kocke, klobaso nareži na kolobarje in potem, po želji, še vsak posamezni kolobar na polovico.",
@@ -178,15 +206,19 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "500 g", ingredient: "bučka" },
-      { amount: "1 strok", ingredient: "česen" },
-      { ingredient: "bazilika" },
-      { ingredient: "timijan" },
-      { amount: "200 ml", ingredient: "smetana za kuhanje" },
-      { amount: "300 ml", ingredient: "voda" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "bučka" },
+          { amount: "1 strok", ingredient: "česen" },
+          { ingredient: "bazilika" },
+          { ingredient: "timijan" },
+          { amount: "200 ml", ingredient: "smetana za kuhanje" },
+          { amount: "300 ml", ingredient: "voda" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Bučke nareži na kose. Česen na drobno nasekljaj.",
@@ -205,12 +237,16 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Spanish,
     servings: 4,
-    ingredients: [
-      { amount: "1", ingredient: "coliflor" },
-      { amount: "4", ingredient: "puerro" },
-      { ingredient: "agua" },
-      { ingredient: "nuez moscada" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "coliflor" },
+          { amount: "4", ingredient: "puerro" },
+          { ingredient: "agua" },
+          { ingredient: "nuez moscada" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Corta los puerros y los sofrie en un poco de aceite de oliva hasta que esten doraditos.",
@@ -227,18 +263,22 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "250 g", ingredient: "rdeča leča" },
-      { amount: "1", ingredient: "krompir" },
-      { amount: "1", ingredient: "korenček" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "2 žlički", ingredient: "mleta kurkuma" },
-      { amount: "1.2 l", ingredient: "voda" },
-      { ingredient: "peteršilj" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
-      { ingredient: "limona" },
-      { ingredient: "kisla smetana" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "rdeča leča" },
+          { amount: "1", ingredient: "krompir" },
+          { amount: "1", ingredient: "korenček" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "2 žlički", ingredient: "mleta kurkuma" },
+          { amount: "1.2 l", ingredient: "voda" },
+          { ingredient: "peteršilj" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+          { ingredient: "limona" },
+          { ingredient: "kisla smetana" },
+        ],
+      },
     ],
     instructions: [
       "Dobro speri rdečo lečo. Olupi krompir, korenček in čebulo, nareži vse na kocke.",
@@ -256,18 +296,22 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "220 g", ingredient: "suha rjava leča" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "2 stroka", ingredient: "česen" },
-      { amount: "4 žličke", ingredient: "garam masala" },
-      { amount: "2 žlički", ingredient: "mleta kurkuma" },
-      { amount: "1 žlička", ingredient: "mleti koriander" },
-      { amount: "2 žlici", ingredient: "nariban svež invger" },
-      { amount: "200 ml", ingredient: "paradižnik" },
-      { amount: "500 ml", ingredient: "voda" },
-      { ingredient: "sol" },
-      { ingredient: "kisla smetana" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "220 g", ingredient: "suha rjava leča" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "2 stroka", ingredient: "česen" },
+          { amount: "4 žličke", ingredient: "garam masala" },
+          { amount: "2 žlički", ingredient: "mleta kurkuma" },
+          { amount: "1 žlička", ingredient: "mleti koriander" },
+          { amount: "2 žlici", ingredient: "nariban svež invger" },
+          { amount: "200 ml", ingredient: "paradižnik" },
+          { amount: "500 ml", ingredient: "voda" },
+          { ingredient: "sol" },
+          { ingredient: "kisla smetana" },
+        ],
+      },
     ],
     instructions: [
       "Namoči lečo po navodilih paketa.",
@@ -284,22 +328,26 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.Spanish,
     servings: 4,
-    ingredients: [
-      { amount: "1", ingredient: "cebolla" },
-      { amount: "3 dientes", ingredient: "ajo" },
-      { amount: "1", ingredient: "pimiento verde" },
-      { amount: "1", ingredient: "puerro" },
-      { amount: "3", ingredient: "tomate" },
-      { amount: "3", ingredient: "zanahoria" },
-      { amount: "4", ingredient: "patata" },
-      { amount: "400 g", ingredient: "carne de ternera" },
-      { amount: "1 cachito", ingredient: "morcilla" },
-      { amount: "200 ml", ingredient: "vino blanco" },
-      { ingredient: "agua" },
-      { ingredient: "hoja de laurel" },
-      { ingredient: "sal" },
-      { ingredient: "pimienta" },
-      { ingredient: "pimentón" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "cebolla" },
+          { amount: "3 dientes", ingredient: "ajo" },
+          { amount: "1", ingredient: "pimiento verde" },
+          { amount: "1", ingredient: "puerro" },
+          { amount: "3", ingredient: "tomate" },
+          { amount: "3", ingredient: "zanahoria" },
+          { amount: "4", ingredient: "patata" },
+          { amount: "400 g", ingredient: "carne de ternera" },
+          { amount: "1 cachito", ingredient: "morcilla" },
+          { amount: "200 ml", ingredient: "vino blanco" },
+          { ingredient: "agua" },
+          { ingredient: "hoja de laurel" },
+          { ingredient: "sal" },
+          { ingredient: "pimienta" },
+          { ingredient: "pimentón" },
+        ],
+      },
     ],
     instructions: [
       "Cortamos en cúbitos la cebolla, el puerro, los ajos y el pimiento verde, lo echamos a la olla y hacemos el sofrito.",
@@ -318,18 +366,22 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.Spanish,
     servings: 4,
-    ingredients: [
-      { amount: "400 g", ingredient: "garbanzos" },
-      { amount: "300 g", ingredient: "espinacas" },
-      { amount: "4", ingredient: "tomate" },
-      { amount: "2 dientes", ingredient: "ajo" },
-      { amount: "300 g", ingredient: "pavo" },
-      { ingredient: "agua" },
-      { ingredient: "hoja de laurel" },
-      { ingredient: "sal" },
-      { ingredient: "pimienta" },
-      { ingredient: "pimentón" },
-      { ingredient: "comino" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "400 g", ingredient: "garbanzos" },
+          { amount: "300 g", ingredient: "espinacas" },
+          { amount: "4", ingredient: "tomate" },
+          { amount: "2 dientes", ingredient: "ajo" },
+          { amount: "300 g", ingredient: "pavo" },
+          { ingredient: "agua" },
+          { ingredient: "hoja de laurel" },
+          { ingredient: "sal" },
+          { ingredient: "pimienta" },
+          { ingredient: "pimentón" },
+          { ingredient: "comino" },
+        ],
+      },
     ],
     instructions: [
       "Remoja los garbanzos durante la noche.",
@@ -346,19 +398,23 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "180 g", ingredient: "garbanzos crudos" },
-      { amount: "400 g", ingredient: "calamar crudo" },
-      { amount: "200 g", ingredient: "tomate triturado" },
-      { amount: "4 dientes", ingredient: "ajo" },
-      { amount: "1", ingredient: "cebolla" },
-      { ingredient: "limón" },
-      { amount: "100 ml", ingredient: "vino blanco" },
-      { amount: "1 cuchara", ingredient: "perejil fresco" },
-      { amount: "2 cucharadas", ingredient: "pimentón" },
-      { amount: "2", ingredient: "hoja de laurel" },
-      { amount: "2 cucharadas", ingredient: "pimienta molida" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "180 g", ingredient: "garbanzos crudos" },
+          { amount: "400 g", ingredient: "calamar crudo" },
+          { amount: "200 g", ingredient: "tomate triturado" },
+          { amount: "4 dientes", ingredient: "ajo" },
+          { amount: "1", ingredient: "cebolla" },
+          { ingredient: "limón" },
+          { amount: "100 ml", ingredient: "vino blanco" },
+          { amount: "1 cuchara", ingredient: "perejil fresco" },
+          { amount: "2 cucharadas", ingredient: "pimentón" },
+          { amount: "2", ingredient: "hoja de laurel" },
+          { amount: "2 cucharadas", ingredient: "pimienta molida" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Remoja los garbanzos durante la noche.",
@@ -377,21 +433,25 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "170 g", ingredient: "lentejas crudas" },
-      { amount: "60 g", ingredient: "chorizo" },
-      { amount: "½", ingredient: "pimiento verde" },
-      { amount: "½", ingredient: "pimiento verde" },
-      { amount: "½", ingredient: "pimiento rojo" },
-      { amount: "3", ingredient: "zanahoria" },
-      { amount: "1", ingredient: "puerro" },
-      { amount: "1", ingredient: "cebolla" },
-      { amount: "4 dientes", ingredient: "ajo" },
-      { amount: "4", ingredient: "tomate" },
-      { amount: "2 cucharaditas", ingredient: "pimentón" },
-      { amount: "1", ingredient: "hoja de laurel" },
-      { ingredient: "agua" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "170 g", ingredient: "lentejas crudas" },
+          { amount: "60 g", ingredient: "chorizo" },
+          { amount: "½", ingredient: "pimiento verde" },
+          { amount: "½", ingredient: "pimiento verde" },
+          { amount: "½", ingredient: "pimiento rojo" },
+          { amount: "3", ingredient: "zanahoria" },
+          { amount: "1", ingredient: "puerro" },
+          { amount: "1", ingredient: "cebolla" },
+          { amount: "4 dientes", ingredient: "ajo" },
+          { amount: "4", ingredient: "tomate" },
+          { amount: "2 cucharaditas", ingredient: "pimentón" },
+          { amount: "1", ingredient: "hoja de laurel" },
+          { ingredient: "agua" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Remoja las lentejas según las instrucciones del paquete.",
@@ -408,14 +468,18 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Spanish,
     servings: 4,
-    ingredients: [
-      { amount: "800 g", ingredient: "tomate pera" },
-      { amount: "1", ingredient: "ajo" },
-      { amount: "2", ingredient: "huevo" },
-      { ingredient: "pan" },
-      { ingredient: "aceite" },
-      { ingredient: "sal" },
-      { ingredient: "jamón ibérico" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "800 g", ingredient: "tomate pera" },
+          { amount: "1", ingredient: "ajo" },
+          { amount: "2", ingredient: "huevo" },
+          { ingredient: "pan" },
+          { ingredient: "aceite" },
+          { ingredient: "sal" },
+          { ingredient: "jamón ibérico" },
+        ],
+      },
     ],
     instructions: [
       "Bate los tomates muy maduros durante 2-3 minutos.",
@@ -430,21 +494,25 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "200 g", ingredient: "ješprenj" },
-      { amount: "350 g", ingredient: "kos prekajene šunke" },
-      { amount: "2", ingredient: "korenček" },
-      { amount: "2", ingredient: "čebula" },
-      { amount: "1", ingredient: "česen" },
-      { amount: "100 g", ingredient: "rjav fižol" },
-      { ingredient: "voda" },
-      { ingredient: "peteršilj (vejice)" },
-      { ingredient: "peteršilj (korenina)" },
-      { ingredient: "gomolj zelene" },
-      { ingredient: "por" },
-      { ingredient: "lovorjev list" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "ješprenj" },
+          { amount: "350 g", ingredient: "kos prekajene šunke" },
+          { amount: "2", ingredient: "korenček" },
+          { amount: "2", ingredient: "čebula" },
+          { amount: "1", ingredient: "česen" },
+          { amount: "100 g", ingredient: "rjav fižol" },
+          { ingredient: "voda" },
+          { ingredient: "peteršilj (vejice)" },
+          { ingredient: "peteršilj (korenina)" },
+          { ingredient: "gomolj zelene" },
+          { ingredient: "por" },
+          { ingredient: "lovorjev list" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Fižol preberemo, speremo pod tekočo vodo, stresemo v skledo in zalijemo z zadostno količino hladne vode. Fižol, ki se ne potopi, polovimo in zavržemo. Fižol namakamo vsaj 8 ur, najbolje je, da ga namakamo kar čez noč.",
@@ -461,16 +529,20 @@ export const recipes: IRecipe[] = [
     title: "Bučna juha",
     category: Category.Soup,
     language: Language.Slovenian,
-    ingredients: [
-      { ingredient: "buča hokaido" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "2 žlici", ingredient: "maslo" },
-      { amount: "½ žličke", ingredient: "kurkuma" },
-      { amount: "½ žličke", ingredient: "dimljena paprika" },
-      { ingredient: "muškatni orešček" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
-      { ingredient: "kisla smetana" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { ingredient: "buča hokaido" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "2 žlici", ingredient: "maslo" },
+          { amount: "½ žličke", ingredient: "kurkuma" },
+          { amount: "½ žličke", ingredient: "dimljena paprika" },
+          { ingredient: "muškatni orešček" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+          { ingredient: "kisla smetana" },
+        ],
+      },
     ],
     instructions: [
       "Bučo operemo, odrežemo konce, prepolovimo in odstranimo semenje, nato razrežemo na krhlje.",
@@ -488,15 +560,19 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 3,
-    ingredients: [
-      { amount: "500 g", ingredient: "korenček" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "2 stroka", ingredient: "česen" },
-      { amount: "2 žlici", ingredient: "kurkuma v prahu" },
-      { amount: "1 žlica", ingredient: "ingver v prahu" },
-      { amount: "1 žlica", ingredient: "jabolčni kis" },
-      { amount: "700 ml", ingredient: "jušna osnova" },
-      { ingredient: "kisla smetana" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "korenček" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "2 stroka", ingredient: "česen" },
+          { amount: "2 žlici", ingredient: "kurkuma v prahu" },
+          { amount: "1 žlica", ingredient: "ingver v prahu" },
+          { amount: "1 žlica", ingredient: "jabolčni kis" },
+          { amount: "700 ml", ingredient: "jušna osnova" },
+          { ingredient: "kisla smetana" },
+        ],
+      },
     ],
     instructions: [
       "V večjem loncu popražite nasekljano čebulo in kuhajte toliko časa, da postekleni. Nato dodajte še sesekljan česen in kuhajte še par minut. Med tem časom olupite korenje in ga narežite na kose ter stresite v lonec.",
@@ -516,14 +592,18 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.Slovenian,
     servings: 6,
-    ingredients: [
-      { amount: "500 g", ingredient: "brokoli" },
-      { amount: "5", ingredient: "korenček" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "2 stroka", ingredient: "česen" },
-      { amount: "1500 ml", ingredient: "voda" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "brokoli" },
+          { amount: "5", ingredient: "korenček" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "2 stroka", ingredient: "česen" },
+          { amount: "1500 ml", ingredient: "voda" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Brokoli očistimo in ‘nacvetkamo’, uporabimo tudi steblo. Korenje očistimo in narežemo na kolobarje. Čebulo in česen naseljamo.",
@@ -542,18 +622,22 @@ export const recipes: IRecipe[] = [
     category: Category.Soup,
     language: Language.English,
     servings: 6,
-    ingredients: [
-      { amount: "450 g", ingredient: "broccoli" },
-      { amount: "3", ingredient: "celery stem" },
-      { amount: "50 g", ingredient: "baby spinach" },
-      { amount: "1", ingredient: "onion" },
-      { amount: "4 cloves", ingredient: "garlic" },
-      { amount: "200 g", ingredient: "dry white beans" },
-      { amount: "140 g", ingredient: "cashew" },
-      { amount: "100 ml", ingredient: "white wine" },
-      { amount: "800 ml", ingredient: "veggie broth" },
-      { ingredient: "pepper" },
-      { ingredient: "salt" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "450 g", ingredient: "broccoli" },
+          { amount: "3", ingredient: "celery stem" },
+          { amount: "50 g", ingredient: "baby spinach" },
+          { amount: "1", ingredient: "onion" },
+          { amount: "4 cloves", ingredient: "garlic" },
+          { amount: "200 g", ingredient: "dry white beans" },
+          { amount: "140 g", ingredient: "cashew" },
+          { amount: "100 ml", ingredient: "white wine" },
+          { amount: "800 ml", ingredient: "veggie broth" },
+          { ingredient: "pepper" },
+          { ingredient: "salt" },
+        ],
+      },
     ],
     instructions: [
       "Soak white beans in a water overnight. The next day cook beans until soft and set aside.",
@@ -572,12 +656,16 @@ export const recipes: IRecipe[] = [
     title: "Guacamole",
     category: Category.Spread,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "2", ingredient: "aguacate" },
-      { amount: "1", ingredient: "cebolla roja" },
-      { amount: "1", ingredient: "lima" },
-      { ingredient: "sal" },
-      { ingredient: "pimienta" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2", ingredient: "aguacate" },
+          { amount: "1", ingredient: "cebolla roja" },
+          { amount: "1", ingredient: "lima" },
+          { ingredient: "sal" },
+          { ingredient: "pimienta" },
+        ],
+      },
     ],
     instructions: [
       "Machacamos el aguacate con un tenedor en un bol.",
@@ -591,11 +679,15 @@ export const recipes: IRecipe[] = [
     category: Category.Spread,
     language: Language.English,
     servings: 2,
-    ingredients: [
-      { amount: "1", ingredient: "avocado" },
-      { amount: "2", ingredient: "eggs" },
-      { amount: "80 g", ingredient: "cheese spread" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "avocado" },
+          { amount: "2", ingredient: "eggs" },
+          { amount: "80 g", ingredient: "cheese spread" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "Cut avocado and hard-boiled eggs to small pieces.",
@@ -608,14 +700,18 @@ export const recipes: IRecipe[] = [
     title: "Hummus",
     category: Category.Spread,
     language: Language.English,
-    ingredients: [
-      { amount: "250 g", ingredient: "cooked chickpeas" },
-      { amount: "1", ingredient: "lemon" },
-      { amount: "30 ml", ingredient: "tahini" },
-      { amount: "15 ml", ingredient: "olive oil" },
-      { amount: "2 cloves", ingredient: "garlic" },
-      { amount: "½ tsp", ingredient: "salt" },
-      { amount: "60 ml", ingredient: "cold water" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "cooked chickpeas" },
+          { amount: "1", ingredient: "lemon" },
+          { amount: "30 ml", ingredient: "tahini" },
+          { amount: "15 ml", ingredient: "olive oil" },
+          { amount: "2 cloves", ingredient: "garlic" },
+          { amount: "½ tsp", ingredient: "salt" },
+          { amount: "60 ml", ingredient: "cold water" },
+        ],
+      },
     ],
     instructions: [
       "To cook chickpeas from scratch, soak 125 g of dry chickpeas in the water during the night. The next day rinse chickpeas and cook them until soft, then let them cool down.",
@@ -630,14 +726,18 @@ export const recipes: IRecipe[] = [
     title: "Tzatziki",
     category: Category.Spread,
     language: Language.English,
-    ingredients: [
-      { amount: "200 g", ingredient: "Greek yogurt" },
-      { amount: "1 clove", ingredient: "garlic" },
-      { amount: "1", ingredient: "cucumber" },
-      { amount: "½", ingredient: "lemon" },
-      { amount: "2 spoons", ingredient: "olive oil" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "Greek yogurt" },
+          { amount: "1 clove", ingredient: "garlic" },
+          { amount: "1", ingredient: "cucumber" },
+          { amount: "½", ingredient: "lemon" },
+          { amount: "2 spoons", ingredient: "olive oil" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "Peel and great a cucumber. Squeeze to remove liquid from the greeted cucumber.",
@@ -650,10 +750,14 @@ export const recipes: IRecipe[] = [
     title: "Velikonočni hren",
     category: Category.Spread,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "3", ingredient: "jajce" },
-      { amount: "2", ingredient: "jabolko" },
-      { amount: "100 g", ingredient: "kremni hren" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "3", ingredient: "jajce" },
+          { amount: "2", ingredient: "jabolko" },
+          { amount: "100 g", ingredient: "kremni hren" },
+        ],
+      },
     ],
     instructions: [
       "Olupi jabolka ter jih na drobno naribaj.",
@@ -666,14 +770,18 @@ export const recipes: IRecipe[] = [
     title: "Mezcla de atún, maíz y pepinillos",
     category: Category.Spread,
     language: Language.Spanish,
-    ingredients: [
-      { ingredient: "atún" },
-      { ingredient: "maíz" },
-      { ingredient: "pepinillos" },
-      { ingredient: "mayonesa" },
-      { ingredient: "sal" },
-      { ingredient: "pimienta" },
-      { ingredient: "lechuga" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { ingredient: "atún" },
+          { ingredient: "maíz" },
+          { ingredient: "pepinillos" },
+          { ingredient: "mayonesa" },
+          { ingredient: "sal" },
+          { ingredient: "pimienta" },
+          { ingredient: "lechuga" },
+        ],
+      },
     ],
     instructions: [
       "Mezcla atún, maíz, pepinillos cortado, mayonesa, sal y pimienta.",
@@ -685,11 +793,15 @@ export const recipes: IRecipe[] = [
     title: "Pasta de aceitunas",
     category: Category.Spread,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "2 latas", ingredient: "aceitunas verdes" },
-      { ingredient: "limón" },
-      { ingredient: "orégano" },
-      { ingredient: "tomillo" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2 latas", ingredient: "aceitunas verdes" },
+          { ingredient: "limón" },
+          { ingredient: "orégano" },
+          { ingredient: "tomillo" },
+        ],
+      },
     ],
     instructions: [
       "Escurrir las aceitunas bien y pasar aceitunas sin hueso por la batidora.",
@@ -703,12 +815,16 @@ export const recipes: IRecipe[] = [
     title: "Marmelada de pimientos",
     category: Category.Spread,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "300 g", ingredient: "pimiento rojo" },
-      { amount: "100 g", ingredient: "pimiento verde" },
-      { amount: "200 g", ingredient: "azúcar" },
-      { amount: "100 g", ingredient: "agua" },
-      { amount: "50 g", ingredient: "vinagre" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "300 g", ingredient: "pimiento rojo" },
+          { amount: "100 g", ingredient: "pimiento verde" },
+          { amount: "200 g", ingredient: "azúcar" },
+          { amount: "100 g", ingredient: "agua" },
+          { amount: "50 g", ingredient: "vinagre" },
+        ],
+      },
     ],
     instructions: [
       "Picar los pimientos pequeños (picar en picadora o sino utilizar batidora).",
@@ -723,12 +839,16 @@ export const recipes: IRecipe[] = [
     category: Category.Spread,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "1", ingredient: "jajce" },
-      { amount: "100 g", ingredient: "poli salama" },
-      { amount: "4", ingredient: "kisla kumarica" },
-      { amount: "1 žlica", ingredient: "majoneza" },
-      { ingredient: "poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "jajce" },
+          { amount: "100 g", ingredient: "poli salama" },
+          { amount: "4", ingredient: "kisla kumarica" },
+          { amount: "1 žlica", ingredient: "majoneza" },
+          { ingredient: "poper" },
+        ],
+      },
     ],
     instructions: [
       "Zmelji poli salamo, kisle kumarice ter trdo kuhano jajce.",
@@ -741,21 +861,25 @@ export const recipes: IRecipe[] = [
     category: Category.Spread,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "230 g", ingredient: "file tune v oljčnem olju" },
-      { amount: "160 g", ingredient: "tuna v olju" },
-      { amount: "½", ingredient: "steblo zelene" },
-      { amount: "½", ingredient: "rdeča čebula" },
-      { amount: "1", ingredient: "kisla kumarica" },
-      { amount: "1 žlica", ingredient: "sesekljan peteršilj" },
-      { amount: "1 žlica", ingredient: "tekočine kislih kumaric" },
-      { amount: "1 žlička", ingredient: "paprika v prahu" },
-      { amount: "½ žličke", ingredient: "kajenski poper" },
-      { amount: "100 g", ingredient: "grški jogurt" },
-      { amount: "2 žlici", ingredient: "majoneza" },
-      { amount: "½ žličke", ingredient: "dijonska gorčica" },
-      { amount: "½ žličke", ingredient: "nastrgana limonina lupinica" },
-      { amount: "1 žlička", ingredient: "limonin sok" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "230 g", ingredient: "file tune v oljčnem olju" },
+          { amount: "160 g", ingredient: "tuna v olju" },
+          { amount: "½", ingredient: "steblo zelene" },
+          { amount: "½", ingredient: "rdeča čebula" },
+          { amount: "1", ingredient: "kisla kumarica" },
+          { amount: "1 žlica", ingredient: "sesekljan peteršilj" },
+          { amount: "1 žlica", ingredient: "tekočine kislih kumaric" },
+          { amount: "1 žlička", ingredient: "paprika v prahu" },
+          { amount: "½ žličke", ingredient: "kajenski poper" },
+          { amount: "100 g", ingredient: "grški jogurt" },
+          { amount: "2 žlici", ingredient: "majoneza" },
+          { amount: "½ žličke", ingredient: "dijonska gorčica" },
+          { amount: "½ žličke", ingredient: "nastrgana limonina lupinica" },
+          { amount: "1 žlička", ingredient: "limonin sok" },
+        ],
+      },
     ],
     instructions: [
       "Tuno iz konzerve odcedimo.",
@@ -772,17 +896,21 @@ export const recipes: IRecipe[] = [
     title: "Veganski tatarec",
     category: Category.Spread,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "110 g", ingredient: "suha rjava leča" },
-      { amount: "130 g", ingredient: "vloženi sušeni paradižnik" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "1", ingredient: "česen" },
-      { amount: "2 žlički", ingredient: "gorčica" },
-      { amount: "ščepec", ingredient: "mleta kumina" },
-      { amount: "ščepec", ingredient: "sladka paprika" },
-      { amount: "ščepec", ingredient: "poper" },
-      { amount: "2 žlici", ingredient: "peteršilj" },
-      { amount: "1 žlica", ingredient: "olja" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "110 g", ingredient: "suha rjava leča" },
+          { amount: "130 g", ingredient: "vloženi sušeni paradižnik" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "1", ingredient: "česen" },
+          { amount: "2 žlički", ingredient: "gorčica" },
+          { amount: "ščepec", ingredient: "mleta kumina" },
+          { amount: "ščepec", ingredient: "sladka paprika" },
+          { amount: "ščepec", ingredient: "poper" },
+          { amount: "2 žlici", ingredient: "peteršilj" },
+          { amount: "1 žlica", ingredient: "olja" },
+        ],
+      },
     ],
     instructions: [
       "Namoči lečo po navodilih paketa.",
@@ -800,19 +928,23 @@ export const recipes: IRecipe[] = [
     title: "Mojo",
     category: Category.Sauce,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "1 l", ingredient: "agua" },
-      { amount: "8 dientes", ingredient: "ajo" },
-      { amount: "1 cucharita", ingredient: "sal" },
-      { amount: "5 cucharas", ingredient: "orégano" },
-      { amount: "3 cucharas", ingredient: "perejil" },
-      { amount: "2 cucharas", ingredient: "romero" },
-      { amount: "1 cuchara", ingredient: "tomillo" },
-      { amount: "1 cuchara", ingredient: "cumino" },
-      { amount: "1 cuchara", ingredient: "pimienta cayena" },
-      { amount: "4", ingredient: "hoja de laurel" },
-      { amount: "150 ml", ingredient: "vinagre" },
-      { amount: "500 ml", ingredient: "aceite de oliva" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 l", ingredient: "agua" },
+          { amount: "8 dientes", ingredient: "ajo" },
+          { amount: "1 cucharita", ingredient: "sal" },
+          { amount: "5 cucharas", ingredient: "orégano" },
+          { amount: "3 cucharas", ingredient: "perejil" },
+          { amount: "2 cucharas", ingredient: "romero" },
+          { amount: "1 cuchara", ingredient: "tomillo" },
+          { amount: "1 cuchara", ingredient: "cumino" },
+          { amount: "1 cuchara", ingredient: "pimienta cayena" },
+          { amount: "4", ingredient: "hoja de laurel" },
+          { amount: "150 ml", ingredient: "vinagre" },
+          { amount: "500 ml", ingredient: "aceite de oliva" },
+        ],
+      },
     ],
     instructions: [
       "Pon agua, ajo y todas especias a un bol. Mezcla todo con una batidora.",
@@ -824,16 +956,20 @@ export const recipes: IRecipe[] = [
     title: "Pisto",
     category: Category.Sauce,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "5", ingredient: "tomate" },
-      { amount: "1", ingredient: "berenjena" },
-      { amount: "1", ingredient: "calabacín" },
-      { amount: "2", ingredient: "cebolla" },
-      { amount: "1", ingredient: "pimiento rojo" },
-      { amount: "1", ingredient: "pimiento verde" },
-      { amount: "5 dientes", ingredient: "ajo" },
-      { ingredient: "pimentón" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "5", ingredient: "tomate" },
+          { amount: "1", ingredient: "berenjena" },
+          { amount: "1", ingredient: "calabacín" },
+          { amount: "2", ingredient: "cebolla" },
+          { amount: "1", ingredient: "pimiento rojo" },
+          { amount: "1", ingredient: "pimiento verde" },
+          { amount: "5 dientes", ingredient: "ajo" },
+          { ingredient: "pimentón" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Corta los tomates, el calabacín, la berenjena, el pimiento rojo y el verde. Pica finamente la cebolla y los dientes de ajo.",
@@ -848,13 +984,17 @@ export const recipes: IRecipe[] = [
     title: "Pomarančna marmelada",
     category: Category.Spread,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "3", ingredient: "pomaranča" },
-      { amount: "200 ml", ingredient: "voda" },
-      { amount: "250 g", ingredient: "sladkor" },
-      { amount: "10 g", ingredient: "želatina" },
-      { amount: "1", ingredient: "limona" },
-      { ingredient: "cimet" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "3", ingredient: "pomaranča" },
+          { amount: "200 ml", ingredient: "voda" },
+          { amount: "250 g", ingredient: "sladkor" },
+          { amount: "10 g", ingredient: "želatina" },
+          { amount: "1", ingredient: "limona" },
+          { ingredient: "cimet" },
+        ],
+      },
     ],
     instructions: [
       "Pomaranči olupi lupinico. Pazi, da ne olupiš belega dela pomaranče!",
@@ -872,11 +1012,15 @@ export const recipes: IRecipe[] = [
     title: "Borovničeva marmelada s chia semeni",
     category: Category.Spread,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "200 g", ingredient: "zamrznjene borovnice" },
-      { amount: "2 žlici", ingredient: "chia semena" },
-      { amount: "2 žlici", ingredient: "sladkor" },
-      { amount: "½", ingredient: "limona" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "zamrznjene borovnice" },
+          { amount: "2 žlici", ingredient: "chia semena" },
+          { amount: "2 žlici", ingredient: "sladkor" },
+          { amount: "½", ingredient: "limona" },
+        ],
+      },
     ],
     instructions: [
       "Borovnice stresi v kozico in kuhaj toliko časa, da se zmehčajo, sok pa v veliki meri pokuha.",
@@ -894,15 +1038,19 @@ export const recipes: IRecipe[] = [
     title: "Marinara omaka",
     category: Category.Pasta,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "300 g", ingredient: "passata" },
-      { amount: "10", ingredient: "paradižnik" },
-      { amount: "4", ingredient: "čebula" },
-      { amount: "6 strokov", ingredient: "česen" },
-      { ingredient: "bazilika" },
-      { amount: "250 ml", ingredient: "rdeče vino" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "300 g", ingredient: "passata" },
+          { amount: "10", ingredient: "paradižnik" },
+          { amount: "4", ingredient: "čebula" },
+          { amount: "6 strokov", ingredient: "česen" },
+          { ingredient: "bazilika" },
+          { amount: "250 ml", ingredient: "rdeče vino" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+        ],
+      },
     ],
     instructions: [
       "Na malo olja in srednji temperaturi prepraži čebulo z malo soli in popra (10-12 minut).",
@@ -919,13 +1067,17 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "250 g", ingredient: "testenine" },
-      { amount: "300 ml", ingredient: "marinara omaka" },
-      { amount: "100 g", ingredient: "šunka" },
-      { ingredient: "grah" },
-      { ingredient: "origano" },
-      { ingredient: "bazilika" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "testenine" },
+          { amount: "300 ml", ingredient: "marinara omaka" },
+          { amount: "100 g", ingredient: "šunka" },
+          { ingredient: "grah" },
+          { ingredient: "origano" },
+          { ingredient: "bazilika" },
+        ],
+      },
     ],
     instructions: [
       "Na malo olja prepraži šalotko, nato grah in šunko.",
@@ -939,13 +1091,17 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "250 g", ingredient: "testenine" },
-      { amount: "300 ml", ingredient: "marinara omaka" },
-      { amount: "1", ingredient: "čebula" },
-      { ingredient: "origano" },
-      { ingredient: "bazilika" },
-      { ingredient: "kajenski poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "testenine" },
+          { amount: "300 ml", ingredient: "marinara omaka" },
+          { amount: "1", ingredient: "čebula" },
+          { ingredient: "origano" },
+          { ingredient: "bazilika" },
+          { ingredient: "kajenski poper" },
+        ],
+      },
     ],
     instructions: ["Prepraži čebulo, nato dodaj omako marinara in začimbe.", "Kuhaj še 10 minut."],
   },
@@ -955,14 +1111,18 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "250 g", ingredient: "testenine" },
-      { amount: "300 ml", ingredient: "marinara omaka" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "100 g", ingredient: "slanina" },
-      { ingredient: "origano" },
-      { ingredient: "bazilika" },
-      { ingredient: "kajenski poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "testenine" },
+          { amount: "300 ml", ingredient: "marinara omaka" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "100 g", ingredient: "slanina" },
+          { ingredient: "origano" },
+          { ingredient: "bazilika" },
+          { ingredient: "kajenski poper" },
+        ],
+      },
     ],
     instructions: [
       "Prepraži čebulo in slanino, nato dodaj omako marinara in začimbe.",
@@ -975,14 +1135,18 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "500 g", ingredient: "testenine" },
-      { amount: "300 g", ingredient: "mleto meso" },
-      { amount: "10", ingredient: "paradižnik" },
-      { amount: "4", ingredient: "čebula" },
-      { ingredient: "origano" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "testenine" },
+          { amount: "300 g", ingredient: "mleto meso" },
+          { amount: "10", ingredient: "paradižnik" },
+          { amount: "4", ingredient: "čebula" },
+          { ingredient: "origano" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+        ],
+      },
     ],
     instructions: [
       "Popraži nasekljano čebulo.",
@@ -1006,16 +1170,20 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "250 g", ingredient: "testenine" },
-      { amount: "200 ml", ingredient: "smetana za kuhanje" },
-      { amount: "100 g", ingredient: "slanina" },
-      { amount: "250 g", ingredient: "šampinjoni" },
-      { amount: "½", ingredient: "bučka" },
-      { amount: "2 stroka", ingredient: "česen" },
-      { ingredient: "peteršilj" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "testenine" },
+          { amount: "200 ml", ingredient: "smetana za kuhanje" },
+          { amount: "100 g", ingredient: "slanina" },
+          { amount: "250 g", ingredient: "šampinjoni" },
+          { amount: "½", ingredient: "bučka" },
+          { amount: "2 stroka", ingredient: "česen" },
+          { ingredient: "peteršilj" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+        ],
+      },
     ],
     instructions: [
       "Nareži šampinjone, bučko, slanino in nasekljaj česen.",
@@ -1030,16 +1198,20 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "250 g", ingredient: "testenine" },
-      { amount: "200 ml", ingredient: "smetana za kuhanje" },
-      { amount: "1 strok", ingredient: "česen" },
-      { ingredient: "bazilika" },
-      { ingredient: "origano" },
-      { ingredient: "paprika v prahu" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
-      { ingredient: "sir" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "testenine" },
+          { amount: "200 ml", ingredient: "smetana za kuhanje" },
+          { amount: "1 strok", ingredient: "česen" },
+          { ingredient: "bazilika" },
+          { ingredient: "origano" },
+          { ingredient: "paprika v prahu" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+          { ingredient: "sir" },
+        ],
+      },
     ],
     instructions: [
       "V ponev nalij smetano za kuhanje, ter dodaj začimbe ter sir.",
@@ -1051,14 +1223,18 @@ export const recipes: IRecipe[] = [
     title: "Pesto genovese",
     category: Category.Pasta,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "120 g", ingredient: "bazilika" },
-      { amount: "80 g", ingredient: "parmezan" },
-      { amount: "2 stroka", ingredient: "česen" },
-      { amount: "60 g", ingredient: "pinjole" },
-      { amount: "2 ščepca", ingredient: "sol" },
-      { amount: "2 ščepca", ingredient: "poper" },
-      { amount: "8 žlic", ingredient: "olivno olje" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "120 g", ingredient: "bazilika" },
+          { amount: "80 g", ingredient: "parmezan" },
+          { amount: "2 stroka", ingredient: "česen" },
+          { amount: "60 g", ingredient: "pinjole" },
+          { amount: "2 ščepca", ingredient: "sol" },
+          { amount: "2 ščepca", ingredient: "poper" },
+          { amount: "8 žlic", ingredient: "olivno olje" },
+        ],
+      },
     ],
     instructions: [
       "Liste bazilike operi in dobro osuši.",
@@ -1074,14 +1250,18 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "250 g", ingredient: "testenine" },
-      { amount: "300 ml", ingredient: "smetana za kuhanje" },
-      { amount: "100 g", ingredient: "panceta" },
-      { amount: "1", ingredient: "por" },
-      { amount: "4 stroki", ingredient: "česen" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "testenine" },
+          { amount: "300 ml", ingredient: "smetana za kuhanje" },
+          { amount: "100 g", ingredient: "panceta" },
+          { amount: "1", ingredient: "por" },
+          { amount: "4 stroki", ingredient: "česen" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Popraži na koščke narezano panceto, da postane rahlo hrustljava in jo odstrani iz ponve.",
@@ -1098,16 +1278,20 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "250 g", ingredient: "pasta" },
-      { amount: "60 g", ingredient: "chorizo" },
-      { amount: "200 ml", ingredient: "tomate frito" },
-      { amount: "½", ingredient: "cebolla" },
-      { amount: "2 dientes", ingredient: "ajo" },
-      { ingredient: "orégano" },
-      { ingredient: "pimienta" },
-      { ingredient: "sal" },
-      { ingredient: "queso parmesano" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "pasta" },
+          { amount: "60 g", ingredient: "chorizo" },
+          { amount: "200 ml", ingredient: "tomate frito" },
+          { amount: "½", ingredient: "cebolla" },
+          { amount: "2 dientes", ingredient: "ajo" },
+          { ingredient: "orégano" },
+          { ingredient: "pimienta" },
+          { ingredient: "sal" },
+          { ingredient: "queso parmesano" },
+        ],
+      },
     ],
     instructions: [
       "Cocina la pasta.",
@@ -1124,14 +1308,18 @@ export const recipes: IRecipe[] = [
     category: Category.Pasta,
     language: Language.English,
     servings: 2,
-    ingredients: [
-      { amount: "400 g", ingredient: "gnocchi" },
-      { amount: "150 g", ingredient: "feta cheese" },
-      { amount: "120 g", ingredient: "frozen spinach cubes" },
-      { amount: "150 g", ingredient: "cherry tomato" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
-      { ingredient: "olive oil" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "400 g", ingredient: "gnocchi" },
+          { amount: "150 g", ingredient: "feta cheese" },
+          { amount: "120 g", ingredient: "frozen spinach cubes" },
+          { amount: "150 g", ingredient: "cherry tomato" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+          { ingredient: "olive oil" },
+        ],
+      },
     ],
     instructions: [
       "Prepare the tomatoes, feta and spinach cubes in a baking dish. Place the feta in the center of the dish, then coat everything in olive oil and spices.",
@@ -1148,19 +1336,23 @@ export const recipes: IRecipe[] = [
     category: Category.Salad,
     language: Language.English,
     servings: 2,
-    ingredients: [
-      { ingredient: "lettuce" },
-      { amount: "250 g", ingredient: "chicken" },
-      { amount: "100 g", ingredient: "bacon" },
-      { amount: "10", ingredient: "cherry tomatoes" },
-      { amount: "½", ingredient: "red onion" },
-      { amount: "1", ingredient: "avocado" },
-      { amount: "4 slices", ingredient: "bread" },
-      { ingredient: "honey" },
-      { ingredient: "dijon mustard" },
-      { ingredient: "olive oil" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { ingredient: "lettuce" },
+          { amount: "250 g", ingredient: "chicken" },
+          { amount: "100 g", ingredient: "bacon" },
+          { amount: "10", ingredient: "cherry tomatoes" },
+          { amount: "½", ingredient: "red onion" },
+          { amount: "1", ingredient: "avocado" },
+          { amount: "4 slices", ingredient: "bread" },
+          { ingredient: "honey" },
+          { ingredient: "dijon mustard" },
+          { ingredient: "olive oil" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "In a small bowl, mix the honey, mustard, oil, garlic, salt, and pepper.",
@@ -1178,18 +1370,22 @@ export const recipes: IRecipe[] = [
     category: Category.Salad,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "400 g", ingredient: "riž" },
-      { amount: "250 g", ingredient: "češnjev paradižnik" },
-      { amount: "1", ingredient: "rdeča čebula" },
-      { amount: "1", ingredient: "paprika" },
-      { amount: "1", ingredient: "kumara" },
-      { amount: "1 konzerva", ingredient: "čičerika" },
-      { amount: "½ konzerve", ingredient: "črne olive" },
-      { amount: "100 g", ingredient: "feta sir" },
-      { amount: "1", ingredient: "limona" },
-      { ingredient: "bazilika" },
-      { ingredient: "oljčno olje" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "400 g", ingredient: "riž" },
+          { amount: "250 g", ingredient: "češnjev paradižnik" },
+          { amount: "1", ingredient: "rdeča čebula" },
+          { amount: "1", ingredient: "paprika" },
+          { amount: "1", ingredient: "kumara" },
+          { amount: "1 konzerva", ingredient: "čičerika" },
+          { amount: "½ konzerve", ingredient: "črne olive" },
+          { amount: "100 g", ingredient: "feta sir" },
+          { amount: "1", ingredient: "limona" },
+          { ingredient: "bazilika" },
+          { ingredient: "oljčno olje" },
+        ],
+      },
     ],
     instructions: [
       "Skuhaj riž in pusti, da se ohladi.",
@@ -1205,16 +1401,20 @@ export const recipes: IRecipe[] = [
     category: Category.Salad,
     language: Language.Slovenian,
     servings: 5,
-    ingredients: [
-      { amount: "500 g", ingredient: "testenine (fusili)" },
-      { amount: "2 lončka", ingredient: "rdeči pesto" },
-      { ingredient: "češnjev paradižnik" },
-      { ingredient: "mini mocarela" },
-      { ingredient: "bazilika" },
-      { ingredient: "limona" },
-      { ingredient: "parmezan" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "testenine (fusili)" },
+          { amount: "2 lončka", ingredient: "rdeči pesto" },
+          { ingredient: "češnjev paradižnik" },
+          { ingredient: "mini mocarela" },
+          { ingredient: "bazilika" },
+          { ingredient: "limona" },
+          { ingredient: "parmezan" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+        ],
+      },
     ],
     instructions: [
       "Skuhaj testenine al dente in pusti, da se ohladijo.",
@@ -1232,18 +1432,22 @@ export const recipes: IRecipe[] = [
     category: Category.Salad,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "400 g", ingredient: "testenine (fusili)" },
-      { amount: "1 lonček", ingredient: "kisla smetana" },
-      { amount: "240 g", ingredient: "tuna iz konzerve" },
-      { amount: "140 g", ingredient: "koruza iz konzerve" },
-      { ingredient: "zelena paprika" },
-      { ingredient: "rdeča paprika" },
-      { ingredient: "mlada čebula" },
-      { ingredient: "kumara" },
-      { ingredient: "olivno olje" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "400 g", ingredient: "testenine (fusili)" },
+          { amount: "1 lonček", ingredient: "kisla smetana" },
+          { amount: "240 g", ingredient: "tuna iz konzerve" },
+          { amount: "140 g", ingredient: "koruza iz konzerve" },
+          { ingredient: "zelena paprika" },
+          { ingredient: "rdeča paprika" },
+          { ingredient: "mlada čebula" },
+          { ingredient: "kumara" },
+          { ingredient: "olivno olje" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+        ],
+      },
     ],
     instructions: [
       "Skuhaj testenine al dente in pusti, da se ohladijo.",
@@ -1259,16 +1463,20 @@ export const recipes: IRecipe[] = [
     category: Category.Salad,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "3", ingredient: "patata" },
-      { amount: "100 g", ingredient: "atún" },
-      { amount: "150 g", ingredient: "aceitunas" },
-      { amount: "½", ingredient: "cebolla" },
-      { amount: "2", ingredient: "huevo" },
-      { ingredient: "pimiento del piquillo" },
-      { ingredient: "mayonesa" },
-      { ingredient: "pimienta" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "3", ingredient: "patata" },
+          { amount: "100 g", ingredient: "atún" },
+          { amount: "150 g", ingredient: "aceitunas" },
+          { amount: "½", ingredient: "cebolla" },
+          { amount: "2", ingredient: "huevo" },
+          { ingredient: "pimiento del piquillo" },
+          { ingredient: "mayonesa" },
+          { ingredient: "pimienta" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Cocine huevos duros 10 minutos.",
@@ -1284,17 +1492,21 @@ export const recipes: IRecipe[] = [
     category: Category.Salad,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "300 g", ingredient: "lentejas" },
-      { amount: "250 g", ingredient: "tomate" },
-      { amount: "200 g", ingredient: "queso feta" },
-      { amount: "1", ingredient: "cebolla roja" },
-      { amount: "2", ingredient: "aguacates" },
-      { amount: "1", ingredient: "mango" },
-      { amount: "1", ingredient: "limón" },
-      { ingredient: "aceite de oliva" },
-      { ingredient: "pimienta" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "300 g", ingredient: "lentejas" },
+          { amount: "250 g", ingredient: "tomate" },
+          { amount: "200 g", ingredient: "queso feta" },
+          { amount: "1", ingredient: "cebolla roja" },
+          { amount: "2", ingredient: "aguacates" },
+          { amount: "1", ingredient: "mango" },
+          { amount: "1", ingredient: "limón" },
+          { ingredient: "aceite de oliva" },
+          { ingredient: "pimienta" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Remoja las lentejas durante la noche.",
@@ -1311,15 +1523,19 @@ export const recipes: IRecipe[] = [
     category: Category.Salad,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "120 g", ingredient: "garbanzos crudos" },
-      { amount: "70 g", ingredient: "arróz" },
-      { amount: "320 g", ingredient: "calabacín" },
-      { amount: "8", ingredient: "tomate cherry" },
-      { amount: "140 g", ingredient: "pollo" },
-      { ingredient: "aceite de oliva" },
-      { ingredient: "pimienta" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "120 g", ingredient: "garbanzos crudos" },
+          { amount: "70 g", ingredient: "arróz" },
+          { amount: "320 g", ingredient: "calabacín" },
+          { amount: "8", ingredient: "tomate cherry" },
+          { amount: "140 g", ingredient: "pollo" },
+          { ingredient: "aceite de oliva" },
+          { ingredient: "pimienta" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Remoja los garbanzos durante la noche. El día siguiente cocina los garbanzos.",
@@ -1347,14 +1563,18 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "150 g", ingredient: "riž" },
-      { amount: "150 g", ingredient: "šparglji" },
-      { amount: "150 g", ingredient: "puran" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "100 ml", ingredient: "belo vino" },
-      { amount: "700 ml", ingredient: "voda" },
-      { amount: "25 g", ingredient: "parmezan" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "150 g", ingredient: "riž" },
+          { amount: "150 g", ingredient: "šparglji" },
+          { amount: "150 g", ingredient: "puran" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "100 ml", ingredient: "belo vino" },
+          { amount: "700 ml", ingredient: "voda" },
+          { amount: "25 g", ingredient: "parmezan" },
+        ],
+      },
     ],
     instructions: [
       "Šparglje očistimo in odstranimo oleseneli del. Olesenele dele damo v vodo in skuhamo jušno osnovo, s katero bomo kasneje zalivali rižoto.",
@@ -1375,14 +1595,18 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "150 g", ingredient: "piščančja prsa" },
-      { amount: "150 g", ingredient: "paprika" },
-      { amount: "50 g", ingredient: "koruza" },
-      { amount: "50 g", ingredient: "rdeča čebula" },
-      { amount: "3", ingredient: "tortilje" },
-      { ingredient: "sir" },
-      { ingredient: "omaka" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "150 g", ingredient: "piščančja prsa" },
+          { amount: "150 g", ingredient: "paprika" },
+          { amount: "50 g", ingredient: "koruza" },
+          { amount: "50 g", ingredient: "rdeča čebula" },
+          { amount: "3", ingredient: "tortilje" },
+          { ingredient: "sir" },
+          { ingredient: "omaka" },
+        ],
+      },
     ],
     instructions: [
       "Na olju in čebuli popraži koščke piščanca, papriko, koruzo ali drugo zelenjavo po želji.",
@@ -1396,16 +1620,20 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "200 g", ingredient: "adjova kaša" },
-      { amount: "250 g", ingredient: "gobe" },
-      { amount: "150 g", ingredient: "kisla smetana" },
-      { ingredient: "česem" },
-      { ingredient: "voda" },
-      { ingredient: "rožmarin" },
-      { ingredient: "timijan" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "adjova kaša" },
+          { amount: "250 g", ingredient: "gobe" },
+          { amount: "150 g", ingredient: "kisla smetana" },
+          { ingredient: "česem" },
+          { ingredient: "voda" },
+          { ingredient: "rožmarin" },
+          { ingredient: "timijan" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Ajdovo kašo skuhamo po navodilih paketa.",
@@ -1420,13 +1648,17 @@ export const recipes: IRecipe[] = [
     title: "Rižota s piščancem in papriko",
     category: Category.Main,
     language: Language.Slovenian,
-    ingredients: [
-      { ingredient: "piščanec" },
-      { ingredient: "paprika" },
-      { ingredient: "paradižnik" },
-      { ingredient: "riž" },
-      { ingredient: "voda" },
-      { ingredient: "začimbe" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { ingredient: "piščanec" },
+          { ingredient: "paprika" },
+          { ingredient: "paradižnik" },
+          { ingredient: "riž" },
+          { ingredient: "voda" },
+          { ingredient: "začimbe" },
+        ],
+      },
     ],
     instructions: [
       "Na olju popeci piščanca in zelenjavo. Oboje malo posoli, popopraj in začini po želji (mleta paprika, timijan, origano, itd.).",
@@ -1440,15 +1672,19 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "150 g", ingredient: "riž" },
-      { amount: "200 g", ingredient: "piščanec" },
-      { amount: "1", ingredient: "por" },
-      { amount: "20 g", ingredient: "maslo" },
-      { amount: "500 ml", ingredient: "jušna osnova" },
-      { amount: "30 ml", ingredient: "belo vino" },
-      { ingredient: "parmezan" },
-      { ingredient: "poper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "150 g", ingredient: "riž" },
+          { amount: "200 g", ingredient: "piščanec" },
+          { amount: "1", ingredient: "por" },
+          { amount: "20 g", ingredient: "maslo" },
+          { amount: "500 ml", ingredient: "jušna osnova" },
+          { amount: "30 ml", ingredient: "belo vino" },
+          { ingredient: "parmezan" },
+          { ingredient: "poper" },
+        ],
+      },
     ],
     instructions: [
       "Popraži na koščke narezanega piščanca, da postane rahlo popečen in odstrani iz ponve.",
@@ -1468,16 +1704,20 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "500 g", ingredient: "piščanec" },
-      { amount: "3", ingredient: "čebula" },
-      { amount: "100 ml", ingredient: "kisla smetana" },
-      { amount: "500 ml", ingredient: "voda" },
-      { ingredient: "mleta paprika" },
-      { ingredient: "lovorjev list" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
-      { ingredient: "moka" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "piščanec" },
+          { amount: "3", ingredient: "čebula" },
+          { amount: "100 ml", ingredient: "kisla smetana" },
+          { amount: "500 ml", ingredient: "voda" },
+          { ingredient: "mleta paprika" },
+          { ingredient: "lovorjev list" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+          { ingredient: "moka" },
+        ],
+      },
     ],
     instructions: [
       "Na malo olja popraži čebulo. Potem dodaš na koščke narezan piščanec.",
@@ -1493,16 +1733,20 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "450 g", ingredient: "puranji zrezek" },
-      { amount: "5 strokov", ingredient: "česen" },
-      { amount: "3 žlice", ingredient: "gorčica" },
-      { amount: "6", ingredient: "brinova jagoda" },
-      { amount: "2 žlici", ingredient: "kisla smetana" },
-      { amount: "250 ml", ingredient: "voda" },
-      { ingredient: "moka" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "450 g", ingredient: "puranji zrezek" },
+          { amount: "5 strokov", ingredient: "česen" },
+          { amount: "3 žlice", ingredient: "gorčica" },
+          { amount: "6", ingredient: "brinova jagoda" },
+          { amount: "2 žlici", ingredient: "kisla smetana" },
+          { amount: "250 ml", ingredient: "voda" },
+          { ingredient: "moka" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Zrezke posoli, popopraj in pomokaj.",
@@ -1516,15 +1760,19 @@ export const recipes: IRecipe[] = [
     title: "Zrezki v porovi omaki",
     category: Category.Main,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "4", ingredient: "piščančji zrezek" },
-      { amount: "1", ingredient: "por" },
-      { amount: "2", ingredient: "paradižnik" },
-      { amount: "250 ml", ingredient: "voda" },
-      { amount: "2 trikotnika", ingredient: "topljeni sir" },
-      { ingredient: "peteršilj" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "4", ingredient: "piščančji zrezek" },
+          { amount: "1", ingredient: "por" },
+          { amount: "2", ingredient: "paradižnik" },
+          { amount: "250 ml", ingredient: "voda" },
+          { amount: "2 trikotnika", ingredient: "topljeni sir" },
+          { ingredient: "peteršilj" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Soli in popraj zrezke z obeh strani, ter jih na hitro popeči v ponvi, toliko da meso zakrkne. Popečene zrezke vzemi iz ponve.",
@@ -1540,15 +1788,19 @@ export const recipes: IRecipe[] = [
     title: "Zrezki v kremni šampinjonovi omaki",
     category: Category.Main,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "4", ingredient: "svinjski zrezek" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "250 g", ingredient: "šampinjoni" },
-      { amount: "1 žlica", ingredient: "moka" },
-      { ingredient: "peteršilj" },
-      { amount: "100 ml", ingredient: "smetana za kuhanje" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "4", ingredient: "svinjski zrezek" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "250 g", ingredient: "šampinjoni" },
+          { amount: "1 žlica", ingredient: "moka" },
+          { ingredient: "peteršilj" },
+          { amount: "100 ml", ingredient: "smetana za kuhanje" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Zrezke operi pod vodo in jih obriši  papirnato brisačo. Začini jih s poprom in soljo. Popeči zrezke na obeh straneh, nato jih vzemi iz ponve.",
@@ -1564,15 +1816,19 @@ export const recipes: IRecipe[] = [
     title: "Gratiniran puranji zrezek",
     category: Category.Main,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "4", ingredient: "puranji zrezek" },
-      { amount: "8 rezin", ingredient: "šunka" },
-      { amount: "8 rezin", ingredient: "sir" },
-      { ingredient: "pivo" },
-      { ingredient: "kisla smetana" },
-      { ingredient: "muškatni orešček" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "4", ingredient: "puranji zrezek" },
+          { amount: "8 rezin", ingredient: "šunka" },
+          { amount: "8 rezin", ingredient: "sir" },
+          { ingredient: "pivo" },
+          { ingredient: "kisla smetana" },
+          { ingredient: "muškatni orešček" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Zrezke namočimo v pivo in pustimo nekaj časa, da se napojijo.",
@@ -1588,15 +1844,19 @@ export const recipes: IRecipe[] = [
     title: "Mesni polpeti",
     category: Category.Main,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "500 g", ingredient: "mleto mešano meso" },
-      { amount: "1", ingredient: "čebula" },
-      { amount: "1 žlica", ingredient: "peteršilj" },
-      { amount: "1", ingredient: "jajce" },
-      { ingredient: "sol" },
-      { ingredient: "poper" },
-      { amount: "½ žlice", ingredient: "mleta paprika" },
-      { amount: "2 žlici", ingredient: "drobtine" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "mleto mešano meso" },
+          { amount: "1", ingredient: "čebula" },
+          { amount: "1 žlica", ingredient: "peteršilj" },
+          { amount: "1", ingredient: "jajce" },
+          { ingredient: "sol" },
+          { ingredient: "poper" },
+          { amount: "½ žlice", ingredient: "mleta paprika" },
+          { amount: "2 žlici", ingredient: "drobtine" },
+        ],
+      },
     ],
     instructions: [
       "Nasekljaj čebulo ter jo prepraži, da zarumeni. Počakaj, da se ohladi.",
@@ -1609,10 +1869,14 @@ export const recipes: IRecipe[] = [
     title: "Tortilla de patatas",
     category: Category.Main,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "4", ingredient: "patata" },
-      { amount: "1", ingredient: "cebolla" },
-      { amount: "4", ingredient: "huevo" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "4", ingredient: "patata" },
+          { amount: "1", ingredient: "cebolla" },
+          { amount: "4", ingredient: "huevo" },
+        ],
+      },
     ],
     instructions: [
       "Pelamos y cortamos las patatas y cebolla.",
@@ -1627,14 +1891,18 @@ export const recipes: IRecipe[] = [
     title: "Pastel de puerro y curry",
     category: Category.Main,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "4", ingredient: "puerro" },
-      { amount: "350 g", ingredient: "queso Maasdam" },
-      { amount: "100 g", ingredient: "pasas" },
-      { amount: "3 cucharadas", ingredient: "harina" },
-      { amount: "1 cucharada", ingredient: "curry" },
-      { amount: "4", ingredient: "huevo" },
-      { ingredient: "semillas sésamo" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "4", ingredient: "puerro" },
+          { amount: "350 g", ingredient: "queso Maasdam" },
+          { amount: "100 g", ingredient: "pasas" },
+          { amount: "3 cucharadas", ingredient: "harina" },
+          { amount: "1 cucharada", ingredient: "curry" },
+          { amount: "4", ingredient: "huevo" },
+          { ingredient: "semillas sésamo" },
+        ],
+      },
     ],
     instructions: [
       "Pochar puerros. Cuando estén tiernos echar el curry, mezclar y dejar enfriar.",
@@ -1650,18 +1918,22 @@ export const recipes: IRecipe[] = [
     title: "Pinchos morunos",
     category: Category.Main,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "600 g", ingredient: "pechuga de pollo" },
-      { amount: "1", ingredient: "cebolla" },
-      { amount: "2", ingredient: "diente de ajo" },
-      { amount: "½ cuchara", ingredient: "sal" },
-      { amount: "1 cuchara", ingredient: "especias morunas" },
-      { amount: "½ cuchara", ingredient: "perejil" },
-      { amount: "¼ cuchara", ingredient: "pimentón" },
-      { amount: "1 pizca", ingredient: "jengibre molido" },
-      { amount: "1 pizca", ingredient: "canela molida" },
-      { amount: "1", ingredient: "limón" },
-      { amount: "5 cucharas", ingredient: "aceite de oliva" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "600 g", ingredient: "pechuga de pollo" },
+          { amount: "1", ingredient: "cebolla" },
+          { amount: "2", ingredient: "diente de ajo" },
+          { amount: "½ cuchara", ingredient: "sal" },
+          { amount: "1 cuchara", ingredient: "especias morunas" },
+          { amount: "½ cuchara", ingredient: "perejil" },
+          { amount: "¼ cuchara", ingredient: "pimentón" },
+          { amount: "1 pizca", ingredient: "jengibre molido" },
+          { amount: "1 pizca", ingredient: "canela molida" },
+          { amount: "1", ingredient: "limón" },
+          { amount: "5 cucharas", ingredient: "aceite de oliva" },
+        ],
+      },
     ],
     instructions: [
       "Corta pollo. Pica cebolla, ajo.",
@@ -1675,18 +1947,22 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "2 lomos", ingredient: "merluza" },
-      { amount: "3", ingredient: "patata" },
-      { amount: "½", ingredient: "pimiento rojo" },
-      { amount: "½", ingredient: "pimiento verde" },
-      { amount: "½", ingredient: "cebolla" },
-      { amount: "15", ingredient: "tomate cherry" },
-      { amount: "3 dientes", ingredient: "ajo" },
-      { amount: "2", ingredient: "cayena" },
-      { ingredient: "limón" },
-      { ingredient: "pimienta" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2 lomos", ingredient: "merluza" },
+          { amount: "3", ingredient: "patata" },
+          { amount: "½", ingredient: "pimiento rojo" },
+          { amount: "½", ingredient: "pimiento verde" },
+          { amount: "½", ingredient: "cebolla" },
+          { amount: "15", ingredient: "tomate cherry" },
+          { amount: "3 dientes", ingredient: "ajo" },
+          { amount: "2", ingredient: "cayena" },
+          { ingredient: "limón" },
+          { ingredient: "pimienta" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Corta las patatas, los pimientos y la cebolla, todo muy muy finito.",
@@ -1713,14 +1989,18 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "2", ingredient: "boniatos" },
-      { amount: "2 cucharadas", ingredient: "aceite de oliva" },
-      { amount: "1 cucharada", ingredient: "maicena" },
-      { ingredient: "orégano" },
-      { ingredient: "ajo en polvo" },
-      { ingredient: "pimentón" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2", ingredient: "boniatos" },
+          { amount: "2 cucharadas", ingredient: "aceite de oliva" },
+          { amount: "1 cucharada", ingredient: "maicena" },
+          { ingredient: "orégano" },
+          { ingredient: "ajo en polvo" },
+          { ingredient: "pimentón" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Pelar y cortar los boniatos al bastoncitos.",
@@ -1737,18 +2017,22 @@ export const recipes: IRecipe[] = [
     title: "Croquetas de jamon",
     category: Category.Main,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "500 ml", ingredient: "leche" },
-      { amount: "70 g", ingredient: "harina" },
-      { amount: "70 g", ingredient: "mantequilla" },
-      { amount: "90 g", ingredient: "jamon" },
-      { amount: "1", ingredient: "cebolla" },
-      { ingredient: "sal" },
-      { ingredient: "pimienta" },
-      { ingredient: "nuez moscada" },
-      { ingredient: "pan rallado" },
-      { amount: "2", ingredient: "huevo" },
-      { ingredient: "aceite de freír" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 ml", ingredient: "leche" },
+          { amount: "70 g", ingredient: "harina" },
+          { amount: "70 g", ingredient: "mantequilla" },
+          { amount: "90 g", ingredient: "jamon" },
+          { amount: "1", ingredient: "cebolla" },
+          { ingredient: "sal" },
+          { ingredient: "pimienta" },
+          { ingredient: "nuez moscada" },
+          { ingredient: "pan rallado" },
+          { amount: "2", ingredient: "huevo" },
+          { ingredient: "aceite de freír" },
+        ],
+      },
     ],
     instructions: [
       "Derrita la mantequilla en una sartén. Echamos la cebolla picada y la iremos moviendo de vez en cuando hasta que este sofrita un poco. Luego echamos el jamon y lo dejaremos aproximadamente 1 minuto moviendolo de vez en cuando. Luego añadimos la harina y la iremos moviendo hasta que adquiera un color doradito.",
@@ -1763,19 +2047,23 @@ export const recipes: IRecipe[] = [
     title: "Croquetas de berenjena",
     category: Category.Main,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "250 ml", ingredient: "leche" },
-      { amount: "40 g", ingredient: "harina" },
-      { amount: "40 g", ingredient: "mantequilla" },
-      { amount: "350 g", ingredient: "berenjena" },
-      { amount: "1", ingredient: "cebolla" },
-      { amount: "1", ingredient: "ajo" },
-      { ingredient: "sal" },
-      { ingredient: "pimienta" },
-      { ingredient: "nuez moscada" },
-      { ingredient: "pan rallado" },
-      { amount: "20 g", ingredient: "queso rallado" },
-      { amount: "2", ingredient: "huevo" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 ml", ingredient: "leche" },
+          { amount: "40 g", ingredient: "harina" },
+          { amount: "40 g", ingredient: "mantequilla" },
+          { amount: "350 g", ingredient: "berenjena" },
+          { amount: "1", ingredient: "cebolla" },
+          { amount: "1", ingredient: "ajo" },
+          { ingredient: "sal" },
+          { ingredient: "pimienta" },
+          { ingredient: "nuez moscada" },
+          { ingredient: "pan rallado" },
+          { amount: "20 g", ingredient: "queso rallado" },
+          { amount: "2", ingredient: "huevo" },
+        ],
+      },
     ],
     instructions: [
       "Primero quita los extremos de berenjenas, cortala a cubitos pequeños. Pon berenjena ya cortada a un recipiente y añade un poco de sal. Cobre el recipiente con papel fil y deja que se cocina 5 minutos a maxima potencia en microondas.",
@@ -1793,19 +2081,23 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "180 g", ingredient: "arroz" },
-      { amount: "220 g", ingredient: "mariscos" },
-      { amount: "200 ml", ingredient: "vino blanco" },
-      { amount: "500 ml", ingredient: "agua" },
-      { amount: "1", ingredient: "cebolla" },
-      { amount: "1 diente", ingredient: "ajo" },
-      { amount: "1", ingredient: "pimiento rojo" },
-      { amount: "2", ingredient: "tomate" },
-      { ingredient: "curcuma" },
-      { ingredient: "pimentón" },
-      { ingredient: "pimienta" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "180 g", ingredient: "arroz" },
+          { amount: "220 g", ingredient: "mariscos" },
+          { amount: "200 ml", ingredient: "vino blanco" },
+          { amount: "500 ml", ingredient: "agua" },
+          { amount: "1", ingredient: "cebolla" },
+          { amount: "1 diente", ingredient: "ajo" },
+          { amount: "1", ingredient: "pimiento rojo" },
+          { amount: "2", ingredient: "tomate" },
+          { ingredient: "curcuma" },
+          { ingredient: "pimentón" },
+          { ingredient: "pimienta" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Pica cebolla y ajo y los fríe. Cuando esta cocinado, echa tomates cortados y pimiento picado.",
@@ -1820,10 +2112,14 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Spanish,
     servings: 1,
-    ingredients: [
-      { amount: "140 g", ingredient: "lomo de merluza" },
-      { amount: "150 g", ingredient: "pisto" },
-      { amount: "40 g", ingredient: "arroz" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "140 g", ingredient: "lomo de merluza" },
+          { amount: "150 g", ingredient: "pisto" },
+          { amount: "40 g", ingredient: "arroz" },
+        ],
+      },
     ],
     instructions: [
       "Cocer el arroz en agua.",
@@ -1837,21 +2133,25 @@ export const recipes: IRecipe[] = [
     title: "Pastel de berenjenas",
     category: Category.Main,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "2", ingredient: "berenjenas" },
-      { amount: "250 g", ingredient: "carne picada" },
-      { amount: "1", ingredient: "cebolla" },
-      { amount: "2 dientes", ingredient: "ajo" },
-      { amount: "100 ml", ingredient: "vino blanco" },
-      { amount: "50 ml", ingredient: "tomate frito" },
-      { amount: "35 g", ingredient: "mantequilla" },
-      { amount: "35 g", ingredient: "harina" },
-      { amount: "300 ml", ingredient: "leche" },
-      { ingredient: "orégano" },
-      { ingredient: "queso" },
-      { ingredient: "pimienta" },
-      { ingredient: "nuez moscada" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2", ingredient: "berenjenas" },
+          { amount: "250 g", ingredient: "carne picada" },
+          { amount: "1", ingredient: "cebolla" },
+          { amount: "2 dientes", ingredient: "ajo" },
+          { amount: "100 ml", ingredient: "vino blanco" },
+          { amount: "50 ml", ingredient: "tomate frito" },
+          { amount: "35 g", ingredient: "mantequilla" },
+          { amount: "35 g", ingredient: "harina" },
+          { amount: "300 ml", ingredient: "leche" },
+          { ingredient: "orégano" },
+          { ingredient: "queso" },
+          { ingredient: "pimienta" },
+          { ingredient: "nuez moscada" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Corta las berenjenas sin pelar en rodajas de 1 cm. Pon las berenjenas cortadas a un recipiente con agua y sal para 30 o 40 minutos para quitar el amargor.",
@@ -1869,13 +2169,17 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "400 g", ingredient: "sepia limpia" },
-      { amount: "400 g", ingredient: "cebolla" },
-      { amount: "1 diente", ingredient: "ajo" },
-      { amount: "40 g", ingredient: "aceite de oliva" },
-      { amount: "200 ml", ingredient: "vino blanco" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "400 g", ingredient: "sepia limpia" },
+          { amount: "400 g", ingredient: "cebolla" },
+          { amount: "1 diente", ingredient: "ajo" },
+          { amount: "40 g", ingredient: "aceite de oliva" },
+          { amount: "200 ml", ingredient: "vino blanco" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Cortamos el cuerpo de la sepia en cuadrados y los tentáculos y las aletas en trocitos.",
@@ -1895,20 +2199,24 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Spanish,
     servings: 4,
-    ingredients: [
-      { amount: "140 g", ingredient: "soja texturizada" },
-      { amount: "2", ingredient: "cebolla" },
-      { amount: "2 dientes", ingredient: "ajo" },
-      { amount: "2", ingredient: "zanahoria" },
-      { amount: "1 tronco", ingredient: "apio" },
-      { amount: "300 ml", ingredient: "tomate triturado" },
-      { amount: "100 ml", ingredient: "nata agria" },
-      { amount: "2 cucharadas", ingredient: "comino" },
-      { amount: "2 cucharadas", ingredient: "pimentón" },
-      { amount: "1 cucharada", ingredient: "especias morunas" },
-      { amount: "2 cucharadas", ingredient: "orégano" },
-      { amount: "4", ingredient: "pimientos morrón" },
-      { amount: "100 g", ingredient: "queso rallado" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "140 g", ingredient: "soja texturizada" },
+          { amount: "2", ingredient: "cebolla" },
+          { amount: "2 dientes", ingredient: "ajo" },
+          { amount: "2", ingredient: "zanahoria" },
+          { amount: "1 tronco", ingredient: "apio" },
+          { amount: "300 ml", ingredient: "tomate triturado" },
+          { amount: "100 ml", ingredient: "nata agria" },
+          { amount: "2 cucharadas", ingredient: "comino" },
+          { amount: "2 cucharadas", ingredient: "pimentón" },
+          { amount: "1 cucharada", ingredient: "especias morunas" },
+          { amount: "2 cucharadas", ingredient: "orégano" },
+          { amount: "4", ingredient: "pimientos morrón" },
+          { amount: "100 g", ingredient: "queso rallado" },
+        ],
+      },
     ],
     instructions: [
       "Poner la soja en un cuenca grande y cubrir con agua para que se vaya hidratando. Calentar un fondo de aceite en una sartén o cazuela ancha a temperatura suave y añadir la cebolla muy picada con los ajos y una pizca de sal. pochar suavemente hasta que se transparenten.",
@@ -1935,18 +2243,22 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.English,
     servings: 4,
-    ingredients: [
-      { amount: "160 g", ingredient: "dry chickpeas" },
-      { amount: "138 g", ingredient: "frozen green peas" },
-      { amount: "2 cloves", ingredient: "garlic" },
-      { amount: "1", ingredient: "lemon" },
-      { amount: "4 g", ingredient: "fresh parsley" },
-      { amount: "2 tbsp", ingredient: "tahini" },
-      { amount: "2 tbsp", ingredient: "flour" },
-      { amount: "2 tbsp", ingredient: "ground flaxseeds" },
-      { amount: "2 tsp", ingredient: "ground cumin" },
-      { amount: "2 tsp", ingredient: "ground coriander" },
-      { amount: "pinch", ingredient: "cayenne pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "160 g", ingredient: "dry chickpeas" },
+          { amount: "138 g", ingredient: "frozen green peas" },
+          { amount: "2 cloves", ingredient: "garlic" },
+          { amount: "1", ingredient: "lemon" },
+          { amount: "4 g", ingredient: "fresh parsley" },
+          { amount: "2 tbsp", ingredient: "tahini" },
+          { amount: "2 tbsp", ingredient: "flour" },
+          { amount: "2 tbsp", ingredient: "ground flaxseeds" },
+          { amount: "2 tsp", ingredient: "ground cumin" },
+          { amount: "2 tsp", ingredient: "ground coriander" },
+          { amount: "pinch", ingredient: "cayenne pepper" },
+        ],
+      },
     ],
     instructions: [
       "Soak chickpeas over night.",
@@ -1970,18 +2282,22 @@ export const recipes: IRecipe[] = [
     title: "Polnjene paprike in čufti",
     category: Category.Main,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "1 kg", ingredient: "mleto mešano meso" },
-      { amount: "10", ingredient: "paprika" },
-      { amount: "150 g", ingredient: "riž" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "2", ingredient: "čebula" },
-      { amount: "5 strokov", ingredient: "česen" },
-      { amount: "8 vejic", ingredient: "peteršilj" },
-      { amount: "4 ščepce", ingredient: "sol" },
-      { ingredient: "poper" },
-      { amount: "10", ingredient: "paradižnik" },
-      { ingredient: "voda" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 kg", ingredient: "mleto mešano meso" },
+          { amount: "10", ingredient: "paprika" },
+          { amount: "150 g", ingredient: "riž" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "2", ingredient: "čebula" },
+          { amount: "5 strokov", ingredient: "česen" },
+          { amount: "8 vejic", ingredient: "peteršilj" },
+          { amount: "4 ščepce", ingredient: "sol" },
+          { ingredient: "poper" },
+          { amount: "10", ingredient: "paradižnik" },
+          { ingredient: "voda" },
+        ],
+      },
     ],
     instructions: [
       "Na olju prepraži čebulo, dodaj česen, sol, peteršilj in poper.",
@@ -1997,12 +2313,16 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "4", ingredient: "jajčevec" },
-      { amount: "400 g", ingredient: "paradižnikova omaka" },
-      { ingredient: "nadev" },
-      { ingredient: "origano" },
-      { ingredient: "sir" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "4", ingredient: "jajčevec" },
+          { amount: "400 g", ingredient: "paradižnikova omaka" },
+          { ingredient: "nadev" },
+          { ingredient: "origano" },
+          { ingredient: "sir" },
+        ],
+      },
     ],
     instructions: [
       "Jajčevcem odstrani spodnji in zgornji del ter odreži 4 vzdolžne olupke. Jajčevce potopi v slano vodo za 30 minut, da se znebijo grenčine.",
@@ -2021,13 +2341,17 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.English,
     servings: 2,
-    ingredients: [
-      { amount: "160 g", ingredient: "basmati rice" },
-      { amount: "1", ingredient: "leek" },
-      { amount: "2", ingredient: "carrots" },
-      { amount: "200 g", ingredient: "chicken" },
-      { amount: "2", ingredient: "eggs" },
-      { ingredient: "soy sauce" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "160 g", ingredient: "basmati rice" },
+          { amount: "1", ingredient: "leek" },
+          { amount: "2", ingredient: "carrots" },
+          { amount: "200 g", ingredient: "chicken" },
+          { amount: "2", ingredient: "eggs" },
+          { ingredient: "soy sauce" },
+        ],
+      },
     ],
     instructions: [
       "Cook rice.",
@@ -2044,18 +2368,22 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "450 g", ingredient: "potato" },
-      { amount: "150 g", ingredient: "cherry tomato" },
-      { amount: "85-110 g", ingredient: "halloumi" },
-      { amount: "3", ingredient: "eggs" },
-      { ingredient: "olive oil" },
-      { ingredient: "red onion" },
-      { ingredient: "parsley" },
-      { ingredient: "dill" },
-      { ingredient: "cayenne pepper" },
-      { ingredient: "pepper" },
-      { ingredient: "salt" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "450 g", ingredient: "potato" },
+          { amount: "150 g", ingredient: "cherry tomato" },
+          { amount: "85-110 g", ingredient: "halloumi" },
+          { amount: "3", ingredient: "eggs" },
+          { ingredient: "olive oil" },
+          { ingredient: "red onion" },
+          { ingredient: "parsley" },
+          { ingredient: "dill" },
+          { ingredient: "cayenne pepper" },
+          { ingredient: "pepper" },
+          { ingredient: "salt" },
+        ],
+      },
     ],
     instructions: [
       "Preheat oven to 220°C. Add diced potatoes and diced tomatoes to a large baking sheet, keeping them on separate halves. Drizzle a good bit of olive oil on both the potatoes and the tomatoes. Add a few good dashes of seasoning (pepper, salt, cayenne pepper) to the potatoes and toss. Bake for 25-35 minutes until potatoes are crispy and tomatoes are soft and charred, mixing the potatoes halfway through cooking.",
@@ -2071,21 +2399,25 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.English,
     servings: 4,
-    ingredients: [
-      { amount: "1 tbsp", ingredient: "olive oil" },
-      { amount: "1", ingredient: "onion, chopped" },
-      { amount: "4 cloves", ingredient: "garlic, minced" },
-      { amount: "½ tsp", ingredient: "salt" },
-      { amount: "200 g", ingredient: "portobello mushrooms, finely chopped" },
-      { amount: "600 g", ingredient: "firm tofu, pressed" },
-      { amount: "1 tbsp", ingredient: "dried oregano" },
-      { amount: "2 tbsp", ingredient: "paprika powder" },
-      { amount: "½ tsp", ingredient: "ground coriander" },
-      { amount: "½ tsp", ingredient: "ground cumin" },
-      { amount: "½ tsp", ingredient: "ground back pepper" },
-      { amount: "⅛ tsp", ingredient: "ground cinnamon" },
-      { amount: "2 tbsp", ingredient: "apple cider vinegar" },
-      { amount: "1 tsp", ingredient: "soy sauce" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 tbsp", ingredient: "olive oil" },
+          { amount: "1", ingredient: "onion, chopped" },
+          { amount: "4 cloves", ingredient: "garlic, minced" },
+          { amount: "½ tsp", ingredient: "salt" },
+          { amount: "200 g", ingredient: "portobello mushrooms, finely chopped" },
+          { amount: "600 g", ingredient: "firm tofu, pressed" },
+          { amount: "1 tbsp", ingredient: "dried oregano" },
+          { amount: "2 tbsp", ingredient: "paprika powder" },
+          { amount: "½ tsp", ingredient: "ground coriander" },
+          { amount: "½ tsp", ingredient: "ground cumin" },
+          { amount: "½ tsp", ingredient: "ground back pepper" },
+          { amount: "⅛ tsp", ingredient: "ground cinnamon" },
+          { amount: "2 tbsp", ingredient: "apple cider vinegar" },
+          { amount: "1 tsp", ingredient: "soy sauce" },
+        ],
+      },
     ],
     instructions: [
       "Add the oil to a large pan on high heat. When hot, add the onion, garlic, and salt, and cook for 3 minutes.",
@@ -2106,17 +2438,21 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.English,
     servings: 2,
-    ingredients: [
-      { amount: "125 g", ingredient: "quinoa" },
-      { ingredient: "chicken" },
-      { amount: "1", ingredient: "red bell pepper" },
-      { ingredient: "corn" },
-      { amount: "1", ingredient: "red onion" },
-      { amount: "1", ingredient: "lime" },
-      { ingredient: "black pepper" },
-      { ingredient: "cayenne pepper" },
-      { ingredient: "salt" },
-      { ingredient: "guacamole" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "125 g", ingredient: "quinoa" },
+          { ingredient: "chicken" },
+          { amount: "1", ingredient: "red bell pepper" },
+          { ingredient: "corn" },
+          { amount: "1", ingredient: "red onion" },
+          { amount: "1", ingredient: "lime" },
+          { ingredient: "black pepper" },
+          { ingredient: "cayenne pepper" },
+          { ingredient: "salt" },
+          { ingredient: "guacamole" },
+        ],
+      },
     ],
     instructions: [
       "Cook quinoa.",
@@ -2133,24 +2469,28 @@ export const recipes: IRecipe[] = [
     title: "Maqluba",
     category: Category.Main,
     language: Language.English,
-    ingredients: [
-      { amount: "1", ingredient: "eggplant" },
-      { amount: "1", ingredient: "tomato" },
-      { ingredient: "ground beef" },
-      { amount: "1", ingredient: "red bell pepper" },
-      { amount: "1", ingredient: "onion" },
-      { amount: "200 g", ingredient: "basmati rice" },
-      { ingredient: "cashew nuts" },
-      { amount: "1 tablespoon", ingredient: "tomato paste" },
-      { ingredient: "turmeric" },
-      { ingredient: "paprika" },
-      { ingredient: "coriander" },
-      { ingredient: "parsley" },
-      { ingredient: "cinnamon" },
-      { ingredient: "black pepper" },
-      { ingredient: "salt" },
-      { ingredient: "bay leaf" },
-      { ingredient: "water" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "eggplant" },
+          { amount: "1", ingredient: "tomato" },
+          { ingredient: "ground beef" },
+          { amount: "1", ingredient: "red bell pepper" },
+          { amount: "1", ingredient: "onion" },
+          { amount: "200 g", ingredient: "basmati rice" },
+          { ingredient: "cashew nuts" },
+          { amount: "1 tablespoon", ingredient: "tomato paste" },
+          { ingredient: "turmeric" },
+          { ingredient: "paprika" },
+          { ingredient: "coriander" },
+          { ingredient: "parsley" },
+          { ingredient: "cinnamon" },
+          { ingredient: "black pepper" },
+          { ingredient: "salt" },
+          { ingredient: "bay leaf" },
+          { ingredient: "water" },
+        ],
+      },
     ],
     instructions: ["Open the original recipe for the instructions."], // TODO
     originalRecipe: "https://www.hungrypaprikas.com/maqluba",
@@ -2161,24 +2501,28 @@ export const recipes: IRecipe[] = [
     category: Category.Stew,
     language: Language.English,
     servings: 3,
-    ingredients: [
-      { amount: "200 g", ingredient: "dry chickpeas" },
-      { amount: "3 cloves", ingredient: "garlic" },
-      { amount: "2 cm", ingredient: "ginger" },
-      { amount: "1", ingredient: "red onion" },
-      { amount: "300 ml", ingredient: "tomatoes" },
-      { amount: "7", ingredient: "black pepper" },
-      { amount: "1", ingredient: "bay leaf" },
-      { amount: "4", ingredient: "cardamom" },
-      { amount: "3", ingredient: "cloves" },
-      { amount: "1", ingredient: "cinnamon stick" },
-      { amount: "1 teaspoon", ingredient: "coriander" },
-      { amount: "1 teaspoon", ingredient: "cumin" },
-      { amount: "1 teaspoon", ingredient: "paprika" },
-      { amount: "½ teaspoon", ingredient: "turmeric" },
-      { amount: "½ teaspoon", ingredient: "garam masala" },
-      { ingredient: "salt" },
-      { amount: "200 ml", ingredient: "water" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "dry chickpeas" },
+          { amount: "3 cloves", ingredient: "garlic" },
+          { amount: "2 cm", ingredient: "ginger" },
+          { amount: "1", ingredient: "red onion" },
+          { amount: "300 ml", ingredient: "tomatoes" },
+          { amount: "7", ingredient: "black pepper" },
+          { amount: "1", ingredient: "bay leaf" },
+          { amount: "4", ingredient: "cardamom" },
+          { amount: "3", ingredient: "cloves" },
+          { amount: "1", ingredient: "cinnamon stick" },
+          { amount: "1 teaspoon", ingredient: "coriander" },
+          { amount: "1 teaspoon", ingredient: "cumin" },
+          { amount: "1 teaspoon", ingredient: "paprika" },
+          { amount: "½ teaspoon", ingredient: "turmeric" },
+          { amount: "½ teaspoon", ingredient: "garam masala" },
+          { ingredient: "salt" },
+          { amount: "200 ml", ingredient: "water" },
+        ],
+      },
     ],
     instructions: [
       "Soak chickpeas over night.",
@@ -2201,18 +2545,22 @@ export const recipes: IRecipe[] = [
     category: Category.Main,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "1", ingredient: "piščančja prsa" },
-      { amount: "3 žličke", ingredient: "gorčica" },
-      { amount: "250 ml", ingredient: "smetana za kuhanje" },
-      { amount: "120 g", ingredient: "špinača" },
-      { amount: "6", ingredient: "češnjev paradižnik" },
-      { amount: "2 stroka", ingredient: "česen" },
-      { amount: "100 ml", ingredient: "voda" },
-      { amount: "1 žlička", ingredient: "vegeta" },
-      { amount: "3 žlice", ingredient: "moka" },
-      { ingredient: "poper" },
-      { ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "piščančja prsa" },
+          { amount: "3 žličke", ingredient: "gorčica" },
+          { amount: "250 ml", ingredient: "smetana za kuhanje" },
+          { amount: "120 g", ingredient: "špinača" },
+          { amount: "6", ingredient: "češnjev paradižnik" },
+          { amount: "2 stroka", ingredient: "česen" },
+          { amount: "100 ml", ingredient: "voda" },
+          { amount: "1 žlička", ingredient: "vegeta" },
+          { amount: "3 žlice", ingredient: "moka" },
+          { ingredient: "poper" },
+          { ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Piščančja prsa nareži na zrezke ter jih z obeh strani začini s soljo in poprom. Povaljaj v malo moke.",
@@ -2229,12 +2577,16 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "1 kg", ingredient: "moka" },
-      { amount: "42 g", ingredient: "sveži kvas" },
-      { amount: "3 žlice", ingredient: "olivno olje" },
-      { amount: "600 ml", ingredient: "voda" },
-      { amount: "2 žlički", ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 kg", ingredient: "moka" },
+          { amount: "42 g", ingredient: "sveži kvas" },
+          { amount: "3 žlice", ingredient: "olivno olje" },
+          { amount: "600 ml", ingredient: "voda" },
+          { amount: "2 žlički", ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Kvas zdrobimo v mlačni vodi, primešamo malo moke in pustimo, da vzide.",
@@ -2251,11 +2603,15 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.Slovenian,
     servings: 8,
-    ingredients: [
-      { amount: "225 g", ingredient: "moka" },
-      { amount: "1 žlica", ingredient: "olivno olje" },
-      { amount: "1 žlička", ingredient: "sol" },
-      { amount: "120 ml", ingredient: "voda" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "225 g", ingredient: "moka" },
+          { amount: "1 žlica", ingredient: "olivno olje" },
+          { amount: "1 žlička", ingredient: "sol" },
+          { amount: "120 ml", ingredient: "voda" },
+        ],
+      },
     ],
     instructions: [
       "Zmešaj sestavine za tortiljo in pusti maso počivati vsaj 15 minut.",
@@ -2269,14 +2625,18 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.Slovenian,
     servings: 8,
-    ingredients: [
-      { amount: "300 g", ingredient: "ostra moka" },
-      { amount: "½ žličke", ingredient: "sol" },
-      { amount: "1 žlička", ingredient: "kis" },
-      { amount: "100 ml", ingredient: "voda" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "70 g", ingredient: "maslo" },
-      { amount: "500 g", ingredient: "nadev po želji" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "300 g", ingredient: "ostra moka" },
+          { amount: "½ žličke", ingredient: "sol" },
+          { amount: "1 žlička", ingredient: "kis" },
+          { amount: "100 ml", ingredient: "voda" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "70 g", ingredient: "maslo" },
+          { amount: "500 g", ingredient: "nadev po želji" },
+        ],
+      },
     ],
     instructions: [
       "V eni posodi vgneti sol in maslo v moko, v drugi posodi pa zmešaj 1 jajce, 1 beljak (shrani 1 rumenjak za pozneje), vodo in kis.",
@@ -2295,17 +2655,21 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.Spanish,
     servings: 16,
-    ingredients: [
-      { ingredient: "masa de empanada" },
-      { amount: "1", ingredient: "cebolla roja" },
-      { amount: "1", ingredient: "pimiento verde" },
-      { amount: "200 g", ingredient: "champiñones" },
-      { amount: "300 g", ingredient: "carne de kebab" },
-      { amount: "400 g", ingredient: "tomate triturado" },
-      { amount: "150 g", ingredient: "queso feta" },
-      { amount: "1", ingredient: "huevo" },
-      { ingredient: "aceitunas" },
-      { ingredient: "especias morunas" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { ingredient: "masa de empanada" },
+          { amount: "1", ingredient: "cebolla roja" },
+          { amount: "1", ingredient: "pimiento verde" },
+          { amount: "200 g", ingredient: "champiñones" },
+          { amount: "300 g", ingredient: "carne de kebab" },
+          { amount: "400 g", ingredient: "tomate triturado" },
+          { amount: "150 g", ingredient: "queso feta" },
+          { amount: "1", ingredient: "huevo" },
+          { ingredient: "aceitunas" },
+          { ingredient: "especias morunas" },
+        ],
+      },
     ],
     instructions: [
       "Pica bien el pimiento verde y la cebolla roja. Sofrie durante 10 minutos.",
@@ -2323,12 +2687,16 @@ export const recipes: IRecipe[] = [
     title: "Njoki",
     category: Category.Dough,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "700 g", ingredient: "krompir" },
-      { amount: "250-300 g", ingredient: "ostra moka" },
-      { amount: "50 g", ingredient: "pšenični zdrob" },
-      { amount: "1", ingredient: "jajce" },
-      { amount: "2 žlički", ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "700 g", ingredient: "krompir" },
+          { amount: "250-300 g", ingredient: "ostra moka" },
+          { amount: "50 g", ingredient: "pšenični zdrob" },
+          { amount: "1", ingredient: "jajce" },
+          { amount: "2 žlički", ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Krompir skuhaj v slani vodi, ter še vročega olupi.",
@@ -2348,13 +2716,17 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "500 g", ingredient: "skuta" },
-      { amount: "1", ingredient: "jajce" },
-      { amount: "ščepec", ingredient: "sol" },
-      { amount: "ščepec", ingredient: "muškatni orešček" },
-      { amount: "50 g", ingredient: "parmezan" },
-      { amount: "320-350 g", ingredient: "ostra moka" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "skuta" },
+          { amount: "1", ingredient: "jajce" },
+          { amount: "ščepec", ingredient: "sol" },
+          { amount: "ščepec", ingredient: "muškatni orešček" },
+          { amount: "50 g", ingredient: "parmezan" },
+          { amount: "320-350 g", ingredient: "ostra moka" },
+        ],
+      },
     ],
     instructions: [
       "V skledo stresemo skuto in jo z vilicami dobro pretlačimo. Zmešamo jo z jajcem in soljo. Po želji dodamo tudi malo naribanega muškatnega oreščka.",
@@ -2372,12 +2744,16 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.English,
     servings: 6,
-    ingredients: [
-      { amount: "3 cups", ingredient: "flour" },
-      { amount: "1 tablespoon", ingredient: "dry yeast" },
-      { amount: "1 teaspoon", ingredient: "salt" },
-      { amount: "1½ cups", ingredient: "warm water" },
-      { ingredient: "seeds" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "3 cups", ingredient: "flour" },
+          { amount: "1 tablespoon", ingredient: "dry yeast" },
+          { amount: "1 teaspoon", ingredient: "salt" },
+          { amount: "1½ cups", ingredient: "warm water" },
+          { ingredient: "seeds" },
+        ],
+      },
     ],
     instructions: [
       "Add all the ingredients to a bowl and mix until you have a wet, sticky dough. Cover the bowl with a kitchen towel and leave to rise for at least 1 hour in a warm place.",
@@ -2391,15 +2767,19 @@ export const recipes: IRecipe[] = [
     title: "Toast kruh",
     category: Category.Dough,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "250 g", ingredient: "pirina moka" },
-      { amount: "250 g", ingredient: "navadna moka" },
-      { amount: "250 ml", ingredient: "voda" },
-      { amount: "1 žlička", ingredient: "sol" },
-      { amount: "7 g", ingredient: "suh kvas" },
-      { amount: "1 žlička", ingredient: "sladkor" },
-      { amount: "60 g", ingredient: "lanena semena" },
-      { ingredient: "mešanica semen" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "pirina moka" },
+          { amount: "250 g", ingredient: "navadna moka" },
+          { amount: "250 ml", ingredient: "voda" },
+          { amount: "1 žlička", ingredient: "sol" },
+          { amount: "7 g", ingredient: "suh kvas" },
+          { amount: "1 žlička", ingredient: "sladkor" },
+          { amount: "60 g", ingredient: "lanena semena" },
+          { ingredient: "mešanica semen" },
+        ],
+      },
     ],
     instructions: [
       "V malo tople vode dodajte suh kvas in sladkor, ter počakajte nekaj minut, da se kvas aktivira.",
@@ -2416,15 +2796,19 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.English,
     servings: 8,
-    ingredients: [
-      { amount: "340 g", ingredient: "flour" },
-      { amount: "21 g", ingredient: "yeast" },
-      { amount: "120 g", ingredient: "Greek yogurt" },
-      { amount: "125 ml", ingredient: "water" },
-      { amount: "1 teaspoon", ingredient: "sugar" },
-      { amount: "½ teaspoon", ingredient: "salt" },
-      { amount: "1 tablespoon", ingredient: "olive oil" },
-      { amount: "3 tablespoons", ingredient: "butter" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "340 g", ingredient: "flour" },
+          { amount: "21 g", ingredient: "yeast" },
+          { amount: "120 g", ingredient: "Greek yogurt" },
+          { amount: "125 ml", ingredient: "water" },
+          { amount: "1 teaspoon", ingredient: "sugar" },
+          { amount: "½ teaspoon", ingredient: "salt" },
+          { amount: "1 tablespoon", ingredient: "olive oil" },
+          { amount: "3 tablespoons", ingredient: "butter" },
+        ],
+      },
     ],
     instructions: [
       "Mix water, sugar and yeast, and let it rest for 10 min to rise.",
@@ -2442,14 +2826,18 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.Slovenian,
     servings: 12,
-    ingredients: [
-      { amount: "250 g", ingredient: "gladka moka" },
-      { amount: "21 g", ingredient: "kvas" },
-      { amount: "100 ml", ingredient: "mleko" },
-      { amount: "50 g", ingredient: "maslo" },
-      { amount: "1", ingredient: "jajce" },
-      { ingredient: "sol" },
-      { ingredient: "nadev" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "gladka moka" },
+          { amount: "21 g", ingredient: "kvas" },
+          { amount: "100 ml", ingredient: "mleko" },
+          { amount: "50 g", ingredient: "maslo" },
+          { amount: "1", ingredient: "jajce" },
+          { ingredient: "sol" },
+          { ingredient: "nadev" },
+        ],
+      },
     ],
     instructions: [
       "V skodelici zmešamo 6 žlic toplega mleka in sladkor ter v tej tekočini raztopimo kvas. Pokrijemo in pustimo na toplem vzhajati 20 minut.",
@@ -2466,14 +2854,18 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.English,
     servings: 12,
-    ingredients: [
-      { amount: "200 g", ingredient: "flour" },
-      { ingredient: "baking powder" },
-      { amount: "1", ingredient: "egg" },
-      { amount: "140 ml", ingredient: "milk" },
-      { amount: "40 g", ingredient: "sour cream" },
-      { amount: "40 ml", ingredient: "olive oil" },
-      { amount: "450 g", ingredient: "add-ins" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "flour" },
+          { ingredient: "baking powder" },
+          { amount: "1", ingredient: "egg" },
+          { amount: "140 ml", ingredient: "milk" },
+          { amount: "40 g", ingredient: "sour cream" },
+          { amount: "40 ml", ingredient: "olive oil" },
+          { amount: "450 g", ingredient: "add-ins" },
+        ],
+      },
     ],
     instructions: [
       "Whisk dry ingredients in a bowl 1 (flour, baking powder).",
@@ -2492,13 +2884,17 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.Spanish,
     servings: 2,
-    ingredients: [
-      { amount: "200 g", ingredient: "lenteja roja" },
-      { amount: "2 dientes", ingredient: "ajo" },
-      { amount: "200 ml", ingredient: "agua" },
-      { amount: "2 cucharada", ingredient: "orégano" },
-      { ingredient: "pimienta" },
-      { ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "lenteja roja" },
+          { amount: "2 dientes", ingredient: "ajo" },
+          { amount: "200 ml", ingredient: "agua" },
+          { amount: "2 cucharada", ingredient: "orégano" },
+          { ingredient: "pimienta" },
+          { ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "Lava las lentejas y dejalas en el remojo al menos 4 horas.",
@@ -2515,15 +2911,19 @@ export const recipes: IRecipe[] = [
     category: Category.Dough,
     language: Language.Slovenian,
     servings: 2,
-    ingredients: [
-      { amount: "100 g", ingredient: "rdeča leča" },
-      { amount: "100 ml", ingredient: "voda" },
-      { amount: "½ žličke", ingredient: "česen" },
-      { amount: "½ žličke", ingredient: "poper" },
-      { amount: "½ žličke", ingredient: "sol" },
-      { amount: "¼ žličke", ingredient: "kumina" },
-      { amount: "¼ žličke", ingredient: "paprika" },
-      { amount: "¼ žličke", ingredient: "kurkuma" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "100 g", ingredient: "rdeča leča" },
+          { amount: "100 ml", ingredient: "voda" },
+          { amount: "½ žličke", ingredient: "česen" },
+          { amount: "½ žličke", ingredient: "poper" },
+          { amount: "½ žličke", ingredient: "sol" },
+          { amount: "¼ žličke", ingredient: "kumina" },
+          { amount: "¼ žličke", ingredient: "paprika" },
+          { amount: "¼ žličke", ingredient: "kurkuma" },
+        ],
+      },
     ],
     instructions: [
       "Lečo čez noč ali za vsaj 4 ure namočimo v zadostni količini hladne vode.",
@@ -2538,12 +2938,16 @@ export const recipes: IRecipe[] = [
     title: "Pickled red onion",
     category: Category.Snack,
     language: Language.English,
-    ingredients: [
-      { amount: "2", ingredient: "red onions" },
-      { amount: "1 tbsp", ingredient: "sugar" },
-      { amount: "1½ tsp", ingredient: "salt" },
-      { amount: "120 ml", ingredient: "apple cider vinegar" },
-      { amount: "240 ml", ingredient: "water" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2", ingredient: "red onions" },
+          { amount: "1 tbsp", ingredient: "sugar" },
+          { amount: "1½ tsp", ingredient: "salt" },
+          { amount: "120 ml", ingredient: "apple cider vinegar" },
+          { amount: "240 ml", ingredient: "water" },
+        ],
+      },
     ],
     instructions: [
       "Whisk sugar, salt, apple cider vinegar and water in a jar until sugar and salt dissolve.",
@@ -2559,14 +2963,18 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "1", ingredient: "wrap" },
-      { amount: "½", ingredient: "avocado" },
-      { amount: "40 g", ingredient: "cheese spread" },
-      { amount: "50 g", ingredient: "turkey breast" },
-      { amount: "1", ingredient: "egg" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "wrap" },
+          { amount: "½", ingredient: "avocado" },
+          { amount: "40 g", ingredient: "cheese spread" },
+          { amount: "50 g", ingredient: "turkey breast" },
+          { amount: "1", ingredient: "egg" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "In a bowl, add the chopped hard-boiled egg, the chicken in strips, the avocado, the cream cheese, a pinch of salt and pepper, and a few drops of lime juice.",
@@ -2582,11 +2990,15 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "1", ingredient: "whole-grain bread roll" },
-      { amount: "125 g", ingredient: "turkey, skinless, raw" },
-      { amount: "30 g", ingredient: "hummus" },
-      { amount: "75 g", ingredient: "lettuce" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "whole-grain bread roll" },
+          { amount: "125 g", ingredient: "turkey, skinless, raw" },
+          { amount: "30 g", ingredient: "hummus" },
+          { amount: "75 g", ingredient: "lettuce" },
+        ],
+      },
     ],
     instructions: [
       "Cut the bread roll into 2 halves.",
@@ -2602,13 +3014,17 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "1", ingredient: "whole-grain burger roll" },
-      { amount: "120 g", ingredient: "ground turkey" },
-      { amount: "70 g", ingredient: "mushrooms" },
-      { amount: "1 slice", ingredient: "cheese" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "whole-grain burger roll" },
+          { amount: "120 g", ingredient: "ground turkey" },
+          { amount: "70 g", ingredient: "mushrooms" },
+          { amount: "1 slice", ingredient: "cheese" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "Season the ground turkey with salt and pepper.",
@@ -2623,15 +3039,19 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "1", ingredient: "whole-grain bread roll" },
-      { amount: "100 g", ingredient: "chicken" },
-      { amount: "½", ingredient: "avocado" },
-      { amount: "60 g", ingredient: "baby spinach leaves" },
-      { amount: "½", ingredient: "tomato" },
-      { amount: "1", ingredient: "egg" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "whole-grain bread roll" },
+          { amount: "100 g", ingredient: "chicken" },
+          { amount: "½", ingredient: "avocado" },
+          { amount: "60 g", ingredient: "baby spinach leaves" },
+          { amount: "½", ingredient: "tomato" },
+          { amount: "1", ingredient: "egg" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "Place the avocado in cubes in a medium bowl, mash it with lemon juice, a pinch of salt and pepper to taste.",
@@ -2648,16 +3068,20 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "1", ingredient: "wrap" },
-      { amount: "100 g", ingredient: "chicken" },
-      { amount: "20 g", ingredient: "corn" },
-      { amount: "¼", ingredient: "avocado" },
-      { amount: "3", ingredient: "cherry tomatoes" },
-      { amount: "1 slice", ingredient: "cheese" },
-      { amount: "¼", ingredient: "onion" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "wrap" },
+          { amount: "100 g", ingredient: "chicken" },
+          { amount: "20 g", ingredient: "corn" },
+          { amount: "¼", ingredient: "avocado" },
+          { amount: "3", ingredient: "cherry tomatoes" },
+          { amount: "1 slice", ingredient: "cheese" },
+          { amount: "¼", ingredient: "onion" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "Cook the meat and sauté a little onion for better flavor.",
@@ -2674,14 +3098,18 @@ export const recipes: IRecipe[] = [
     category: Category.Snack,
     language: Language.Spanish,
     servings: 1,
-    ingredients: [
-      { amount: "1", ingredient: "wrap integral" },
-      { amount: "2 lonchas", ingredient: "jamón serrano" },
-      { amount: "60 g", ingredient: "mozzarella" },
-      { amount: "4", ingredient: "tomate cherry" },
-      { amount: "50 g", ingredient: "canónigos" },
-      { ingredient: "salt" },
-      { ingredient: "pepper" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "wrap integral" },
+          { amount: "2 lonchas", ingredient: "jamón serrano" },
+          { amount: "60 g", ingredient: "mozzarella" },
+          { amount: "4", ingredient: "tomate cherry" },
+          { amount: "50 g", ingredient: "canónigos" },
+          { ingredient: "salt" },
+          { ingredient: "pepper" },
+        ],
+      },
     ],
     instructions: [
       "Poner una fajita en un plato y montar con los ingredientes: jamón serrano, cherrys cortados a la mitad, canónigos y por último el queso.",
@@ -2697,13 +3125,17 @@ export const recipes: IRecipe[] = [
     title: "Pizza polžki",
     category: Category.Snack,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "1 zavitek", ingredient: "listnato testo" },
-      { amount: "40 g", ingredient: "paradižnikova omaka" },
-      { amount: "100 g", ingredient: "sir" },
-      { amount: "50 g", ingredient: "šunka" },
-      { ingredient: "origano" },
-      { amount: "1", ingredient: "jajce" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 zavitek", ingredient: "listnato testo" },
+          { amount: "40 g", ingredient: "paradižnikova omaka" },
+          { amount: "100 g", ingredient: "sir" },
+          { amount: "50 g", ingredient: "šunka" },
+          { ingredient: "origano" },
+          { amount: "1", ingredient: "jajce" },
+        ],
+      },
     ],
     instructions: [
       "Razvij listnato testo ter premaži s paradižnikovo omaki po celotni površini in potresi origano.",
@@ -2719,14 +3151,18 @@ export const recipes: IRecipe[] = [
     category: Category.WarmDrink,
     language: Language.English,
     servings: 2,
-    ingredients: [
-      { amount: "400 ml", ingredient: "water" },
-      { amount: "3", ingredient: "cloves" },
-      { amount: "4", ingredient: "cardamom" },
-      { amount: "2 cm", ingredient: "ginger" },
-      { amount: "1 stick", ingredient: "cinnamon" },
-      { amount: "2 teaspoons", ingredient: "black tea" },
-      { amount: "200 ml", ingredient: "milk" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "400 ml", ingredient: "water" },
+          { amount: "3", ingredient: "cloves" },
+          { amount: "4", ingredient: "cardamom" },
+          { amount: "2 cm", ingredient: "ginger" },
+          { amount: "1 stick", ingredient: "cinnamon" },
+          { amount: "2 teaspoons", ingredient: "black tea" },
+          { amount: "200 ml", ingredient: "milk" },
+        ],
+      },
     ],
     instructions: [
       "Pour water into the pot.",
@@ -2746,15 +3182,19 @@ export const recipes: IRecipe[] = [
     category: Category.WarmDrink,
     language: Language.English,
     servings: 2,
-    ingredients: [
-      { amount: "500 ml", ingredient: "milk" },
-      { amount: "1 tsp", ingredient: "ground turmeric" },
-      { amount: "½ tsp", ingredient: "ground cinnamon" },
-      { amount: "½ tsp", ingredient: "ground ginger" },
-      { amount: "pinch", ingredient: "black pepper" },
-      { amount: "pinch", ingredient: "ground cardamom (optional)" },
-      { amount: "pinch", ingredient: "ground nutmeg (optional)" },
-      { amount: "pinch", ingredient: "ground clove (optional)" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 ml", ingredient: "milk" },
+          { amount: "1 tsp", ingredient: "ground turmeric" },
+          { amount: "½ tsp", ingredient: "ground cinnamon" },
+          { amount: "½ tsp", ingredient: "ground ginger" },
+          { amount: "pinch", ingredient: "black pepper" },
+          { amount: "pinch", ingredient: "ground cardamom (optional)" },
+          { amount: "pinch", ingredient: "ground nutmeg (optional)" },
+          { amount: "pinch", ingredient: "ground clove (optional)" },
+        ],
+      },
     ],
     instructions: [
       "Add all spices and 2 teaspoons of water to a small saucepan.",
@@ -2771,11 +3211,15 @@ export const recipes: IRecipe[] = [
     category: Category.WarmDrink,
     language: Language.Slovenian,
     servings: 5,
-    ingredients: [
-      { ingredient: "ingver" },
-      { amount: "1.5 l", ingredient: "voda" },
-      { amount: "3 žlice", ingredient: "med" },
-      { amount: "2", ingredient: "limona" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { ingredient: "ingver" },
+          { amount: "1.5 l", ingredient: "voda" },
+          { amount: "3 žlice", ingredient: "med" },
+          { amount: "2", ingredient: "limona" },
+        ],
+      },
     ],
     instructions: [
       "Olupi ingver ter ga na tanko nareži.",
@@ -2788,12 +3232,16 @@ export const recipes: IRecipe[] = [
     title: "Čokoladni liker",
     category: Category.ColdDrink,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "1 l", ingredient: "mleko" },
-      { amount: "2", ingredient: "čokoladni puding v prahu" },
-      { amount: "3 žlice", ingredient: "kakav v prahu" },
-      { amount: "450 g", ingredient: "rjavi sladkor" },
-      { amount: "0.5 l", ingredient: "rum" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 l", ingredient: "mleko" },
+          { amount: "2", ingredient: "čokoladni puding v prahu" },
+          { amount: "3 žlice", ingredient: "kakav v prahu" },
+          { amount: "450 g", ingredient: "rjavi sladkor" },
+          { amount: "0.5 l", ingredient: "rum" },
+        ],
+      },
     ],
     instructions: [
       "Sladkor dodamo v mleko in pogrejemo, nato dodamo puding in kakav v prahu, ter mešamo se par minut na nizkem ognju.",
@@ -2807,10 +3255,14 @@ export const recipes: IRecipe[] = [
     category: Category.ColdDrink,
     language: Language.Spanish,
     servings: 8,
-    ingredients: [
-      { amount: "1 l", ingredient: "vino tinto" },
-      { amount: "1 l", ingredient: "agua con gas" },
-      { amount: "3", ingredient: "limón" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1 l", ingredient: "vino tinto" },
+          { amount: "1 l", ingredient: "agua con gas" },
+          { amount: "3", ingredient: "limón" },
+        ],
+      },
     ],
     instructions: ["Mezcla vino tinto, agua con gas y zumo de limónes."],
   },
@@ -2820,13 +3272,17 @@ export const recipes: IRecipe[] = [
     category: Category.ColdDrink,
     language: Language.Spanish,
     servings: 1,
-    ingredients: [
-      { amount: "30 ml", ingredient: "ron blanco" },
-      { amount: "200 ml", ingredient: "agua con gas" },
-      { amount: "1", ingredient: "lima" },
-      { amount: "1 cucharita", ingredient: "azúcar moreno" },
-      { ingredient: "menta" },
-      { ingredient: "hielo" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "30 ml", ingredient: "ron blanco" },
+          { amount: "200 ml", ingredient: "agua con gas" },
+          { amount: "1", ingredient: "lima" },
+          { amount: "1 cucharita", ingredient: "azúcar moreno" },
+          { ingredient: "menta" },
+          { ingredient: "hielo" },
+        ],
+      },
     ],
     instructions: [
       "Machacamos el azúcar moreno y lima con un mortero en un vaso.",
@@ -2841,11 +3297,15 @@ export const recipes: IRecipe[] = [
     category: Category.ColdDrink,
     language: Language.Spanish,
     servings: 1,
-    ingredients: [
-      { amount: "30 ml", ingredient: "ron blanco" },
-      { amount: "200 ml", ingredient: "cola" },
-      { amount: "1", ingredient: "lima" },
-      { ingredient: "hielo" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "30 ml", ingredient: "ron blanco" },
+          { amount: "200 ml", ingredient: "cola" },
+          { amount: "1", ingredient: "lima" },
+          { ingredient: "hielo" },
+        ],
+      },
     ],
     instructions: [
       "Machacamos la lima con un mortero en un vaso.",
@@ -2858,11 +3318,15 @@ export const recipes: IRecipe[] = [
     category: Category.ColdDrink,
     language: Language.Slovenian,
     servings: 1,
-    ingredients: [
-      { amount: "30 ml", ingredient: "beli rum" },
-      { amount: "30 ml", ingredient: "kokosovo mleko" },
-      { amount: "90 ml", ingredient: "ananasov sok" },
-      { ingredient: "led" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "30 ml", ingredient: "beli rum" },
+          { amount: "30 ml", ingredient: "kokosovo mleko" },
+          { amount: "90 ml", ingredient: "ananasov sok" },
+          { ingredient: "led" },
+        ],
+      },
     ],
     instructions: [
       "V ohlajen kozarec pretresi zmleti led.",
@@ -2876,12 +3340,16 @@ export const recipes: IRecipe[] = [
     title: "Palačinke",
     category: Category.Dough,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "1", ingredient: "jajce" },
-      { ingredient: "mleko" },
-      { ingredient: "gladka moka" },
-      { amount: "1 žlička", ingredient: "sladkor" },
-      { amount: "½ žličke", ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "1", ingredient: "jajce" },
+          { ingredient: "mleko" },
+          { ingredient: "gladka moka" },
+          { amount: "1 žlička", ingredient: "sladkor" },
+          { amount: "½ žličke", ingredient: "sol" },
+        ],
+      },
     ],
     instructions: ["Zmešaj vse sestavine.", "Na vroči ponvi popeči palačinko z obeh strani."],
   },
@@ -2891,17 +3359,21 @@ export const recipes: IRecipe[] = [
     category: Category.Dessert,
     language: Language.Slovenian,
     servings: 12,
-    ingredients: [
-      { amount: "200 g", ingredient: "gladka moka" },
-      { amount: "50 g", ingredient: "kakav" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "70 g", ingredient: "maslo" },
-      { amount: "200 ml", ingredient: "mleko" },
-      { amount: "120 g", ingredient: "sladkor" },
-      { amount: "1", ingredient: "limona" },
-      { ingredient: "pecilni prašek" },
-      { ingredient: "vanilij sladkor" },
-      { ingredient: "gozdni sadeži" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "gladka moka" },
+          { amount: "50 g", ingredient: "kakav" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "70 g", ingredient: "maslo" },
+          { amount: "200 ml", ingredient: "mleko" },
+          { amount: "120 g", ingredient: "sladkor" },
+          { amount: "1", ingredient: "limona" },
+          { ingredient: "pecilni prašek" },
+          { ingredient: "vanilij sladkor" },
+          { ingredient: "gozdni sadeži" },
+        ],
+      },
     ],
     instructions: [
       "Zmešaj rumenjake, sladkor, vanilij, sok limone in maslo.",
@@ -2923,17 +3395,21 @@ export const recipes: IRecipe[] = [
     title: "Borovničev kolač",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "200 g", ingredient: "pirina moka" },
-      { amount: "40 g", ingredient: "rjavi sladkor" },
-      { amount: "1", ingredient: "pecilni prašek" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "100 ml", ingredient: "mleko" },
-      { amount: "80 g", ingredient: "maslo" },
-      { amount: "50 g", ingredient: "kisla smetana" },
-      { amount: "190 g", ingredient: "borovnic" },
-      { amount: "1", ingredient: "limona" },
-      { amount: "1 žlička", ingredient: "cimet" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "pirina moka" },
+          { amount: "40 g", ingredient: "rjavi sladkor" },
+          { amount: "1", ingredient: "pecilni prašek" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "100 ml", ingredient: "mleko" },
+          { amount: "80 g", ingredient: "maslo" },
+          { amount: "50 g", ingredient: "kisla smetana" },
+          { amount: "190 g", ingredient: "borovnic" },
+          { amount: "1", ingredient: "limona" },
+          { amount: "1 žlička", ingredient: "cimet" },
+        ],
+      },
     ],
     instructions: [
       "V eni posodi zmešaj suhe sestavine: moka, sladkor, pecilni prašek in cimet.",
@@ -2948,14 +3424,18 @@ export const recipes: IRecipe[] = [
     title: "Bananin kolač",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "4", ingredient: "zrela banana" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "160 g", ingredient: "pirina moka" },
-      { amount: "100 g", ingredient: "maslo" },
-      { amount: "1", ingredient: "pecilni prašek" },
-      { amount: "1 žlička", ingredient: "cimet" },
-      { amount: "100 g", ingredient: "temna čokolada" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "4", ingredient: "zrela banana" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "160 g", ingredient: "pirina moka" },
+          { amount: "100 g", ingredient: "maslo" },
+          { amount: "1", ingredient: "pecilni prašek" },
+          { amount: "1 žlička", ingredient: "cimet" },
+          { amount: "100 g", ingredient: "temna čokolada" },
+        ],
+      },
     ],
     instructions: [
       "V večji skledi z vilico zmečkaj olupljene zrele banane.",
@@ -2973,15 +3453,19 @@ export const recipes: IRecipe[] = [
     title: "Bananini mafini z Nutello in kokosom",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "200 g", ingredient: "moka" },
-      { amount: "80 g", ingredient: "maslo" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "100 g", ingredient: "sladkor" },
-      { amount: "60 g", ingredient: "kokosova moka" },
-      { amount: "3", ingredient: "banana" },
-      { amount: "1", ingredient: "pecilni prašek" },
-      { amount: "6 žličk", ingredient: "Nutella" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "moka" },
+          { amount: "80 g", ingredient: "maslo" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "100 g", ingredient: "sladkor" },
+          { amount: "60 g", ingredient: "kokosova moka" },
+          { amount: "3", ingredient: "banana" },
+          { amount: "1", ingredient: "pecilni prašek" },
+          { amount: "6 žličk", ingredient: "Nutella" },
+        ],
+      },
     ],
     instructions: [
       "V eni posodi zmešaj mokre sestavine: jajca, sladkor, maslo in banane.",
@@ -2997,18 +3481,22 @@ export const recipes: IRecipe[] = [
     title: "Bizcocho de canela, cardamomo y jengibre",
     category: Category.Dessert,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "100 g", ingredient: "mantequilla" },
-      { amount: "100 g", ingredient: "azúcar" },
-      { amount: "2", ingredient: "huevo" },
-      { amount: "200 g", ingredient: "harina" },
-      { amount: "2 cucharaditas", ingredient: "canela" },
-      { amount: "2 cucharaditas", ingredient: "jengibre" },
-      { amount: "½ cucharadita", ingredient: "cardamomo" },
-      { amount: "½ cucharadita", ingredient: "nuez moscada" },
-      { ingredient: "polvo de hornear" },
-      { amount: "120 ml", ingredient: "leche" },
-      { amount: "una pizca", ingredient: "sal" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "100 g", ingredient: "mantequilla" },
+          { amount: "100 g", ingredient: "azúcar" },
+          { amount: "2", ingredient: "huevo" },
+          { amount: "200 g", ingredient: "harina" },
+          { amount: "2 cucharaditas", ingredient: "canela" },
+          { amount: "2 cucharaditas", ingredient: "jengibre" },
+          { amount: "½ cucharadita", ingredient: "cardamomo" },
+          { amount: "½ cucharadita", ingredient: "nuez moscada" },
+          { ingredient: "polvo de hornear" },
+          { amount: "120 ml", ingredient: "leche" },
+          { amount: "una pizca", ingredient: "sal" },
+        ],
+      },
     ],
     instructions: [
       "En un bol mezcla mantequilla, azúcar y huevo.",
@@ -3026,13 +3514,17 @@ export const recipes: IRecipe[] = [
     title: "Crema fría de almendras con canela",
     category: Category.Dessert,
     language: Language.Spanish,
-    ingredients: [
-      { amount: "150 g", ingredient: "almendras peladas" },
-      { amount: "100 g", ingredient: "azúcar" },
-      { amount: "1 l", ingredient: "leche" },
-      { amount: "2 cucharadas", ingredient: "maicena" },
-      { amount: "1 rama", ingredient: "canela" },
-      { amount: "2 cucharadas", ingredient: "canela en polvo" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "150 g", ingredient: "almendras peladas" },
+          { amount: "100 g", ingredient: "azúcar" },
+          { amount: "1 l", ingredient: "leche" },
+          { amount: "2 cucharadas", ingredient: "maicena" },
+          { amount: "1 rama", ingredient: "canela" },
+          { amount: "2 cucharadas", ingredient: "canela en polvo" },
+        ],
+      },
     ],
     instructions: [
       "Coloca las almendras en una sartén antiadherente y tuéstalas hasta que tomen color. Luego, colócalas en el vaso de la picadora y tritúralas hasta pulverizarlas.",
@@ -3047,16 +3539,20 @@ export const recipes: IRecipe[] = [
     title: "Korenčkov kolač",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "200 g", ingredient: "korenček" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "160 g", ingredient: "pirina moka" },
-      { amount: "20 g", ingredient: "sladkor" },
-      { amount: "4 žlice", ingredient: "olivno olje" },
-      { amount: "1", ingredient: "pecilni prašek" },
-      { amount: "100 ml", ingredient: "mleko" },
-      { amount: "1 žlička", ingredient: "cimet" },
-      { ingredient: "orehi ali mandlji" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "200 g", ingredient: "korenček" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "160 g", ingredient: "pirina moka" },
+          { amount: "20 g", ingredient: "sladkor" },
+          { amount: "4 žlice", ingredient: "olivno olje" },
+          { amount: "1", ingredient: "pecilni prašek" },
+          { amount: "100 ml", ingredient: "mleko" },
+          { amount: "1 žlička", ingredient: "cimet" },
+          { ingredient: "orehi ali mandlji" },
+        ],
+      },
     ],
     instructions: [
       "V večjo skledo naribaj korenček.",
@@ -3073,13 +3569,17 @@ export const recipes: IRecipe[] = [
     category: Category.Dessert,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "35 g", ingredient: "rolled oats" },
-      { amount: "5 g", ingredient: "chia seeds" },
-      { amount: "100 ml", ingredient: "Greek yogurt" },
-      { amount: "100 ml", ingredient: "milk" },
-      { amount: "1 tbs", ingredient: "peanut butter" },
-      { amount: "½", ingredient: "banana" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "35 g", ingredient: "rolled oats" },
+          { amount: "5 g", ingredient: "chia seeds" },
+          { amount: "100 ml", ingredient: "Greek yogurt" },
+          { amount: "100 ml", ingredient: "milk" },
+          { amount: "1 tbs", ingredient: "peanut butter" },
+          { amount: "½", ingredient: "banana" },
+        ],
+      },
     ],
     instructions: [
       "Mix oats and chia seeds.",
@@ -3095,14 +3595,18 @@ export const recipes: IRecipe[] = [
     category: Category.Dessert,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "35 g", ingredient: "rolled oats" },
-      { amount: "5 g", ingredient: "chia seeds" },
-      { amount: "100 ml", ingredient: "Greek yogurt" },
-      { amount: "100 ml", ingredient: "milk" },
-      { amount: "1 tbs", ingredient: "almond butter" },
-      { amount: "1 tbs", ingredient: "cinnamon" },
-      { amount: "90 g", ingredient: "berries" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "35 g", ingredient: "rolled oats" },
+          { amount: "5 g", ingredient: "chia seeds" },
+          { amount: "100 ml", ingredient: "Greek yogurt" },
+          { amount: "100 ml", ingredient: "milk" },
+          { amount: "1 tbs", ingredient: "almond butter" },
+          { amount: "1 tbs", ingredient: "cinnamon" },
+          { amount: "90 g", ingredient: "berries" },
+        ],
+      },
     ],
     instructions: [
       "Mix oats, chia seeds and cinnamon.",
@@ -3118,14 +3622,18 @@ export const recipes: IRecipe[] = [
     category: Category.Dessert,
     language: Language.English,
     servings: 1,
-    ingredients: [
-      { amount: "35 g", ingredient: "rolled oats" },
-      { amount: "5 g", ingredient: "chia seeds" },
-      { amount: "100 ml", ingredient: "Greek yogurt" },
-      { amount: "100 ml", ingredient: "milk" },
-      { amount: "1 tbs", ingredient: "hazelnut or almond butter" },
-      { amount: "1 tbs", ingredient: "cacao or chocolate powder" },
-      { amount: "½", ingredient: "banana" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "35 g", ingredient: "rolled oats" },
+          { amount: "5 g", ingredient: "chia seeds" },
+          { amount: "100 ml", ingredient: "Greek yogurt" },
+          { amount: "100 ml", ingredient: "milk" },
+          { amount: "1 tbs", ingredient: "hazelnut or almond butter" },
+          { amount: "1 tbs", ingredient: "cacao or chocolate powder" },
+          { amount: "½", ingredient: "banana" },
+        ],
+      },
     ],
     instructions: [
       "Mix oats, chia seeds and cacao powder.",
@@ -3140,15 +3648,19 @@ export const recipes: IRecipe[] = [
     title: "Jabolčne palačinke",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "2", ingredient: "jabolko" },
-      { amount: "1", ingredient: "jajce" },
-      { amount: "180 ml", ingredient: "mleko" },
-      { amount: "125 g", ingredient: "moka" },
-      { amount: "1 žlička", ingredient: "cimet" },
-      { amount: "25 g", ingredient: "sladkor" },
-      { ingredient: "pecilni prašek" },
-      { ingredient: "grški jogurt" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2", ingredient: "jabolko" },
+          { amount: "1", ingredient: "jajce" },
+          { amount: "180 ml", ingredient: "mleko" },
+          { amount: "125 g", ingredient: "moka" },
+          { amount: "1 žlička", ingredient: "cimet" },
+          { amount: "25 g", ingredient: "sladkor" },
+          { ingredient: "pecilni prašek" },
+          { ingredient: "grški jogurt" },
+        ],
+      },
     ],
     instructions: [
       "Zmešamo jajce in mleko.",
@@ -3165,14 +3677,18 @@ export const recipes: IRecipe[] = [
     title: "Tiramisu",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { ingredient: "Savoiardi piškoti" },
-      { amount: "500 g", ingredient: "mascarpone" },
-      { amount: "100 ml", ingredient: "mleko" },
-      { amount: "50 g", ingredient: "sladkor" },
-      { ingredient: "rum" },
-      { ingredient: "kava" },
-      { ingredient: "kakav" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { ingredient: "Savoiardi piškoti" },
+          { amount: "500 g", ingredient: "mascarpone" },
+          { amount: "100 ml", ingredient: "mleko" },
+          { amount: "50 g", ingredient: "sladkor" },
+          { ingredient: "rum" },
+          { ingredient: "kava" },
+          { ingredient: "kakav" },
+        ],
+      },
     ],
     instructions: [
       "Zmešaj mascarpone, mleko in sladkor, da dobiš kremasto zmes.",
@@ -3188,17 +3704,21 @@ export const recipes: IRecipe[] = [
     title: "Medenjaki",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "500 g", ingredient: "moka" },
-      { amount: "150 g", ingredient: "maslo" },
-      { amount: "2", ingredient: "jajci" },
-      { amount: "150 g", ingredient: "sladkor v prahu" },
-      { amount: "70 g", ingredient: "sladkor" },
-      { amount: "50 g", ingredient: "med" },
-      { ingredient: "pecilni prašek" },
-      { ingredient: "vanilij sladkor" },
-      { ingredient: "začimbe za medenjake" },
-      { amount: "½", ingredient: "limona" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "moka" },
+          { amount: "150 g", ingredient: "maslo" },
+          { amount: "2", ingredient: "jajci" },
+          { amount: "150 g", ingredient: "sladkor v prahu" },
+          { amount: "70 g", ingredient: "sladkor" },
+          { amount: "50 g", ingredient: "med" },
+          { ingredient: "pecilni prašek" },
+          { ingredient: "vanilij sladkor" },
+          { ingredient: "začimbe za medenjake" },
+          { amount: "½", ingredient: "limona" },
+        ],
+      },
     ],
     instructions: [
       "Zmešaj moko in pecilni prašek, nato dodaj vse ostale sestavine za testo: sladkor, maslo, 1 jajce, 1 rumenjak, vanilij sladkor, med, začimbe za medenjake (cimet, ingver, itd.).",
@@ -3213,13 +3733,17 @@ export const recipes: IRecipe[] = [
     title: "Vanilijevi rogljički",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "500 g", ingredient: "moka" },
-      { amount: "300 g", ingredient: "maslo" },
-      { amount: "200 g", ingredient: "mleti orehi" },
-      { amount: "4", ingredient: "jajce" },
-      { amount: "240 g", ingredient: "sladkor v prahu" },
-      { amount: "3", ingredient: "vanilij sladkor" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "500 g", ingredient: "moka" },
+          { amount: "300 g", ingredient: "maslo" },
+          { amount: "200 g", ingredient: "mleti orehi" },
+          { amount: "4", ingredient: "jajce" },
+          { amount: "240 g", ingredient: "sladkor v prahu" },
+          { amount: "3", ingredient: "vanilij sladkor" },
+        ],
+      },
     ],
     instructions: [
       "Vmesimo testo iz masla, moke, zmletih orehov, 4 rumenjakov, 140 g sladkorja v prahu in 2 vanilijih sladkorjev.",
@@ -3234,16 +3758,20 @@ export const recipes: IRecipe[] = [
     title: "Jabolčna pita",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "10-15", ingredient: "jabolko" },
-      { amount: "500 g", ingredient: "moka" },
-      { amount: "200 g", ingredient: "margarina" },
-      { amount: "2", ingredient: "jajce" },
-      { amount: "3 žlice", ingredient: "rdeče vino" },
-      { amount: "1 žlica", ingredient: "sladkor" },
-      { ingredient: "limona" },
-      { ingredient: "cimet" },
-      { amount: "ščepec", ingredient: "sol" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "10-15", ingredient: "jabolko" },
+          { amount: "500 g", ingredient: "moka" },
+          { amount: "200 g", ingredient: "margarina" },
+          { amount: "2", ingredient: "jajce" },
+          { amount: "3 žlice", ingredient: "rdeče vino" },
+          { amount: "1 žlica", ingredient: "sladkor" },
+          { ingredient: "limona" },
+          { ingredient: "cimet" },
+          { amount: "ščepec", ingredient: "sol" },
+        ],
+      },
     ],
     instructions: [
       "Maslo zdrobi med moko, dodaj rumenjake, vino, sladkor, sol in drobno naribano limonino lupino.",
@@ -3259,14 +3787,18 @@ export const recipes: IRecipe[] = [
     category: Category.Dessert,
     language: Language.Slovenian,
     servings: 4,
-    ingredients: [
-      { amount: "180 g", ingredient: "ingverjevi piškoti" },
-      { amount: "40 g", ingredient: "maslo" },
-      { amount: "140 g", ingredient: "maskarpone" },
-      { amount: "200 g", ingredient: "skuta" },
-      { amount: "140 g", ingredient: "kisla smetana" },
-      { ingredient: "zamrznjeni gozdni sadeži" },
-      { ingredient: "cimet" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "180 g", ingredient: "ingverjevi piškoti" },
+          { amount: "40 g", ingredient: "maslo" },
+          { amount: "140 g", ingredient: "maskarpone" },
+          { amount: "200 g", ingredient: "skuta" },
+          { amount: "140 g", ingredient: "kisla smetana" },
+          { ingredient: "zamrznjeni gozdni sadeži" },
+          { ingredient: "cimet" },
+        ],
+      },
     ],
     instructions: [
       "Zamrznjene gozdne sadeže skuhamo v džem in ohladimo.",
@@ -3282,24 +3814,28 @@ export const recipes: IRecipe[] = [
     title: "Božično novoletni piškoti",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "2 pesti", ingredient: "sesekljani mandlji" },
-      { amount: "2 pesti", ingredient: "sesekljani lešniki" },
-      { amount: "100 g", ingredient: "rozine" },
-      { amount: "1", ingredient: "pomaranča" },
-      { amount: "1", ingredient: "limona" },
-      { amount: "2 žlici", ingredient: "rum" },
-      { amount: "500 g", ingredient: "ostra moka" },
-      { amount: "2 žlici", ingredient: "pecilni prašek" },
-      { amount: "4 žlice", ingredient: "kakav v prahu" },
-      { amount: "400 g", ingredient: "čokolada" },
-      { amount: "2 žlički", ingredient: "cimet" },
-      { amount: "2 žlički", ingredient: "ingver" },
-      { amount: "1 žlička", ingredient: "muškatni orešček" },
-      { amount: "400 g", ingredient: "margarina" },
-      { amount: "200 g", ingredient: "sladkor v prahu" },
-      { amount: "2", ingredient: "vanilij sladkor" },
-      { amount: "4", ingredient: "jajce" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "2 pesti", ingredient: "sesekljani mandlji" },
+          { amount: "2 pesti", ingredient: "sesekljani lešniki" },
+          { amount: "100 g", ingredient: "rozine" },
+          { amount: "1", ingredient: "pomaranča" },
+          { amount: "1", ingredient: "limona" },
+          { amount: "2 žlici", ingredient: "rum" },
+          { amount: "500 g", ingredient: "ostra moka" },
+          { amount: "2 žlici", ingredient: "pecilni prašek" },
+          { amount: "4 žlice", ingredient: "kakav v prahu" },
+          { amount: "400 g", ingredient: "čokolada" },
+          { amount: "2 žlički", ingredient: "cimet" },
+          { amount: "2 žlički", ingredient: "ingver" },
+          { amount: "1 žlička", ingredient: "muškatni orešček" },
+          { amount: "400 g", ingredient: "margarina" },
+          { amount: "200 g", ingredient: "sladkor v prahu" },
+          { amount: "2", ingredient: "vanilij sladkor" },
+          { amount: "4", ingredient: "jajce" },
+        ],
+      },
     ],
     instructions: [
       "Rozine zmešamo s pomarančnim sokom ter žlico ruma, da se malo prepojijo.",
@@ -3317,19 +3853,23 @@ export const recipes: IRecipe[] = [
     title: "Božični kruh",
     category: Category.Dessert,
     language: Language.Slovenian,
-    ingredients: [
-      { amount: "250 g", ingredient: "moka" },
-      { amount: "200 g", ingredient: "sladkor" },
-      { amount: "150 g", ingredient: "margarina" },
-      { amount: "5", ingredient: "jajce" },
-      { amount: "1", ingredient: "pecilni prašek" },
-      { amount: "1", ingredient: "vanilij sladkor" },
-      { amount: "1 žlica", ingredient: "rum" },
-      { amount: "100 g", ingredient: "rozine" },
-      { amount: "100 g", ingredient: "orehi" },
-      { amount: "100 g", ingredient: "suhe fige" },
-      { amount: "100 g", ingredient: "suhe slive" },
-      { amount: "100 g", ingredient: "čokolada" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "250 g", ingredient: "moka" },
+          { amount: "200 g", ingredient: "sladkor" },
+          { amount: "150 g", ingredient: "margarina" },
+          { amount: "5", ingredient: "jajce" },
+          { amount: "1", ingredient: "pecilni prašek" },
+          { amount: "1", ingredient: "vanilij sladkor" },
+          { amount: "1 žlica", ingredient: "rum" },
+          { amount: "100 g", ingredient: "rozine" },
+          { amount: "100 g", ingredient: "orehi" },
+          { amount: "100 g", ingredient: "suhe fige" },
+          { amount: "100 g", ingredient: "suhe slive" },
+          { amount: "100 g", ingredient: "čokolada" },
+        ],
+      },
     ],
     instructions: [
       "Rozine preberemo, jih v topli vodi operemo in dobro odcedimo in navlažimo z rumom.",
@@ -3348,12 +3888,19 @@ export const recipes: IRecipe[] = [
     title: "Brownie energy balls",
     category: Category.Dessert,
     language: Language.English,
-    ingredients: [
-      { amount: "50 g", ingredient: "oats" },
-      { amount: "200 g", ingredient: "pitted dates" },
-      { amount: "100 g", ingredient: "nuts of your choice (hazelnuts, almonds, cashews, etc.)" },
-      { amount: "1 tbsp", ingredient: "cocoa powder" },
-      { amount: "50 g", ingredient: "nut butter of your choice" },
+    ingredientsGroups: [
+      {
+        ingredients: [
+          { amount: "50 g", ingredient: "oats" },
+          { amount: "200 g", ingredient: "pitted dates" },
+          {
+            amount: "100 g",
+            ingredient: "nuts of your choice (hazelnuts, almonds, cashews, etc.)",
+          },
+          { amount: "1 tbsp", ingredient: "cocoa powder" },
+          { amount: "50 g", ingredient: "nut butter of your choice" },
+        ],
+      },
     ],
     instructions: [
       "If your dates aren’t soft and chewy, place in warm water for 20 minutes.",

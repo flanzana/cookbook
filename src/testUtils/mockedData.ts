@@ -6,12 +6,16 @@ export const mockedRecipe: IRecipe = {
   category: Category.Dessert,
   language: Language.English,
   servings: 2,
-  ingredients: [
-    { amount: "120 g", ingredient: "lorem" },
-    { amount: "1 spoon", ingredient: "ipsum" },
-    { amount: "1", ingredient: "dolor" },
-    { ingredient: "sit" },
-    { ingredient: "amet" },
+  ingredientsGroups: [
+    {
+      ingredients: [
+        { amount: "120 g", ingredient: "lorem" },
+        { amount: "1 spoon", ingredient: "ipsum" },
+        { amount: "1", ingredient: "dolor" },
+        { ingredient: "sit" },
+        { ingredient: "amet" },
+      ],
+    },
   ],
   instructions: [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
