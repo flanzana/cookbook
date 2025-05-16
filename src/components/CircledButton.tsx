@@ -13,6 +13,7 @@ const ICON_COLOR: Record<CircledButtonType, string> = {
 
 type Props = {
   ariaLabel: string
+  ariaPressed?: boolean
   icon: ReactElement
   onClick: () => void
   type?: CircledButtonType
@@ -22,15 +23,23 @@ type Props = {
  * Styled circled button component.
  *
  * @param ariaLabel - content for the aria-label attribute
+ * @param ariaPressed - value for the aria-pressed attribute
  * @param onClick - callback when button is clicked
  * @param icon - icon of the button
  * @param type - type of the button
  */
-const CircledButton = ({ ariaLabel, onClick, icon, type = CircledButtonType.PRIMARY }: Props) => {
+const CircledButton = ({
+  ariaLabel,
+  ariaPressed,
+  onClick,
+  icon,
+  type = CircledButtonType.PRIMARY,
+}: Props) => {
   return (
     <button
       type="button"
       aria-label={ariaLabel}
+      aria-pressed={typeof ariaPressed === "boolean" ? ariaPressed : undefined}
       onClick={onClick}
       className={clsx(
         "h-fit w-fit items-center rounded-full p-2 outline-hidden",

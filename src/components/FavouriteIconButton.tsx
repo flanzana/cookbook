@@ -12,17 +12,12 @@ import CircledButton from "./CircledButton"
 const FavouriteIconButton = () => {
   const { areFavouriteRecipesOnlyShown, showFavouriteRecipesOnly, showAllRecipes } = useFavourites()
 
-  return areFavouriteRecipesOnlyShown ? (
+  return (
     <CircledButton
-      ariaLabel="Show all recipes"
-      onClick={showAllRecipes}
-      icon={<FilledHeartIcon />}
-    />
-  ) : (
-    <CircledButton
-      ariaLabel="Show favourite recipes only"
-      onClick={showFavouriteRecipesOnly}
-      icon={<EmptyHeartIcon />}
+      ariaLabel="Toggle favourite recipes only"
+      ariaPressed={areFavouriteRecipesOnlyShown}
+      onClick={areFavouriteRecipesOnlyShown ? showAllRecipes : showFavouriteRecipesOnly}
+      icon={areFavouriteRecipesOnlyShown ? <FilledHeartIcon /> : <EmptyHeartIcon />}
     />
   )
 }

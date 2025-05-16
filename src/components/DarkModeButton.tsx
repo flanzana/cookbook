@@ -22,6 +22,7 @@ const DarkModeButton = () => {
   return (
     <CircledButton
       ariaLabel="Toggle dark mode"
+      ariaPressed={isDarkMode}
       onClick={() => setIsDarkMode(!isDarkMode)}
       icon={<SunIcon />}
     />
