@@ -25,7 +25,7 @@ const FavouriteLink = ({ recipeId, language }: Props) => {
 
   useEffect(() => {
     setIsFavouriteLocal(isFavourite)
-  }, [isFavourite]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isFavourite])
 
   return isFavouriteLocal ? (
     <TextLink

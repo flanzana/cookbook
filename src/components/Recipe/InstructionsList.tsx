@@ -17,7 +17,6 @@ export const InstructionsListItem = ({ children, index }: InstructionsListItemPr
   const [isCrossed, setIsCrossed] = useState<boolean>(false)
 
   return (
-    // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions
     <li
       className={clsx("flex flex-row text-left", isCrossed && "text-zinc-400 line-through")}
       onClick={() => setIsCrossed(!isCrossed)}

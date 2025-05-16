@@ -64,7 +64,6 @@ describe("Recipe", () => {
     },
   ].forEach(langItem =>
     describe(`items in ${langItem.language} language`, () => {
-      // eslint-disable-next-line testing-library/no-render-in-lifecycle
       beforeEach(() => renderRecipe(langItem.recipe))
 
       it("displays the title", () => {
