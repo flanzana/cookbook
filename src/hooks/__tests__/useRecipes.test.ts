@@ -3,6 +3,11 @@ import { renderHook } from "@testing-library/react"
 import { mockedRecipes } from "../../testUtils/mockedData"
 import useRecipes from "../useRecipes"
 
+jest.mock("next/navigation", () => ({
+  usePathname: () => "/hello",
+  useSearchParams: () => new URLSearchParams(),
+  useRouter: () => jest.fn(),
+}))
 jest.mock("../../data/data", () => ({
   get recipes() {
     return mockedRecipes
