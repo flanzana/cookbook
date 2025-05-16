@@ -1,6 +1,6 @@
-import { recipes } from "../data/data"
-import { IRecipe, RecipeCard } from "../types"
 import { useFavourites } from "../context/FavouritesProvider"
+import { recipes } from "../data/data"
+import type { IRecipe, RecipeCard } from "../types"
 
 const sortAlphabetically = (x: RecipeCard[]): RecipeCard[] =>
   x.sort((a, b) => a.title.localeCompare(b.title))

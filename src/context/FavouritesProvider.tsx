@@ -1,8 +1,8 @@
 "use client"
-import React, { createContext, useCallback, useContext, useState } from "react"
+import { type ReactNode, createContext, useCallback, useContext, useState } from "react"
 
 import useLocalStorage from "../hooks/useLocalStorage"
-import { RecipeId } from "../types"
+import type { RecipeId } from "../types"
 
 type Favourites = {
   areFavouriteRecipesOnlyShown: boolean
@@ -19,7 +19,7 @@ type Favourites = {
 const FavouritesContext = createContext<Favourites>({})
 
 type Props = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const FavouritesProvider = ({ children }: Props) => {

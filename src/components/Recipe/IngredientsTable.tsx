@@ -1,6 +1,6 @@
 "use client"
 import clsx from "clsx"
-import React, { useState } from "react"
+import { type ReactNode, useState } from "react"
 
 type IngredientsTableRowProps = {
   amount?: string
@@ -29,7 +29,7 @@ export const IngredientsTableRow = ({ amount, ingredient }: IngredientsTableRowP
 
 type Props = {
   title?: string
-  children: React.ReactNode
+  children: ReactNode
 }
 
 /**

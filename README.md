@@ -23,11 +23,11 @@ then open [localhost:3000](http://localhost:3000) in your browser (Google Chrome
 - TypeScript
 - TailwindCSS and Heroicons
 - Jest and React testing library
-- ESLint and different ESLint plugins
-- Prettier
+- Biome
 
 ## Resources
 
 - [TailwindCSS](https://tailwindcss.com/docs)
 - [Heroicons](https://heroicons.com/)
 - [Next.js](https://nextjs.org/docs)
+- [Biome](https://biomejs.dev/linter/rules)

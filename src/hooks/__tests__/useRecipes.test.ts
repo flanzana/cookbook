@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react"
 
-import useRecipes from "../useRecipes"
 import { mockedRecipes } from "../../testUtils/mockedData"
+import useRecipes from "../useRecipes"
 
 jest.mock("../../data/data", () => ({
   get recipes() {

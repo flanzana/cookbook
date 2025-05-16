@@ -1,10 +1,10 @@
 "use client"
 import React from "react"
 
-import useRecipes from "../../hooks/useRecipes"
 import RecipeCard from "../../components/RecipeCard/RecipeCard"
-import { useFavourites } from "../../context/FavouritesProvider"
 import TextLink from "../../components/TextLink"
+import { useFavourites } from "../../context/FavouritesProvider"
+import useRecipes from "../../hooks/useRecipes"
 
 const NoFavouriteRecipes = () => {
   const { showAllRecipes } = useFavourites()

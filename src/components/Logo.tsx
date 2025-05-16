@@ -9,7 +9,14 @@ type Props = {
  * Note: it has to be in this format in order to set the logo's color via Tailwind. It cannot be set via Next.js Image or img tag.
  */
 const Logo = ({ width, height, className }: Props) => (
-  <svg width={width} height={height} viewBox="0 0 46 42" fill="currentColor" className={className}>
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 46 42"
+    fill="currentColor"
+    className={className}
+    aria-hidden="true"
+  >
     <path
       fill="currentColor"
       fillRule="evenodd"

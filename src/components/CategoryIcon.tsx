@@ -1,6 +1,6 @@
-import { Category } from "../types"
-import getCategoryTitle from "../helpers/getCategoryTitle"
 import getCategoryEmoji from "../helpers/getCategoryEmoji"
+import getCategoryTitle from "../helpers/getCategoryTitle"
+import type { Category } from "../types"
 
 type Props = {
   category: Category

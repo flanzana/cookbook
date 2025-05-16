@@ -1,9 +1,10 @@
-import Link from "next/link"
 import clsx from "clsx"
+import Link from "next/link"
+import type { ReactNode } from "react"
 
 type Props = {
   href?: string
-  children: string | React.ReactNode
+  children: string | ReactNode
   onClick?: () => void
   size?: "normal" | "large"
 }
@@ -30,7 +31,7 @@ const Button = ({ href, onClick, children, size = "normal" }: Props) => {
       {children}
     </Link>
   ) : (
-    <button onClick={onClick} className={className}>
+    <button type="button" onClick={onClick} className={className}>
       {children}
     </button>
   )

@@ -1,4 +1,4 @@
-import { Metadata } from "next"
+import type { Metadata } from "next"
 
 import Page from "../../components/Page/Page"
 import RecipeCards from "./RecipeCards"

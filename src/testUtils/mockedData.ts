@@ -1,4 +1,4 @@
-import { Category, IRecipe, Language } from "../types"
+import { Category, type IRecipe, Language } from "../types"
 
 export const mockedRecipe: IRecipe = {
   id: "lorem-ipsum",

@@ -1,12 +1,12 @@
-import React from "react"
 import { screen, within } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
+import React from "react"
 
-import Recipe from "../Recipe"
-import { IRecipe, Language } from "../../../types"
-import { mockedRecipe } from "../../../testUtils/mockedData"
 import mockLocalStorage from "../../../testUtils/mockLocalStorage"
+import { mockedRecipe } from "../../../testUtils/mockedData"
 import renderWithProviders from "../../../testUtils/renderWithProviders"
+import { type IRecipe, Language } from "../../../types"
+import Recipe from "../Recipe"
 
 const ORIGINAL_RECIPE = "https://www.recipe.com"
 
@@ -17,6 +17,7 @@ const mockedRecipeWithOriginal = {
 
 const renderRecipe = (recipe: IRecipe, isSaved = false) => {
   mockLocalStorage({
+    // biome-ignore lint/complexity/useLiteralKeys: complex key
     ["cookbook-zana:favourite-recipes"]: JSON.stringify(isSaved ? [recipe.id] : []),
   })
 

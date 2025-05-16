@@ -1,12 +1,12 @@
-import React, { cloneElement } from "react"
-import Link from "next/link"
 import clsx from "clsx"
+import Link from "next/link"
+import { type ReactElement, type ReactNode, cloneElement } from "react"
 
 export type Props = {
   href?: string
   onClick?: () => void
-  children?: string | React.ReactNode
-  icon?: React.ReactElement
+  children?: string | ReactNode
+  icon?: ReactElement
   isExternal?: boolean
   isUnderlined?: boolean
   additionalClassName?: string
@@ -78,7 +78,7 @@ const TextLink = ({
   }
 
   return (
-    <button onClick={onClick} className={className} aria-label={ariaLabel}>
+    <button type="button" onClick={onClick} className={className} aria-label={ariaLabel}>
       <StyledContent icon={icon}>{children}</StyledContent>
     </button>
   )

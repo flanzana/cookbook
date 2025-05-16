@@ -1,8 +1,8 @@
 import { ArrowRightIcon } from "@heroicons/react/20/solid"
 
-import Page from "../components/Page/Page"
-import Logo from "../components/Logo"
 import Button from "../components/Button"
+import Logo from "../components/Logo"
+import Page from "../components/Page/Page"
 
 const HomePage = () => {
   return (

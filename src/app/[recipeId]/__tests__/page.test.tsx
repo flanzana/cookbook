@@ -1,8 +1,8 @@
 import { screen } from "@testing-library/react"
 import { notFound } from "next/navigation"
 
-import RecipePage from "../page"
 import renderWithProviders from "../../../testUtils/renderWithProviders"
+import RecipePage from "../page"
 
 jest.mock("next/navigation", () => ({
   notFound: jest.fn(),

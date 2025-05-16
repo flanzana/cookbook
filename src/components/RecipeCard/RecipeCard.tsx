@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { ChevronRightIcon } from "@heroicons/react/20/solid"
+import Link from "next/link"
 
-import { RecipeCard as RecipeCardType } from "../../types"
+import type { RecipeCard as RecipeCardType } from "../../types"
 import CategoryIcon from "../CategoryIcon"
 
 /**

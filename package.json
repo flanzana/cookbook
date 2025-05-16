@@ -9,6 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier . --check",
+    "biome": "biome check --error-on-warnings",
+    "biome:fix": "biome check --error-on-warnings --write",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "types": "tsc"
@@ -20,6 +22,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/postcss": "^4.0.9",
     "@testing-library/dom": "^10.4.0",

@@ -1,9 +1,11 @@
-import PageHeader from "./PageHeader"
-import PageFooter from "./PageFooter"
+import type { ReactNode } from "react"
+
 import DarkModeButton from "../DarkModeButton"
+import PageFooter from "./PageFooter"
+import PageHeader from "./PageHeader"
 
 type Props = {
-  children: React.ReactNode
+  children: ReactNode
   hasHeader?: boolean
   hasFooter?: boolean
   hasFavouritesIcon?: boolean

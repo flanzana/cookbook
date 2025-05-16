@@ -1,14 +1,14 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline"
 
-import { IRecipe } from "../../types"
-import RecipeLayout, { Part } from "./RecipeLayout"
+import getTranslation from "../../helpers/getTranslation"
+import type { IRecipe } from "../../types"
 import TextLink from "../TextLink"
+import CookMode from "./CookMode"
+import FavouriteLink from "./FavouriteLink"
 import IngredientsTable, { IngredientsTableRow } from "./IngredientsTable"
 import InstructionsList, { InstructionsListItem } from "./InstructionsList"
-import getTranslation from "../../helpers/getTranslation"
-import FavouriteLink from "./FavouriteLink"
 import NotesList from "./NotesList"
-import CookMode from "./CookMode"
+import RecipeLayout, { Part } from "./RecipeLayout"
 
 type Props = {
   recipe: IRecipe

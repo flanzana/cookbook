@@ -1,10 +1,10 @@
 "use client"
-import React from "react"
 import clsx from "clsx"
+import React from "react"
 
-import useWakeLock from "../../hooks/useWakeLock"
-import { Language } from "../../types"
 import getTranslation from "../../helpers/getTranslation"
+import useWakeLock from "../../hooks/useWakeLock"
+import type { Language } from "../../types"
 
 type Props = {
   language: Language

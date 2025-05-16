@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Open_Sans, Poppins } from "next/font/google"
+import type { ReactNode } from "react"
 
 import "./globals.css"
 import FavouritesProvider from "../context/FavouritesProvider"
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
 const RootLayout = ({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) => {
   return (
     <html lang="en" className={`${poppins.variable} ${openSans.variable}`}>

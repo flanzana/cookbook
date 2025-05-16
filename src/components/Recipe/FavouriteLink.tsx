@@ -1,12 +1,12 @@
 "use client"
-import React, { useEffect, useState } from "react"
 import { HeartIcon as FilledHeartIcon } from "@heroicons/react/20/solid"
 import { HeartIcon as EmptyHeartIcon } from "@heroicons/react/24/outline"
+import React, { useEffect, useState } from "react"
 
-import { IRecipe } from "../../types"
-import TextLink from "../TextLink"
-import getTranslation from "../../helpers/getTranslation"
 import { useFavourites } from "../../context/FavouritesProvider"
+import getTranslation from "../../helpers/getTranslation"
+import type { IRecipe } from "../../types"
+import TextLink from "../TextLink"
 
 type Props = {
   recipeId: IRecipe["id"]

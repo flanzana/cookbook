@@ -1,9 +1,9 @@
-import { Metadata } from "next"
+import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
+import Page from "../../components/Page/Page"
 import Recipe from "../../components/Recipe/Recipe"
 import { recipes } from "../../data/data"
-import Page from "../../components/Page/Page"
 import getRecipe from "../../helpers/getRecipe"
 
 export async function generateStaticParams() {

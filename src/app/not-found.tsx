@@ -1,7 +1,7 @@
-import { Metadata } from "next"
+import type { Metadata } from "next"
 
-import TextLink from "../components/TextLink"
 import Page from "../components/Page/Page"
+import TextLink from "../components/TextLink"
 
 export const metadata: Metadata = {
   title: "Not found | Žana's cookbook",

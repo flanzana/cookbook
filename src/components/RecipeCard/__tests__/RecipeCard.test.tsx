@@ -1,8 +1,8 @@
-import React from "react"
 import { render, screen } from "@testing-library/react"
+import React from "react"
 
-import RecipeCard from "../RecipeCard"
 import { Category } from "../../../types"
+import RecipeCard from "../RecipeCard"
 
 const renderRecipeCard = () =>
   render(<RecipeCard href="/link-to-page" title="Burrito bowl" category={Category.Main} />)

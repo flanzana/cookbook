@@ -1,5 +1,5 @@
-import React, { cloneElement } from "react"
 import clsx from "clsx"
+import { type ReactElement, cloneElement } from "react"
 
 export enum CircledButtonType {
   PRIMARY = "primary",
@@ -13,7 +13,7 @@ const ICON_COLOR: Record<CircledButtonType, string> = {
 
 type Props = {
   ariaLabel: string
-  icon: React.ReactElement
+  icon: ReactElement
   onClick: () => void
   type?: CircledButtonType
 }
@@ -29,6 +29,7 @@ type Props = {
 const CircledButton = ({ ariaLabel, onClick, icon, type = CircledButtonType.PRIMARY }: Props) => {
   return (
     <button
+      type="button"
       aria-label={ariaLabel}
       onClick={onClick}
       className={clsx(

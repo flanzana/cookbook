@@ -1,8 +1,8 @@
-import React from "react"
 import { render, screen, within } from "@testing-library/react"
+import React from "react"
 
-import SearchPage from "../page"
 import { mockedRecipes } from "../../../testUtils/mockedData"
+import SearchPage from "../page"
 
 jest.mock("../../../data/data", () => ({
   get recipes() {
