@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "yarn biome && yarn types",
+    "prepush": "yarn biome && yarn types && yarn test",
     "build": "next build",
     "start": "next start",
     "biome": "biome check --error-on-warnings",
