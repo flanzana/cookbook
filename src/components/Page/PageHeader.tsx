@@ -1,8 +1,9 @@
 import Link from "next/link"
-
+import { Suspense } from "react"
 import DarkModeButton from "../DarkModeButton"
 import FavouriteIconButton from "../FavouriteIconButton"
 import FiltersButton from "../FiltersButton"
+import Loader from "../Loader"
 import Logo from "../Logo"
 
 type Props = {
@@ -27,7 +28,13 @@ const PageHeader = ({ hasFavouritesIcon, hasFilters }: Props) => (
     </Link>
     <div className="mr-4 flex flex-row items-center sm:space-x-4">
       {hasFavouritesIcon && <FavouriteIconButton />}
-      {hasFilters && <FiltersButton />}
+      {hasFilters && (
+        <Suspense
+          fallback={<Loader sizingClassNames="size-5 p-2" label="Loading filters button" />}
+        >
+          <FiltersButton />
+        </Suspense>
+      )}
       <DarkModeButton />
     </div>
   </header>
