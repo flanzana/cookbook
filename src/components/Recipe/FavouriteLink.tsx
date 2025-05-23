@@ -33,9 +33,11 @@ const FavouriteLink = ({ recipeId, language }: Props) => {
         isFavouriteLocal ? removeFavouriteRecipe(recipeId) : setFavouriteRecipe(recipeId)
       }
       icon={isFavouriteLocal ? <FilledHeartIcon /> : <EmptyHeartIcon />}
-      ariaLabel={getTranslation("add.favourite.recipe", language)}
       ariaPressed={isFavouriteLocal}
-    />
+    >
+      {/* Note for future me: screen reader doesn't use the correct language for aria-labels when set to the section only, so we need this hidden span */}
+      <span className="sr-only">{getTranslation("add.favourite.recipe", language)}</span>
+    </TextLink>
   )
 }
 

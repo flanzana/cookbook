@@ -32,6 +32,7 @@ const Recipe = ({ recipe }: Props) => {
   return (
     <RecipeLayout
       title={title}
+      language={language}
       originalRecipeLink={
         originalRecipe ? (
           <TextLink

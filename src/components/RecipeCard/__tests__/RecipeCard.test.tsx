@@ -1,11 +1,18 @@
 import { render, screen } from "@testing-library/react"
 import React from "react"
 
-import { Category } from "../../../types"
+import { Category, Language } from "../../../types"
 import RecipeCard from "../RecipeCard"
 
 const renderRecipeCard = () =>
-  render(<RecipeCard href="/link-to-page" title="Burrito bowl" category={Category.Main} />)
+  render(
+    <RecipeCard
+      href="/link-to-page"
+      title="Burrito bowl"
+      category={Category.Main}
+      language={Language.English}
+    />,
+  )
 
 describe("RecipeCard", () => {
   it("has title burrito bowl", () => {

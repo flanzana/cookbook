@@ -1,16 +1,15 @@
 import clsx from "clsx"
 import Link from "next/link"
-import { type ReactElement, type ReactNode, cloneElement } from "react"
+import { type ReactElement, cloneElement } from "react"
 
 export type Props = {
   href?: string
   onClick?: () => void
-  children?: string | ReactNode
+  children: string | ReactElement
   icon?: ReactElement
   isExternal?: boolean
   isUnderlined?: boolean
   additionalClassName?: string
-  ariaLabel?: string
   ariaPressed?: boolean
 }
 
@@ -41,7 +40,6 @@ const StyledContent = ({ icon, children }: Pick<Props, "children" | "icon">) => 
  * @param isExternal - when true, page will be opened in a new tab. If false, link will be wrapped with Next.js's Link.
  * @param isUnderlined - when true, the link will be underlined
  * @param additionalClassName - additional className for styling
- * @param ariaLabel - aria-label for the link
  * @param ariaPressed - value for the aria-pressed attribute
  */
 const TextLink = ({
@@ -52,7 +50,6 @@ const TextLink = ({
   isExternal = false,
   isUnderlined = false,
   additionalClassName = "",
-  ariaLabel,
   ariaPressed,
 }: Props) => {
   const className = clsx(
@@ -64,30 +61,18 @@ const TextLink = ({
 
   if (href) {
     return isExternal ? (
-      <a
-        href={href}
-        className={className}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={ariaLabel}
-      >
+      <a href={href} className={className} target="_blank" rel="noopener noreferrer">
         <StyledContent icon={icon}>{children}</StyledContent>
       </a>
     ) : (
-      <Link href={href} className={className} aria-label={ariaLabel}>
+      <Link href={href} className={className}>
         <StyledContent icon={icon}>{children}</StyledContent>
       </Link>
     )
   }
 
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={className}
-      aria-pressed={ariaPressed}
-      aria-label={ariaLabel}
-    >
+    <button type="button" onClick={onClick} className={className} aria-pressed={ariaPressed}>
       <StyledContent icon={icon}>{children}</StyledContent>
     </button>
   )

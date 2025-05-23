@@ -1,4 +1,4 @@
-import { Language } from "../types"
+import { Category, Language } from "../types"
 
 const TRANSLATIONS: Record<string, Record<Language, string>> = {
   ingredients: {
@@ -40,6 +40,66 @@ const TRANSLATIONS: Record<string, Record<Language, string>> = {
     [Language.English]: "(Keep screen awake)",
     [Language.Slovenian]: "(Ne ugašaj zaslona)",
     [Language.Spanish]: "(Pantalla activa)",
+  },
+  [Category.ColdDrink]: {
+    [Language.English]: "Cold drink",
+    [Language.Slovenian]: "Hladna pijača",
+    [Language.Spanish]: "Bebida fría",
+  },
+  [Category.Dessert]: {
+    [Language.English]: "Dessert",
+    [Language.Slovenian]: "Sladica",
+    [Language.Spanish]: "Postre",
+  },
+  [Category.WarmDrink]: {
+    [Language.English]: "Warm drink",
+    [Language.Slovenian]: "Topla pijača",
+    [Language.Spanish]: "Bebida caliente",
+  },
+  [Category.Main]: {
+    [Language.English]: "Main dish",
+    [Language.Slovenian]: "Glavna jed",
+    [Language.Spanish]: "Plato principal",
+  },
+  [Category.Salad]: {
+    [Language.English]: "Salad",
+    [Language.Slovenian]: "Solata",
+    [Language.Spanish]: "Ensalada",
+  },
+  [Category.Snack]: {
+    [Language.English]: "Snack",
+    [Language.Slovenian]: "Prigrizek",
+    [Language.Spanish]: "Aperitivo",
+  },
+  [Category.Soup]: {
+    [Language.English]: "Soup",
+    [Language.Slovenian]: "Juha",
+    [Language.Spanish]: "Sopa",
+  },
+  [Category.Spread]: {
+    [Language.English]: "Spread",
+    [Language.Slovenian]: "Namaz",
+    [Language.Spanish]: "Untable",
+  },
+  [Category.Stew]: {
+    [Language.English]: "Stew",
+    [Language.Slovenian]: "Enolončnica",
+    [Language.Spanish]: "Estofado",
+  },
+  [Category.Pasta]: {
+    [Language.English]: "Pasta",
+    [Language.Slovenian]: "Testenine",
+    [Language.Spanish]: "Pasta",
+  },
+  [Category.Sauce]: {
+    [Language.English]: "Sauce",
+    [Language.Slovenian]: "Omaka",
+    [Language.Spanish]: "Salsa",
+  },
+  [Category.Dough]: {
+    [Language.English]: "Dough",
+    [Language.Slovenian]: "Testo",
+    [Language.Spanish]: "Masa",
   },
 }
 

@@ -1,4 +1,5 @@
 import React, { type ReactElement, type ReactNode } from "react"
+import type { Language } from "../../types"
 
 type PartProps = {
   title: string
@@ -26,6 +27,7 @@ type Props = {
   ingredients: ReactElement
   instructions: ReactElement
   notes?: ReactElement
+  language: Language
 }
 
 const RecipeLayout = ({
@@ -36,8 +38,9 @@ const RecipeLayout = ({
   ingredients,
   instructions,
   notes,
+  language,
 }: Props) => (
-  <section className="flex cursor-default flex-col items-center">
+  <section lang={language} className="flex cursor-default flex-col items-center">
     <h1 className="text-center text-2xl font-bold sm:text-3xl">{title}</h1>
     {(originalRecipeLink || favouriteLink) && (
       <div className="mt-3 flex items-center space-x-4 lg:space-x-16">

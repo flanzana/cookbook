@@ -80,7 +80,7 @@ describe("SearchPage", () => {
       "Cold drink",
       "Warm drink",
       "Sauce",
-      "Spread or dip",
+      "Spread",
       "Snack",
     ]
 

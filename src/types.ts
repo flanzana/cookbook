@@ -14,9 +14,9 @@ export enum Category {
 }
 
 export enum Language {
-  English = "English",
-  Slovenian = "Slovenian",
-  Spanish = "Spanish",
+  English = "en",
+  Slovenian = "sl",
+  Spanish = "es",
 }
 
 type Ingredient = {
@@ -42,4 +42,5 @@ export type RecipeCard = {
   title: string
   category: Category
   href: string
+  language: Language
 }

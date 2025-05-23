@@ -21,6 +21,7 @@ const useRecipes = (): RecipeCard[] => {
       title: recipe.title,
       category: recipe.category,
       href: `/${recipe.id}`,
+      language: recipe.language,
     }))
 
   return sortAlphabetically(formattedRecipes)
