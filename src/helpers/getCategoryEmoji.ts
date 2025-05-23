@@ -2,8 +2,10 @@ import { Category } from "../types"
 
 const getCategoryEmoji = (category: Category): string => {
   switch (category) {
-    case Category.Dessert:
+    case Category.DessertBake:
       return "🍰"
+    case Category.DessertNoBake:
+      return "🍮"
     case Category.ColdDrink:
       return "🍹"
     case Category.WarmDrink:
@@ -15,7 +17,7 @@ const getCategoryEmoji = (category: Category): string => {
     case Category.Salad:
       return "🥗"
     case Category.Soup:
-      return "🍲"
+      return "🥣"
     case Category.Stew:
       return "🍲"
     case Category.Snack:

@@ -3,7 +3,7 @@ import { Category, type IRecipe, Language } from "../types"
 export const mockedRecipe: IRecipe = {
   id: "lorem-ipsum",
   title: "Lorem ipsum",
-  category: Category.Dessert,
+  category: Category.DessertBake,
   language: Language.English,
   servings: 2,
   ingredientsGroups: [

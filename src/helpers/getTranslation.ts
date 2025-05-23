@@ -46,10 +46,15 @@ const TRANSLATIONS: Record<string, Record<Language, string>> = {
     [Language.Slovenian]: "Hladna pijača",
     [Language.Spanish]: "Bebida fría",
   },
-  [Category.Dessert]: {
-    [Language.English]: "Dessert",
-    [Language.Slovenian]: "Sladica",
-    [Language.Spanish]: "Postre",
+  [Category.DessertBake]: {
+    [Language.English]: "Baked dessert",
+    [Language.Slovenian]: "Sladica s peko",
+    [Language.Spanish]: "Postre al horno",
+  },
+  [Category.DessertNoBake]: {
+    [Language.English]: "No-bake dessert",
+    [Language.Slovenian]: "Sladica brez peke",
+    [Language.Spanish]: "Postre sin horno",
   },
   [Category.WarmDrink]: {
     [Language.English]: "Warm drink",

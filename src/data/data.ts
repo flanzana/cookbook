@@ -724,7 +724,7 @@ export const recipes: IRecipe[] = [
   {
     id: "tzatziki",
     title: "Tzatziki",
-    category: Category.Spread,
+    category: Category.Sauce,
     language: Language.English,
     ingredientsGroups: [
       {
@@ -3393,7 +3393,7 @@ export const recipes: IRecipe[] = [
   {
     id: "cokoladni-mafini-z-gozdnimi-sadezi",
     title: "Čokoladni mafini z gozdnimi sadeži",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     servings: 12,
     ingredientsGroups: [
@@ -3430,7 +3430,7 @@ export const recipes: IRecipe[] = [
   {
     id: "borovnicev-kolac",
     title: "Borovničev kolač",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3459,7 +3459,7 @@ export const recipes: IRecipe[] = [
   {
     id: "bananin-kolac",
     title: "Bananin kolač",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3488,7 +3488,7 @@ export const recipes: IRecipe[] = [
   {
     id: "bananini-mafini-z-nutello-in-kokosom",
     title: "Bananini mafini z Nutello in kokosom",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3516,7 +3516,7 @@ export const recipes: IRecipe[] = [
   {
     id: "bizcocho-de-canela-cardamomo-y-jengibre",
     title: "Bizcocho de canela, cardamomo y jengibre",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Spanish,
     ingredientsGroups: [
       {
@@ -3549,7 +3549,7 @@ export const recipes: IRecipe[] = [
   {
     id: "crema-fria-de-almendras-con-canela",
     title: "Crema fría de almendras con canela",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.Spanish,
     ingredientsGroups: [
       {
@@ -3574,7 +3574,7 @@ export const recipes: IRecipe[] = [
   {
     id: "korenckov-kolac",
     title: "Korenčkov kolač",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3603,7 +3603,7 @@ export const recipes: IRecipe[] = [
   {
     id: "overnight-oats-peanut-butter-banana",
     title: "Overnight oats with peanut butter & banana",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.English,
     servings: 1,
     ingredientsGroups: [
@@ -3629,7 +3629,7 @@ export const recipes: IRecipe[] = [
   {
     id: "overnight-oats-berries",
     title: "Overnight oats with berries",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.English,
     servings: 1,
     ingredientsGroups: [
@@ -3656,7 +3656,7 @@ export const recipes: IRecipe[] = [
   {
     id: "overnight-oats-choco-banana",
     title: "Overnight oats with choco banana",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.English,
     servings: 1,
     ingredientsGroups: [
@@ -3683,7 +3683,7 @@ export const recipes: IRecipe[] = [
   {
     id: "jabolcne-palacinke",
     title: "Jabolčne palačinke",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3712,7 +3712,7 @@ export const recipes: IRecipe[] = [
   {
     id: "tiramisu",
     title: "Tiramisu",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3739,7 +3739,7 @@ export const recipes: IRecipe[] = [
   {
     id: "medenjaki",
     title: "Medenjaki",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3768,7 +3768,7 @@ export const recipes: IRecipe[] = [
   {
     id: "vanilijevi-rogljicki",
     title: "Vanilijevi rogljički",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3793,7 +3793,7 @@ export const recipes: IRecipe[] = [
   {
     id: "jabolcna-pita",
     title: "Jabolčna pita",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3821,7 +3821,7 @@ export const recipes: IRecipe[] = [
   {
     id: "jabolcni-strudelj",
     title: "Jabolčni štrudelj",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3865,7 +3865,7 @@ export const recipes: IRecipe[] = [
   {
     id: "praznicni-cheesecake-v-kozarcu",
     title: "Praznični cheesecake v kozarcu",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.Slovenian,
     servings: 4,
     ingredientsGroups: [
@@ -3893,7 +3893,7 @@ export const recipes: IRecipe[] = [
   {
     id: "bozicno-novoletni-piskoti",
     title: "Božično novoletni piškoti",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3932,7 +3932,7 @@ export const recipes: IRecipe[] = [
   {
     id: "bozicni-kruh",
     title: "Božični kruh",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -3967,7 +3967,7 @@ export const recipes: IRecipe[] = [
   {
     id: "mandljeva-potica-v-cokoladnem-testu",
     title: "Mandljeva potica v čokoladnem testu",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -4012,7 +4012,7 @@ export const recipes: IRecipe[] = [
   {
     id: "potratna-potica",
     title: "Potratna potica",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     ingredientsGroups: [
       {
@@ -4125,7 +4125,7 @@ export const recipes: IRecipe[] = [
   {
     id: "orehove-poticke",
     title: "Orehove potičke",
-    category: Category.Dessert,
+    category: Category.DessertBake,
     language: Language.Slovenian,
     servings: 10,
     ingredientsGroups: [
@@ -4197,7 +4197,7 @@ export const recipes: IRecipe[] = [
   {
     id: "cesarki-prazenec",
     title: "Cesarski praženec",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.Slovenian,
     servings: 4,
     ingredientsGroups: [
@@ -4224,7 +4224,7 @@ export const recipes: IRecipe[] = [
   {
     id: "brownie-energy-balls",
     title: "Brownie energy balls",
-    category: Category.Dessert,
+    category: Category.DessertNoBake,
     language: Language.English,
     ingredientsGroups: [
       {

@@ -28,7 +28,7 @@ describe("SearchPage", () => {
     ;(useSearchParams as jest.Mock).mockReturnValue(new URLSearchParams({}))
     render(<SearchPage />)
 
-    expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(12)
+    expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(13)
   })
 
   it("displays filter categories when button clicked", async () => {
@@ -44,10 +44,10 @@ describe("SearchPage", () => {
     ;(useSearchParams as jest.Mock).mockReturnValue(new URLSearchParams("filter"))
     render(<SearchPage />)
 
-    expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(12)
+    expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(13)
     expect(
       within(screen.getByRole("list", { name: "Category filters" })).getAllByRole("button"),
-    ).toHaveLength(12)
+    ).toHaveLength(13)
   })
 
   it("selects a filter when clicked", async () => {
@@ -68,7 +68,7 @@ describe("SearchPage", () => {
     expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(2)
     expect(
       within(screen.getByRole("list", { name: "Category filters" })).getAllByRole("button"),
-    ).toHaveLength(12)
+    ).toHaveLength(13)
 
     const selectedCategories = ["Dough", "Pasta"]
     const unselectedCategories = [
@@ -76,7 +76,8 @@ describe("SearchPage", () => {
       "Stew",
       "Main dish",
       "Salad",
-      "Dessert",
+      "Baked dessert",
+      "No-bake dessert",
       "Cold drink",
       "Warm drink",
       "Sauce",
@@ -93,7 +94,7 @@ describe("SearchPage", () => {
       ).toHaveAttribute("aria-pressed", "true")
     })
 
-    expect(unselectedCategories).toHaveLength(10)
+    expect(unselectedCategories).toHaveLength(11)
     unselectedCategories.forEach(category => {
       expect(
         within(screen.getByRole("list", { name: "Category filters" })).getByRole("button", {

@@ -27,10 +27,16 @@ describe("useRecipes", () => {
           "title": "Lorem cold-drink ipsum",
         },
         {
-          "category": "dessert",
-          "href": "/lorem-dessert-ipsum",
+          "category": "dessert-bake",
+          "href": "/lorem-dessert-bake-ipsum",
           "language": "en",
-          "title": "Lorem dessert ipsum",
+          "title": "Lorem dessert-bake ipsum",
+        },
+        {
+          "category": "dessert-no-bake",
+          "href": "/lorem-dessert-no-bake-ipsum",
+          "language": "en",
+          "title": "Lorem dessert-no-bake ipsum",
         },
         {
           "category": "dough",
