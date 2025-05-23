@@ -14,7 +14,7 @@ import CategoryIcon from "../CategoryIcon"
 const RecipeCard = ({ href, title, category }: RecipeCardType) => (
   <Link
     href={href}
-    className="hocus:bg-primary-100 hocus:text-primary-700 dark:hocus:bg-primary-300 flex flex-row items-center justify-between rounded-xl bg-zinc-100 px-3 py-2 outline-hidden sm:p-4 dark:bg-zinc-700"
+    className="hocus:bg-primary-100 hocus:text-primary-700 dark:hocus:bg-primary-300 flex flex-row items-center justify-between rounded-xl bg-zinc-100 px-3 py-2 outline-hidden sm:p-4 dark:bg-zinc-700 h-full"
   >
     <>
       <span className="flex-1 text-base leading-tight">

@@ -31,11 +31,6 @@ const TRANSLATIONS: Record<string, Record<Language, string>> = {
     [Language.Slovenian]: "Dodaj med priljubljene",
     [Language.Spanish]: "Añadir a favoritos",
   },
-  "remove.favourite.recipe": {
-    [Language.English]: "Remove from favourites",
-    [Language.Slovenian]: "Odstrani iz priljubljenih",
-    [Language.Spanish]: "Quitar de favoritos",
-  },
   "cook.mode": {
     [Language.English]: "Cook mode",
     [Language.Slovenian]: "Način kuhanja",

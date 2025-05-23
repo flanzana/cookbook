@@ -27,17 +27,14 @@ const FavouriteLink = ({ recipeId, language }: Props) => {
     setIsFavouriteLocal(isFavourite)
   }, [isFavourite])
 
-  return isFavouriteLocal ? (
+  return (
     <TextLink
-      onClick={() => removeFavouriteRecipe(recipeId)}
-      icon={<FilledHeartIcon />}
-      ariaLabel={getTranslation("remove.favourite.recipe", language)}
-    />
-  ) : (
-    <TextLink
-      onClick={() => setFavouriteRecipe(recipeId)}
-      icon={<EmptyHeartIcon />}
+      onClick={() =>
+        isFavouriteLocal ? removeFavouriteRecipe(recipeId) : setFavouriteRecipe(recipeId)
+      }
+      icon={isFavouriteLocal ? <FilledHeartIcon /> : <EmptyHeartIcon />}
       ariaLabel={getTranslation("add.favourite.recipe", language)}
+      ariaPressed={isFavouriteLocal}
     />
   )
 }

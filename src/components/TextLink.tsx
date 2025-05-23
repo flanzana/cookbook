@@ -11,6 +11,7 @@ export type Props = {
   isUnderlined?: boolean
   additionalClassName?: string
   ariaLabel?: string
+  ariaPressed?: boolean
 }
 
 const StyledContent = ({ icon, children }: Pick<Props, "children" | "icon">) => {
@@ -41,6 +42,7 @@ const StyledContent = ({ icon, children }: Pick<Props, "children" | "icon">) => 
  * @param isUnderlined - when true, the link will be underlined
  * @param additionalClassName - additional className for styling
  * @param ariaLabel - aria-label for the link
+ * @param ariaPressed - value for the aria-pressed attribute
  */
 const TextLink = ({
   href,
@@ -51,6 +53,7 @@ const TextLink = ({
   isUnderlined = false,
   additionalClassName = "",
   ariaLabel,
+  ariaPressed,
 }: Props) => {
   const className = clsx(
     "rounded-md px-1 font-semibold text-primary-600 outline-hidden dark:text-primary-300",
@@ -78,7 +81,13 @@ const TextLink = ({
   }
 
   return (
-    <button type="button" onClick={onClick} className={className} aria-label={ariaLabel}>
+    <button
+      type="button"
+      onClick={onClick}
+      className={className}
+      aria-pressed={ariaPressed}
+      aria-label={ariaLabel}
+    >
       <StyledContent icon={icon}>{children}</StyledContent>
     </button>
   )

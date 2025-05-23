@@ -26,17 +26,25 @@ const PageHeader = ({ hasFavouritesIcon, hasFilters }: Props) => (
         <span className="font-display ml-4 text-xl font-medium">Žana&apos;s cookbook</span>
       </>
     </Link>
-    <div className="mr-4 flex flex-row items-center sm:space-x-4">
-      {hasFavouritesIcon && <FavouriteIconButton />}
-      {hasFilters && (
-        <Suspense
-          fallback={<Loader sizingClassNames="size-5 p-2" label="Loading filters button" />}
-        >
-          <FiltersButton />
-        </Suspense>
+    <ul className="mr-4 flex flex-row items-center sm:space-x-4">
+      {hasFavouritesIcon && (
+        <li>
+          <FavouriteIconButton />
+        </li>
       )}
-      <DarkModeButton />
-    </div>
+      {hasFilters && (
+        <li>
+          <Suspense
+            fallback={<Loader sizingClassNames="size-5 p-2" label="Loading filters button" />}
+          >
+            <FiltersButton />
+          </Suspense>
+        </li>
+      )}
+      <li>
+        <DarkModeButton />
+      </li>
+    </ul>
   </header>
 )
 

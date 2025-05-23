@@ -34,7 +34,6 @@ describe("Recipe", () => {
       instructions: "Instructions",
       servings: "Servings:",
       addFavouriteRecipe: "Add to favourites",
-      removeFavouriteRecipe: "Remove from favourites",
     },
     {
       language: "Slovenian",
@@ -47,7 +46,6 @@ describe("Recipe", () => {
       instructions: "Postopek",
       servings: "Porcije:",
       addFavouriteRecipe: "Dodaj med priljubljene",
-      removeFavouriteRecipe: "Odstrani iz priljubljenih",
     },
     {
       language: "Spanish",
@@ -60,7 +58,6 @@ describe("Recipe", () => {
       instructions: "Preparación",
       servings: "Raciones:",
       addFavouriteRecipe: "Añadir a favoritos",
-      removeFavouriteRecipe: "Quitar de favoritos",
     },
   ].forEach(langItem =>
     describe(`items in ${langItem.language} language`, () => {
@@ -106,15 +103,17 @@ describe("Recipe", () => {
       })
 
       it("toggles between Add and Remove in favourites", async () => {
-        expect(screen.getByRole("button", { name: langItem.addFavouriteRecipe })).toBeVisible()
+        const button = screen.getByRole("button", { name: langItem.addFavouriteRecipe })
 
-        await userEvent.click(screen.getByRole("button", { name: langItem.addFavouriteRecipe }))
+        expect(button).toHaveAttribute("aria-pressed", "false")
 
-        expect(screen.getByRole("button", { name: langItem.removeFavouriteRecipe })).toBeVisible()
+        await userEvent.click(button)
 
-        await userEvent.click(screen.getByRole("button", { name: langItem.removeFavouriteRecipe }))
+        expect(button).toHaveAttribute("aria-pressed", "true")
 
-        expect(screen.getByRole("button", { name: langItem.addFavouriteRecipe })).toBeVisible()
+        await userEvent.click(button)
+
+        expect(button).toHaveAttribute("aria-pressed", "false")
       })
     }),
   )
@@ -127,6 +126,9 @@ describe("Recipe", () => {
   it("displays Remove from favourites if it's already saved in localStorage", () => {
     renderRecipe(mockedRecipe, true)
 
-    expect(screen.getByRole("button", { name: "Remove from favourites" })).toBeVisible()
+    expect(screen.getByRole("button", { name: "Add to favourites" })).toHaveAttribute(
+      "aria-pressed",
+      "true",
+    )
   })
 })

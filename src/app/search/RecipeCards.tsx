@@ -37,11 +37,13 @@ const RecipeCards = () => {
   if (!recipes.length) return <NoRecipes />
 
   return (
-    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
+    <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
       {recipes.map(recipe => (
-        <RecipeCard key={recipe.title} {...recipe} />
+        <li key={recipe.title}>
+          <RecipeCard {...recipe} />
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
 

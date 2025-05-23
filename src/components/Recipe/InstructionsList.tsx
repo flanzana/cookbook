@@ -3,7 +3,10 @@ import clsx from "clsx"
 import { type ReactNode, useState } from "react"
 
 const InstructionIndex = ({ index }: Pick<InstructionsListItemProps, "index">) => (
-  <div className="bg-primary-100 mt-0.5 mr-3 h-5 w-5 rounded-full text-center text-sm dark:bg-zinc-600">
+  <div
+    className="bg-primary-100 mt-0.5 mr-3 h-5 w-5 rounded-full text-center text-sm dark:bg-zinc-600"
+    aria-hidden
+  >
     {index}
   </div>
 )

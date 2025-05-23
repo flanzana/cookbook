@@ -5,13 +5,19 @@ import type { Category } from "../types"
 type Props = {
   category: Category
   className?: string
+  ariaHidden?: boolean
 }
 
 /**
  * Accessible category emoji icon with category title as aria-label.
  */
-const CategoryIcon = ({ category, className }: Props) => (
-  <span role="img" aria-label={getCategoryTitle(category)} className={className}>
+const CategoryIcon = ({ category, className, ariaHidden }: Props) => (
+  <span
+    role="img"
+    aria-label={ariaHidden ? undefined : getCategoryTitle(category)}
+    aria-hidden={ariaHidden}
+    className={className}
+  >
     {getCategoryEmoji(category)}
   </span>
 )

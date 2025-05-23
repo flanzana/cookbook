@@ -37,7 +37,7 @@ const RecipeLayout = ({
   instructions,
   notes,
 }: Props) => (
-  <div className="flex cursor-default flex-col items-center">
+  <section className="flex cursor-default flex-col items-center">
     <h1 className="text-center text-2xl font-bold sm:text-3xl">{title}</h1>
     {(originalRecipeLink || favouriteLink) && (
       <div className="mt-3 flex items-center space-x-4 lg:space-x-16">
@@ -53,7 +53,7 @@ const RecipeLayout = ({
         {notes}
       </div>
     </div>
-  </div>
+  </section>
 )
 
 export default RecipeLayout

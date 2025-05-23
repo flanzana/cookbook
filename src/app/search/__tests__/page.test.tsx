@@ -46,7 +46,7 @@ describe("SearchPage", () => {
 
     expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(12)
     expect(
-      within(screen.getByRole("group", { name: "Category filters" })).getAllByRole("button"),
+      within(screen.getByRole("list", { name: "Category filters" })).getAllByRole("button"),
     ).toHaveLength(12)
   })
 
@@ -67,7 +67,7 @@ describe("SearchPage", () => {
 
     expect(within(screen.getByRole("main")).getAllByRole("link")).toHaveLength(2)
     expect(
-      within(screen.getByRole("group", { name: "Category filters" })).getAllByRole("button"),
+      within(screen.getByRole("list", { name: "Category filters" })).getAllByRole("button"),
     ).toHaveLength(12)
 
     const selectedCategories = ["Dough", "Pasta"]
@@ -87,7 +87,7 @@ describe("SearchPage", () => {
     expect(selectedCategories).toHaveLength(2)
     selectedCategories.forEach(category => {
       expect(
-        within(screen.getByRole("group", { name: "Category filters" })).getByRole("button", {
+        within(screen.getByRole("list", { name: "Category filters" })).getByRole("button", {
           name: category,
         }),
       ).toHaveAttribute("aria-pressed", "true")
@@ -96,7 +96,7 @@ describe("SearchPage", () => {
     expect(unselectedCategories).toHaveLength(10)
     unselectedCategories.forEach(category => {
       expect(
-        within(screen.getByRole("group", { name: "Category filters" })).getByRole("button", {
+        within(screen.getByRole("list", { name: "Category filters" })).getByRole("button", {
           name: category,
         }),
       ).toHaveAttribute("aria-pressed", "false")

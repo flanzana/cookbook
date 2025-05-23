@@ -41,12 +41,12 @@ type Props = {
 const IngredientsTable = ({ title, children }: Props) => (
   <div className="pt-2 first-of-type:pt-0">
     {title && (
-      <div
+      <h3
         className="border-b border-b-zinc-200 px-2 font-semibold dark:border-b-zinc-600"
         id={title}
       >
         {title}
-      </div>
+      </h3>
     )}
     <table className="table-auto" aria-labelledby={title ?? "IngredientsTable"}>
       <tbody>{children}</tbody>
