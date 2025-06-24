@@ -16,6 +16,16 @@ const TRANSLATIONS: Record<string, Record<Language, string>> = {
     [Language.Slovenian]: "Porcije:",
     [Language.Spanish]: "Raciones:",
   },
+  "servings.increment": {
+    [Language.English]: "Increment servings",
+    [Language.Slovenian]: "Povečaj porcije",
+    [Language.Spanish]: "Aumentar raciones",
+  },
+  "servings.decrement": {
+    [Language.English]: "Decrement servings",
+    [Language.Slovenian]: "Zmanjšaj porcije",
+    [Language.Spanish]: "Disminuir raciones",
+  },
   notes: {
     [Language.English]: "Notes",
     [Language.Slovenian]: "Opombe",

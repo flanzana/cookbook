@@ -1,5 +1,6 @@
+"use client"
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline"
-
+import { useState } from "react"
 import getTranslation from "../../helpers/getTranslation"
 import type { IRecipe } from "../../types"
 import TextLink from "../TextLink"
@@ -9,6 +10,7 @@ import IngredientsTable, { IngredientsTableRow } from "./IngredientsTable"
 import InstructionsList, { InstructionsListItem } from "./InstructionsList"
 import NotesList from "./NotesList"
 import RecipeLayout, { Part } from "./RecipeLayout"
+import Servings from "./Servings"
 
 type Props = {
   recipe: IRecipe
@@ -23,11 +25,21 @@ type Props = {
  * - link to save the recipe into favourites
  * - table of all ingredients
  * - number of servings if specified
+ * - servings increment/decrement buttons
  * - list of all instructions
  */
 const Recipe = ({ recipe }: Props) => {
-  const { language, title, originalRecipe, id, servings, ingredientsGroups, instructions, notes } =
-    recipe
+  const {
+    language,
+    title,
+    originalRecipe,
+    id,
+    servings: originalServings,
+    ingredientsGroups,
+    instructions,
+    notes,
+  } = recipe
+  const [servings, setServings] = useState<number>(originalServings ?? 0)
 
   return (
     <RecipeLayout
@@ -50,16 +62,18 @@ const Recipe = ({ recipe }: Props) => {
       ingredients={
         <Part title={getTranslation("ingredients", language)} id="IngredientsTable">
           {servings ? (
-            <span className="mb-2 text-sm font-semibold uppercase">
-              {getTranslation("servings", language)} {recipe.servings}
-            </span>
+            <Servings servings={servings} setServings={setServings} language={language} />
           ) : null}
           {ingredientsGroups.map(({ title, ingredients }, index) => (
             <IngredientsTable key={index} title={title}>
               {ingredients.map(({ ingredient, amount, unit }) => (
                 <IngredientsTableRow
                   key={ingredient}
-                  amount={amount}
+                  amount={
+                    originalServings && amount
+                      ? Math.round(amount * (servings / originalServings) * 10) / 10
+                      : amount
+                  }
                   unit={unit}
                   ingredient={ingredient}
                 />

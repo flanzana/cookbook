@@ -33,6 +33,8 @@ describe("Recipe", () => {
       ingredients: "Ingredients",
       instructions: "Instructions",
       servings: "Servings:",
+      incrementServings: "Increment servings",
+      decrementServings: "Decrement servings",
       addFavouriteRecipe: "Add to favourites",
     },
     {
@@ -45,6 +47,8 @@ describe("Recipe", () => {
       ingredients: "Sestavine",
       instructions: "Postopek",
       servings: "Porcije:",
+      incrementServings: "Povečaj porcije",
+      decrementServings: "Zmanjšaj porcije",
       addFavouriteRecipe: "Dodaj med priljubljene",
     },
     {
@@ -57,6 +61,8 @@ describe("Recipe", () => {
       ingredients: "Ingredientes",
       instructions: "Preparación",
       servings: "Raciones:",
+      incrementServings: "Aumentar raciones",
+      decrementServings: "Disminuir raciones",
       addFavouriteRecipe: "Añadir a favoritos",
     },
   ].forEach(langItem =>
@@ -74,7 +80,39 @@ describe("Recipe", () => {
       })
 
       it("displays the servings", () => {
-        expect(screen.getByText(new RegExp(`${langItem.servings}\\s*2`, "i"))).toBeVisible()
+        expect(screen.getByRole("textbox", { name: langItem.servings })).toHaveValue("2")
+        expect(screen.getByRole("button", { name: langItem.incrementServings })).toBeVisible()
+        expect(screen.getByRole("button", { name: langItem.decrementServings })).toBeVisible()
+      })
+
+      it("displays updated amount of ingredients when servings are changed", async () => {
+        const servingsInput = screen.getByRole("textbox", {
+          name: langItem.servings,
+        })
+
+        expect(servingsInput).toHaveValue("2")
+        expect(
+          within(screen.getByRole("table", { name: langItem.ingredients })).getByRole("row", {
+            name: "120 g lorem",
+          }),
+        ).toBeVisible()
+
+        await userEvent.click(screen.getByRole("button", { name: langItem.incrementServings }))
+        expect(servingsInput).toHaveValue("3")
+        expect(
+          within(screen.getByRole("table", { name: langItem.ingredients })).getByRole("row", {
+            name: "180 g lorem",
+          }),
+        ).toBeVisible()
+
+        await userEvent.click(screen.getByRole("button", { name: langItem.decrementServings }))
+        await userEvent.click(screen.getByRole("button", { name: langItem.decrementServings }))
+        expect(servingsInput).toHaveValue("1")
+        expect(
+          within(screen.getByRole("table", { name: langItem.ingredients })).getByRole("row", {
+            name: "60 g lorem",
+          }),
+        ).toBeVisible()
       })
 
       it("displays the ingredients table", () => {
@@ -103,7 +141,9 @@ describe("Recipe", () => {
       })
 
       it("toggles between Add and Remove in favourites", async () => {
-        const button = screen.getByRole("button", { name: langItem.addFavouriteRecipe })
+        const button = screen.getByRole("button", {
+          name: langItem.addFavouriteRecipe,
+        })
 
         expect(button).toHaveAttribute("aria-pressed", "false")
 
