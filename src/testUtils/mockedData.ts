@@ -9,9 +9,9 @@ export const mockedRecipe: IRecipe = {
   ingredientsGroups: [
     {
       ingredients: [
-        { amount: "120 g", ingredient: "lorem" },
-        { amount: "1 spoon", ingredient: "ipsum" },
-        { amount: "1", ingredient: "dolor" },
+        { amount: 120, unit: "g", ingredient: "lorem" },
+        { amount: 1, unit: "tbsp", ingredient: "ipsum" },
+        { amount: 1, ingredient: "dolor" },
         { ingredient: "sit" },
         { ingredient: "amet" },
       ],

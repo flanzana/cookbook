@@ -1,13 +1,11 @@
 "use client"
 import clsx from "clsx"
 import { type ReactNode, useState } from "react"
+import type { Ingredient } from "../../types"
 
-type IngredientsTableRowProps = {
-  amount?: string
-  ingredient?: string
-}
+type IngredientsTableRowProps = Ingredient
 
-export const IngredientsTableRow = ({ amount, ingredient }: IngredientsTableRowProps) => {
+export const IngredientsTableRow = ({ amount, unit, ingredient }: IngredientsTableRowProps) => {
   const [isCrossed, setIsCrossed] = useState<boolean>(false)
   return (
     <tr
@@ -18,7 +16,7 @@ export const IngredientsTableRow = ({ amount, ingredient }: IngredientsTableRowP
         key="amount"
         className="min-w-20 border-r border-r-zinc-200 pr-2 pb-1 text-right text-sm text-nowrap dark:border-r-zinc-600"
       >
-        {amount}
+        {[amount, unit].filter(Boolean).join(" ")}
       </td>
       <td key="ingredient" className="min-w-36 pb-1 pl-2 text-left text-base">
         {ingredient}

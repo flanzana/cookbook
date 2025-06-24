@@ -20,8 +20,33 @@ export enum Language {
   Spanish = "es",
 }
 
-type Ingredient = {
-  amount?: string
+type MetricUnits = "ml" | "l" | "g" | "kg" | "cm"
+type EnglishUnits = "tbsp" | "tsp" | "clove" | "pinch" | "handful" | "stick" | "slice" | "cup"
+type SlovenianUnits =
+  | "žlica"
+  | "žlička"
+  | "strok"
+  | "ščepec"
+  | "pest"
+  | "list"
+  | "rezina"
+  | "šopek"
+  | "lonček"
+  | "steblo"
+type SpanishUnits =
+  | "cucharada"
+  | "cucharadita"
+  | "diente"
+  | "pizca"
+  | "rama"
+  | "hoja"
+  | "loncha"
+  | "ramillete"
+  | "tronco"
+
+export type Ingredient = {
+  amount?: number
+  unit?: MetricUnits | EnglishUnits | SlovenianUnits | SpanishUnits
   ingredient: string
 }
 

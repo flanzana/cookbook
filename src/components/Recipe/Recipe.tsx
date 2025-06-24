@@ -56,8 +56,13 @@ const Recipe = ({ recipe }: Props) => {
           ) : null}
           {ingredientsGroups.map(({ title, ingredients }, index) => (
             <IngredientsTable key={index} title={title}>
-              {ingredients.map(({ ingredient, amount }) => (
-                <IngredientsTableRow key={ingredient} amount={amount} ingredient={ingredient} />
+              {ingredients.map(({ ingredient, amount, unit }) => (
+                <IngredientsTableRow
+                  key={ingredient}
+                  amount={amount}
+                  unit={unit}
+                  ingredient={ingredient}
+                />
               ))}
             </IngredientsTable>
           ))}
