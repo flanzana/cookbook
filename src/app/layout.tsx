@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next"
 import { Open_Sans, Poppins } from "next/font/google"
 import type { ReactNode } from "react"
@@ -74,6 +75,7 @@ const RootLayout = ({
     <html lang="en" className={`${poppins.variable} ${openSans.variable}`}>
       <body>
         <FavouritesProvider>{children}</FavouritesProvider>
+        <Analytics />
       </body>
     </html>
   )
