@@ -21,7 +21,16 @@ export enum Language {
 }
 
 type MetricUnits = "ml" | "l" | "g" | "kg" | "cm"
-type EnglishUnits = "tbsp" | "tsp" | "clove" | "pinch" | "handful" | "stick" | "slice" | "cup"
+type EnglishUnits =
+  | "tbsp"
+  | "tsp"
+  | "clove"
+  | "pinch"
+  | "handful"
+  | "stick"
+  | "slice"
+  | "cup"
+  | "pod"
 type SlovenianUnits =
   | "žlica"
   | "žlička"
