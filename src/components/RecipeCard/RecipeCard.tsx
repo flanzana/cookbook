@@ -1,6 +1,6 @@
-import { ChevronRightIcon } from "@heroicons/react/20/solid"
+import clsx from "clsx"
 import Link from "next/link"
-
+import getCategoryColor from "../../helpers/getCategoryColor"
 import type { RecipeCard as RecipeCardType } from "../../types"
 import CategoryIcon from "../CategoryIcon"
 
@@ -16,15 +16,16 @@ const RecipeCard = ({ href, title, category, language }: RecipeCardType) => (
   <Link
     href={href}
     lang={language}
-    className="hocus:bg-primary-100 hocus:text-primary-700 dark:hocus:bg-primary-300 flex flex-row items-center justify-between rounded-xl bg-zinc-100 px-3 py-2 outline-hidden sm:p-4 dark:bg-zinc-700 h-full"
+    className={clsx(
+      "flex items-center gap-3 rounded-xl px-3 py-2 sm:px-4 sm:py-3 h-full outline-hidden",
+      "bg-gradient-to-br to-zinc-100 dark:to-zinc-700 hocus:from-primary-100 hocus:to-primary-100 hocus:text-primary-700 dark:hocus:from-primary-300 dark:hocus:to-primary-300",
+      getCategoryColor(category),
+    )}
   >
-    <>
-      <span className="flex-1 text-base leading-tight">
-        <span className="mr-2 font-semibold">{title}</span>
-        <CategoryIcon category={category} language={language} />
-      </span>
-      <ChevronRightIcon className="ml-2 h-4 w-4 text-zinc-500" />
-    </>
+    <span className="text-lg sm:text-xl leading-tight">
+      <CategoryIcon category={category} language={language} />
+    </span>
+    <span className="font-semibold leading-tight">{title}</span>
   </Link>
 )
 
