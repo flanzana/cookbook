@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react"
-import React from "react"
 
 import { Category, Language } from "../../../types"
 import RecipeCard from "../RecipeCard"

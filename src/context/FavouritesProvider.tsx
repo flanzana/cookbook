@@ -1,5 +1,5 @@
 "use client"
-import { type ReactNode, createContext, useCallback, useContext, useState } from "react"
+import { createContext, type ReactNode, useCallback, useContext, useState } from "react"
 
 import useLocalStorage from "../hooks/useLocalStorage"
 import type { RecipeId } from "../types"
@@ -14,7 +14,7 @@ type Favourites = {
   showAllRecipes: () => void
 }
 
-// @ts-ignore
+// @ts-expect-error
 const FavouritesContext = createContext<Favourites>({})
 
 type Props = {

@@ -1,12 +1,14 @@
 import clsx from "clsx"
 import Link from "next/link"
-import { type ReactElement, cloneElement } from "react"
+import { cloneElement, type ReactElement } from "react"
+
+type IconElement = ReactElement<{ className?: string }>
 
 export type Props = {
   href?: string
   onClick?: () => void
   children: string | ReactElement
-  icon?: ReactElement
+  icon?: IconElement
   isExternal?: boolean
   isUnderlined?: boolean
   additionalClassName?: string

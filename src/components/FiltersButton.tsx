@@ -1,7 +1,6 @@
 "use client"
 import { FunnelIcon as FilledFunnelIcon } from "@heroicons/react/20/solid"
 import { FunnelIcon as EmptyFunnelIcon } from "@heroicons/react/24/outline"
-import React from "react"
 
 import useFilters from "../hooks/useFilters"
 import CircledButton from "./CircledButton"

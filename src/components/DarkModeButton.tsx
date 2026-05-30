@@ -1,6 +1,6 @@
 "use client"
 import { SunIcon } from "@heroicons/react/20/solid"
-import React, { useEffect } from "react"
+import { useEffect } from "react"
 
 import useLocalStorage from "../hooks/useLocalStorage"
 import CircledButton from "./CircledButton"

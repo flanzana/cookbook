@@ -1,6 +1,5 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation"
-import React from "react"
 
 import RecipeCard from "../../components/RecipeCard/RecipeCard"
 import TextLink from "../../components/TextLink"

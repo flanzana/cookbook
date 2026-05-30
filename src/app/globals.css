@@ -2,7 +2,8 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@custom-variant hocus (&:hover, &:focus);
+@custom-variant hocus (&:hover,
+&:focus);
 
 @theme {
   --font-display: var(--font-poppins), "ui-sans-serif";

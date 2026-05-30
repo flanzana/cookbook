@@ -1,7 +1,7 @@
 "use client"
 import { HeartIcon as FilledHeartIcon } from "@heroicons/react/20/solid"
 import { HeartIcon as EmptyHeartIcon } from "@heroicons/react/24/outline"
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 import { useFavourites } from "../../context/FavouritesProvider"
 import getTranslation from "../../helpers/getTranslation"
